@@ -598,7 +598,10 @@ let _saving    = false;
 /* ── 데이터 불러오기: raw URL로 토큰 없이 읽기 ── */
 async function ghLoadAll() {
   try {
-    const res = await fetch(`${GH_RAW_BASE}/data.json?t=${Date.now()}`);
+    const res = await fetch(`${GH_RAW_BASE}/data.json?t=${Date.now()}`, {
+  cache: 'no-store',
+  headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
+});
     if (!res.ok) return {};          // 아직 파일 없으면 기본값 사용
     return await res.json();
   } catch(e) {
