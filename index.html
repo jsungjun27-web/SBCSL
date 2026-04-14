@@ -590,6 +590,7 @@ body.edit-mode .bg-btn{display:flex}
 const GH_REPO     = 'CNU-SBCSL/SBCSL';
 const GH_BRANCH   = 'main';
 const GH_RAW_BASE = `https://raw.githubusercontent.com/${GH_REPO}/${GH_BRANCH}`;
+const GH_API_BASE = `https://api.github.com/repos/${GH_REPO}/contents`;
 const GH_DISPATCH = `https://api.github.com/repos/${GH_REPO}/dispatches`;
 
 let _siteData  = {};
@@ -599,9 +600,9 @@ let _saving    = false;
 async function ghLoadAll() {
   try {
     const res = await fetch(`${GH_RAW_BASE}/data.json?t=${Date.now()}`, {
-  cache: 'no-store',
-  headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
-});
+      cache: 'no-store',
+      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
+    });
     if (!res.ok) return {};          // 아직 파일 없으면 기본값 사용
     return await res.json();
   } catch(e) {
