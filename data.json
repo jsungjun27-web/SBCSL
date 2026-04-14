@@ -20,60 +20,48 @@
     }
   ],
   "sbcsl-bgs": {},
-  "sbcsl-extlinks": [],
+  "sbcsl-extlinks": [
+    {
+      "id": "el501",
+      "platform": "scholar",
+      "url": "https://scholar.google.com/citations?user=u1ojeP4AAAAJ&hl=ko&oi=ao"
+    }
+  ],
   "sbcsl-members": [
     {
       "group": "pi",
       "id": "mb1",
-      "name": "김OO 교수",
+      "name": "남정수 교수",
       "role": "Principal Investigator"
     },
     {
       "group": "phd",
       "id": "mb2",
-      "name": "이OO",
-      "role": "PhD Candidate · 4년차"
+      "name": "최병철",
+      "role": "PhD Candidate · 5년차"
     },
     {
       "group": "phd",
       "id": "mb3",
-      "name": "박OO",
-      "role": "PhD Candidate · 3년차"
+      "name": "지성준",
+      "role": "PhD Candidate · 2년차"
     },
     {
       "group": "phd",
       "id": "mb4",
-      "name": "최OO",
-      "role": "PhD Student · 2년차"
-    },
-    {
-      "group": "phd",
-      "id": "mb5",
-      "name": "정OO",
+      "name": "윤혜영",
       "role": "PhD Student · 1년차"
     },
     {
       "group": "ms",
       "id": "mb6",
-      "name": "윤OO",
-      "role": "MS Student · 2년차"
-    },
-    {
-      "group": "ms",
-      "id": "mb7",
-      "name": "강OO",
-      "role": "MS Student · 2년차"
-    },
-    {
-      "group": "ms",
-      "id": "mb8",
-      "name": "조OO",
+      "name": "고연우",
       "role": "MS Student · 1년차"
     },
     {
       "group": "ms",
-      "id": "mb9",
-      "name": "한OO",
+      "id": "mb7",
+      "name": "송승훈",
       "role": "MS Student · 1년차"
     }
   ],
@@ -282,9 +270,9 @@
     }
   ],
   "sbcsl-texts": {
-    "s0": "SBCSL",
+    "s0": "SBCSL -&nbsp;Smart Building Construction System Laboratory",
     "s1": "Research Laboratory",
-    "s10": "2015",
+    "s10": "2017",
     "s11": "설립",
     "s12": "About the Lab",
     "s13": "연구실 소개",
@@ -294,7 +282,7 @@
     "s17": "Research Areas",
     "s18": "주요 연구 분야",
     "s19": "Publications",
-    "s2": "Systems, Biology &amp;<br><span style=\"color:var(--accent)\">Computational</span><br>Science Lab",
+    "s2": "Smart Building<br><span style=\"color:var(--accent)\">Construction System</span><br>Laboratory",
     "s20": "주요 논문",
     "s21": "Patents",
     "s22": "특허 현황",
@@ -306,15 +294,15 @@
     "s28": "연락처",
     "s29": "연구실 참여, 공동 연구, 또는 학술 문의가 있으시면 언제든지 연락해 주세요.",
     "s3": "복잡계 생물학과 데이터 기반 컴퓨팅의 교차점에서 차세대 연구를 이끌어갑니다.",
-    "s30": "서울특별시 XX구 대학로 XX<br>XX대학교 공학관 XXX호",
-    "s31": "sbcsl@university.ac.kr",
-    "s32": "02-XXXX-XXXX",
+    "s30": "34134<div>대전광역시 유성구 대학로 99</div><div>충남대학교 공과대학2호관 104-1호</div>",
+    "s31": "j.nam@cnu.ac.kr",
+    "s32": "042-821-5629",
     "s33": "© 2024 SBCSL — Systems, Biology &amp; Computational Science Laboratory. All rights reserved.",
     "s4": "12",
     "s5": "연구원",
-    "s6": "48+",
+    "s6": "48",
     "s7": "발표 논문",
-    "s8": "8+",
+    "s8": "8",
     "s9": "연구 프로젝트"
   }
 }
