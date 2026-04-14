@@ -1,22 +1,22 @@
 {
   "sbcsl-aboutvalues": [
     {
-      "desc": "생물학·컴퓨터과학·통계학의 경계를 넘나드는 연구",
-      "icon": 19,
+      "desc": "고성능·고기능 건설재료의 설계와 구조성능 평가",
+      "icon": 2,
       "id": "av1",
-      "title": "다학제 융합 연구"
+      "title": "스마트 건설 기술 융합"
     },
     {
-      "desc": "대규모 생물학적 데이터 기반 인사이트 도출",
-      "icon": 8,
+      "desc": "센서 기반 손상 감지와 변형·균열 모니터링 기술 개발",
+      "icon": 6,
       "id": "av2",
-      "title": "데이터 중심 접근"
+      "title": "스마트 계측·진단 기술"
     },
     {
-      "desc": "국내외 기관과의 활발한 공동 연구 네트워크",
-      "icon": 18,
+      "desc": "머신러닝과 수치모델링을 활용한 건설재료·구조 거동 예측",
+      "icon": 5,
       "id": "av3",
-      "title": "협력 연구 문화"
+      "title": "AI·데이터 융합 해석"
     }
   ],
   "sbcsl-bgs": {},
@@ -67,91 +67,55 @@
   ],
   "sbcsl-patents": [
     {
-      "id": "pt1",
-      "inventor": "김OO, 이OO",
-      "num": "10-2456789",
+      "featured": true,
+      "id": "pt506",
+      "inventor": "김규용, 남정수, 최경철, 이상규, 황의철, 손민재, 서동균, 유하민, 이예찬, 최희용, 신동석, 변춘섭",
+      "num": "10-2658141-0000",
       "status": "registered",
-      "title": "유전자 발현 데이터 기반 암 진단 방법 및 장치",
-      "year": "2023"
-    },
-    {
-      "id": "pt2",
-      "inventor": "박OO, 김OO",
-      "num": "10-2024-0123456",
-      "status": "applied",
-      "title": "그래프 신경망을 이용한 약물-표적 상호작용 예측 시스템",
-      "year": "2024"
+      "title": "Block for reducing heat island phenomenon using surface-modified waste glass aggregate",
+      "year": "2025"
     }
   ],
   "sbcsl-projects": [
     {
-      "agency": "과학기술정보통신부 / NRF",
-      "id": "pj1",
-      "period": "2023.03 – 2026.02",
-      "role": "책임연구원: 김OO",
+      "agency": "과학기술정보통신부, 한국연구재단",
+      "featured": true,
+      "id": "pj507",
+      "period": "2026.03 - 2031.02",
+      "role": "",
       "status": "ongoing",
-      "title": "대규모 멀티오믹스 데이터 기반 복합질환 네트워크 분석 연구"
+      "title": "극한환경 대응형 AI기반 탄소저감 복합재료 개발 및 실용화 연구"
     },
     {
-      "agency": "산업통상자원부",
-      "id": "pj2",
-      "period": "2022.06 – 2025.05",
-      "role": "공동연구원",
+      "agency": "중소벤처기업부, 중소기업기술정보진흥원",
+      "featured": true,
+      "id": "pj508",
+      "period": "2025.04 - 2027.03",
+      "role": "",
       "status": "ongoing",
-      "title": "AI 기반 신약 후보물질 발굴 플랫폼 개발"
+      "title": "손상 아스팔트포장의 수명연장용 부분도포형 긴급예방보수기술 개발"
     },
     {
-      "agency": "한국연구재단 (NRF)",
-      "id": "pj3",
-      "period": "2020.03 – 2023.02",
-      "role": "책임연구원: 김OO",
-      "status": "done",
-      "title": "단일세포 전사체 분석을 통한 면역세포 분화 경로 규명"
-    },
-    {
-      "agency": "정보통신기획평가원 (IITP)",
-      "id": "pj4",
-      "period": "2019.01 – 2021.12",
-      "role": "공동연구원",
-      "status": "done",
-      "title": "딥러닝 기반 유전체 변이 분석 알고리즘 개발"
+      "agency": "중소벤처기업부, 중소기업기술정보진흥원",
+      "featured": true,
+      "id": "pj509",
+      "period": "2026.04 - 2028.03",
+      "role": "",
+      "status": "ongoing",
+      "title": "폐플라스틱 열분해애시를 활용한 탄소저감형 투수블록 개발"
     }
   ],
   "sbcsl-pubs": {
-    "conference": [
-      {
-        "authors": "Kim J., Lee S.",
-        "id": "c1",
-        "journal": "ISMB 2024",
-        "link": "",
-        "title": "Scalable Graph Learning for Protein Interaction Networks",
-        "year": "2024"
-      },
-      {
-        "authors": "Park H., Choi Y.",
-        "id": "c2",
-        "journal": "RECOMB 2024",
-        "link": "",
-        "title": "Attention-based Multi-omics Integration for Drug Sensitivity Prediction",
-        "year": "2024"
-      }
-    ],
+    "conference": [],
     "domestic": [
       {
-        "authors": "이OO, 박OO, 김OO",
-        "id": "d1",
-        "journal": "한국정보과학회논문지",
+        "authors": "BC Choi, GY Kim, SJ Ji, HY Youn, SJ Pyeon, JS Nam",
+        "featured": false,
+        "id": "p505",
+        "journal": "Architectural Institute of Korea",
         "link": "",
-        "title": "암 유전체 변이 패턴 분석을 위한 딥러닝 모델 개발",
-        "year": "2024"
-      },
-      {
-        "authors": "박OO, 최OO, 김OO",
-        "id": "d2",
-        "journal": "한국생물정보학회지",
-        "link": "",
-        "title": "단일세포 전사체 데이터의 효율적 클러스터링 알고리즘",
-        "year": "2023"
+        "title": "Evaluation of Material Properties and Panel Applicability of Lightweight High-Strength Cementitious Composites Incorporating Waste Glass Beads",
+        "year": "2026"
       }
     ],
     "main": [
@@ -182,57 +146,79 @@
     ],
     "sci": [
       {
-        "authors": "Kim J. et al.",
-        "id": "s1",
-        "journal": "Nature Methods",
-        "link": "",
-        "title": "Graph Neural Network-Based Drug-Target Interaction Prediction",
-        "year": "2024"
+        "authors": "B Choi, G Kim, M Kil, S Pyeon, R Kitagaki, DY Yoo, M Tia, J Nam",
+        "featured": true,
+        "id": "p501",
+        "journal": "Developments in the Built Environment",
+        "link": "https://doi.org/10.1016/j.dibe.2026.100906",
+        "title": "Evaluation of the Applicability of the Fiber-Coating Method as a CNTs Dispersion Technique Based on the Material Properties of FRCC",
+        "year": "2026"
       },
       {
-        "authors": "Park H. et al.",
-        "id": "s2",
-        "journal": "Cell Systems",
-        "link": "",
-        "title": "Single-Cell Trajectory Analysis Reveals Developmental Bifurcation",
-        "year": "2024"
+        "authors": "S Ji, G Kim, B Choi, H Youn, Y Kim, S Sasui, M Tia, J Nam",
+        "featured": true,
+        "id": "p502",
+        "journal": "Results in Engineering",
+        "link": "https://doi.org/10.1016/j.rineng.2025.108846",
+        "title": "Impact of Alkali Hydroxide Selection on Strength and Shrinkage of Multi-Component Alkali-Activated Mortars",
+        "year": "2025"
       },
       {
-        "authors": "Lee S. et al.",
-        "id": "s3",
-        "journal": "Genome Biology",
-        "link": "",
-        "title": "Regulatory Network Rewiring During Cancer Progression",
-        "year": "2023"
+        "authors": "S Pyeon, G Kim, R Kitagaki, J Eom, S Bae, B Choi, M Son, J Nam",
+        "featured": true,
+        "id": "p503",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2025.144426",
+        "title": "RH-based sensitivity modeling and performance classification framework for internally cured waste glass beads mortars",
+        "year": "2025"
       },
       {
-        "authors": "Kim J. et al.",
-        "id": "s4",
-        "journal": "PLOS Computational Biology",
-        "link": "",
-        "title": "Multi-scale Network Analysis of Metabolic Pathways",
-        "year": "2022"
+        "authors": "H Youn, G Kim, B Choi, S Ji, Y Pyo, J Nam",
+        "featured": true,
+        "id": "p504",
+        "journal": "Journal of Materials Research and Technology",
+        "link": "https://doi.org/10.1016/j.jmrt.2025.12.075",
+        "title": "Material Characterization of Waste Plastic Pyrolysis char (WPPC) and Its Applicability Evaluation in Mortar",
+        "year": "2025"
       }
     ]
   },
   "sbcsl-research": [
     {
-      "desc": "유전자 조절 네트워크와 신호 전달 경로를 수학적 모델로 분석하고 생명 시스템의 전체적인 동작 원리를 연구합니다.",
+      "desc": "고강도·고인성 시멘트 복합재와 초고성능 콘크리트의 배합 설계, 역학적 특성, 내구 성능을 종합적으로 연구합니다. 재료 수준의 성능 향상을 넘어 구조 적용성과 장기 안정성까지 함께 검토합니다.",
       "icon": 21,
       "id": "r1",
-      "title": "시스템 생물학"
+      "title": "고성능 건설재료"
     },
     {
-      "desc": "대규모 시퀀싱 데이터를 처리하고, 유전체 변이와 질병의 연관성을 통계적·계산적 방법으로 규명합니다.",
+      "desc": "시멘트계 재료의 수화 반응과 미세구조 형성 과정을 분석하여 재료 성능 발현 메커니즘을 규명합니다. 반응 제어를 통해 강도, 내구성, 체적 안정성 향상에 기여하는 설계기술을 개발합니다.",
       "icon": 1,
       "id": "r3",
-      "title": "게놈 데이터 분석"
+      "title": "수화 반응 및 미세구조 제어"
     },
     {
-      "desc": "딥러닝 및 그래프 신경망을 활용하여 단백질 구조 예측, 약물 표적 발굴 등 생물정보학 문제를 해결합니다.",
-      "icon": 9,
+      "desc": "균열, 변형, 손상 상태를 정량적으로 파악하기 위한 센서 및 계측 기술을 개발합니다. 시험체와 구조물의 거동을 정밀하게 수집하고 해석하여 유지관리와 상태 진단에 활용할 수 있는 기반기술을 연구합니다.",
+      "icon": 6,
       "id": "r2",
-      "title": "머신러닝 & AI"
+      "title": "스마트 센싱 및 구조 모니터링"
+    },
+    {
+      "desc": "머신러닝과 수치모델링을 활용해 재료 물성, 구조 응답, 손상 거동을 예측하는 연구를 수행합니다.복잡한 실험 데이터를 효율적으로 해석하고 설계 의사결정에 활용할 수 있는 데이터 기반 모델을 구축합니다.",
+      "icon": 7,
+      "id": "r510",
+      "title": "머신러닝 기반 건설 해석"
+    },
+    {
+      "desc": "환경부하를 줄일 수 있는 저탄소 시멘트 시스템과 지속가능 건설재료를 연구합니다. 성능과 친환경성을 동시에 확보할 수 있는 재료 설계 전략을 통해 미래형 녹색 건설기술에 기여합니다.",
+      "icon": 0,
+      "id": "r511",
+      "title": "친환경·탄소저감 재료 시스템"
+    },
+    {
+      "desc": "나노소재와 기능성 건축재료를 활용해 기존 재료의 한계를 보완하고 새로운 성능을 부여하는 연구를 수행합니다. 재료의 구조적 역할뿐 아니라 감지, 보강, 기능 부여까지 고려한 차세대 건축재료 개발을 지향합니다.",
+      "icon": 14,
+      "id": "r512",
+      "title": "스마트 건축재료 및 기능성 소재"
     }
   ],
   "sbcsl-texts": {
@@ -242,9 +228,9 @@
     "s11": "설립",
     "s12": "About the Lab",
     "s13": "연구실 소개",
-    "s14": "SBCSL은 시스템 생물학, 계산과학, 머신러닝을 융합하여 복잡한 생물학적 현상을 이해하고 해석하는 연구를 수행합니다.",
-    "s15": "우리는 대규모 생물학적 데이터를 분석하고, 수리 모델과 알고리즘을 개발하여 생명 현상의 근본적인 원리를 탐구합니다.",
-    "s16": "창의적이고 다학제적인 연구 환경에서 다음 세대 연구자들을 양성하는 것을 중요한 사명으로 여깁니다.",
+    "s14": "스마트건축시스템연구실은 첨단 건설재료와 데이터 기반 해석기술을 융합하여 건설 산업의 성능과 효율을 높이는 연구를 수행합니다.",
+    "s15": "고성능 시멘트 복합체, 스마트 센서, 머신러닝 기반 예측기술을 연계해 재료 개발부터 구조 응답 분석까지 통합적으로 다룹니다.",
+    "s16": "실험과 해석, 현장 적용을 연결하는 연구를 통해 미래 건설기술의 실용적 해법을 제시하고자 합니다.",
     "s17": "Research Areas",
     "s18": "주요 연구 분야",
     "s19": "Publications",
@@ -266,9 +252,9 @@
     "s33": "© 2024 SBCSL — Systems, Biology &amp; Computational Science Laboratory. All rights reserved.",
     "s4": "5",
     "s5": "연구원",
-    "s6": "48",
+    "s6": "(집계중)",
     "s7": "발표 논문",
-    "s8": "8",
+    "s8": "(집계중)",
     "s9": "연구 프로젝트"
   }
 }
