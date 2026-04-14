@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
+<html lang="ko"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>SBCSL</title>
@@ -219,70 +217,140 @@ body.edit-mode .bg-btn{display:flex}
 @media(max-width:768px){.about-grid{grid-template-columns:1fr}.hero-stats{gap:28px}.nav-links{display:none}.pub-modal-box{margin:0;border-radius:0;min-height:100vh}.contact-cards{grid-template-columns:1fr}.plat-grid{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
-<body>
+<body class="">
 <nav>
   <div class="nav-inner">
-    <span class="logo" data-edit>SBCSL</span>
+    <span class="logo" data-edit="" contenteditable="false">SBCSL - Smart Building Construction System Laboratory</span>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li><li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li><li><a href="#members">Members</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about" class="">About</a></li><li><a href="#research" class="">Research</a></li>
+      <li><a href="#publications" class="">Publications</a></li><li><a href="#members" class="">Members</a></li>
+      <li><a href="#contact" class="">Contact</a></li>
     </ul>
   </div>
 </nav>
 
 <section id="hero">
   <div class="hero-overlay"></div>
-  <button class="bg-btn" onclick="openImgPanel('hero')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>배경 이미지 변경</button>
+  <button class="bg-btn" onclick="openImgPanel('hero')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>배경 이미지 변경</button>
   <div class="container hero-content">
-    <div class="fade-in">
-      <p class="hero-tag" data-edit>Graduate Research Laboratory</p>
-      <h1 class="hero-title" data-edit>Systems, Biology &<br><span style="color:var(--accent)">Computational</span><br>Science Lab</h1>
-      <p class="hero-sub" data-edit>복잡계 생물학과 데이터 기반 컴퓨팅의 교차점에서 차세대 연구를 이끌어갑니다.</p>
+    <div class="fade-in visible">
+      <p class="hero-tag" data-edit="" contenteditable="false">Research Laboratory</p>
+      <h1 class="hero-title" data-edit="" contenteditable="false">Smart Building<br><span style="color:var(--accent)">Construction System</span><br>Laboratory</h1>
+      <p class="hero-sub" data-edit="" contenteditable="false">스마트 기술 기반 첨단 건설 시스템과 차세대 기능성 건설재료를 개발해&nbsp;<div>현장에 적용하기 위한 연구를 수행하고 있습니다.</div></p>
       <div class="hero-btns"><a href="#research" class="btn-primary">연구 분야 보기</a><a href="#publications" class="btn-outline">논문 목록</a></div>
     </div>
-    <div class="hero-stats fade-in">
-      <div><div class="stat-num" data-edit>12+</div><div class="stat-label" data-edit>연구원</div></div>
-      <div><div class="stat-num" data-edit>48+</div><div class="stat-label" data-edit>발표 논문</div></div>
-      <div><div class="stat-num" data-edit>8+</div><div class="stat-label" data-edit>연구 프로젝트</div></div>
-      <div><div class="stat-num" data-edit>2015</div><div class="stat-label" data-edit>설립</div></div>
+    <div class="hero-stats fade-in visible">
+      <div><div class="stat-num" data-edit="" contenteditable="false">5</div><div class="stat-label" data-edit="" contenteditable="false">연구원</div></div>
+      <div><div class="stat-num" data-edit="" contenteditable="false">48+</div><div class="stat-label" data-edit="" contenteditable="false">발표 논문</div></div>
+      <div><div class="stat-num" data-edit="" contenteditable="false">8+</div><div class="stat-label" data-edit="" contenteditable="false">연구 프로젝트</div></div>
+      <div><div class="stat-num" data-edit="" contenteditable="false">2017</div><div class="stat-label" data-edit="" contenteditable="false">설립</div></div>
     </div>
   </div>
 </section>
 
 <section id="about">
   <div class="about-overlay"></div>
-  <button class="bg-btn" onclick="openImgPanel('about')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>배경 이미지 변경</button>
+  <button class="bg-btn" onclick="openImgPanel('about')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>배경 이미지 변경</button>
   <div class="container about-inner">
-    <div class="fade-in"><p class="section-label" data-edit>About the Lab</p><h2 class="section-title" data-edit>연구실 소개</h2></div>
+    <div class="fade-in visible"><p class="section-label" data-edit="" contenteditable="false">About the Lab</p><h2 class="section-title" data-edit="" contenteditable="false">연구실 소개</h2></div>
     <div class="about-grid">
-      <div class="about-text fade-in">
-        <p data-edit>SBCSL은 시스템 생물학, 계산과학, 머신러닝을 융합하여 복잡한 생물학적 현상을 이해하고 해석하는 연구를 수행합니다.</p>
-        <p data-edit>우리는 대규모 생물학적 데이터를 분석하고, 수리 모델과 알고리즘을 개발하여 생명 현상의 근본적인 원리를 탐구합니다.</p>
-        <p data-edit>창의적이고 다학제적인 연구 환경에서 다음 세대 연구자들을 양성하는 것을 중요한 사명으로 여깁니다.</p>
+      <div class="about-text fade-in visible">
+        <p data-edit="" contenteditable="false">SBCSL은 시스템 생물학, 계산과학, 머신러닝을 융합하여 복잡한 생물학적 현상을 이해하고 해석하는 연구를 수행합니다.</p>
+        <p data-edit="" contenteditable="false">우리는 대규모 생물학적 데이터를 분석하고, 수리 모델과 알고리즘을 개발하여 생명 현상의 근본적인 원리를 탐구합니다.</p>
+        <p data-edit="" contenteditable="false">창의적이고 다학제적인 연구 환경에서 다음 세대 연구자들을 양성하는 것을 중요한 사명으로 여깁니다.</p>
       </div>
-      <div class="about-values fade-in" id="about-values-container"></div>
+      <div class="about-values fade-in visible" id="about-values-container"><div class="value-item">
+      <div class="value-icon"> 
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M15 2v2M9 2v2M15 20v2M9 20v2M2 15h2M2 9h2M20 15h2M20 9h2"></path></svg>
+        
+      </div>
+      <div>
+        <div class="value-title" onblur="syncAV('av1','title',this.textContent)">다학제 융합 연구</div>
+        <div class="value-desc" onblur="syncAV('av1','desc',this.textContent)">생물학·컴퓨터과학·통계학의 경계를 넘나드는 연구</div>
+      </div></div><div class="value-item">
+      <div class="value-icon"> 
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        
+      </div>
+      <div>
+        <div class="value-title" onblur="syncAV('av2','title',this.textContent)">데이터 중심 접근</div>
+        <div class="value-desc" onblur="syncAV('av2','desc',this.textContent)">대규모 생물학적 데이터 기반 인사이트 도출</div>
+      </div></div><div class="value-item">
+      <div class="value-icon"> 
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="4" r="2"></circle><circle cx="4" cy="20" r="2"></circle><circle cx="20" cy="20" r="2"></circle><path d="M12 6v5M7.5 18.5l2.5-3.5M16.5 18.5l-2.5-3.5M12 11l-4.5 6.5M12 11l4.5 6.5"></path></svg>
+        
+      </div>
+      <div>
+        <div class="value-title" onblur="syncAV('av3','title',this.textContent)">협력 연구 문화</div>
+        <div class="value-desc" onblur="syncAV('av3','desc',this.textContent)">국내외 기관과의 활발한 공동 연구 네트워크</div>
+      </div></div></div>
     </div>
   </div>
 </section>
 
 <section id="research">
   <div class="container">
-    <div class="fade-in"><p class="section-label" data-edit>Research Areas</p><h2 class="section-title" data-edit>주요 연구 분야</h2></div>
-    <div class="research-grid" id="research-grid"></div>
-    <div id="research-add-row" class="add-section-row">
-      <button class="add-row-btn" onclick="openAddResearch()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 연구 분야 추가</button>
+    <div class="fade-in visible"><p class="section-label" data-edit="" contenteditable="false">Research Areas</p><h2 class="section-title" data-edit="" contenteditable="false">주요 연구 분야</h2></div>
+    <div class="research-grid" id="research-grid"><div class="research-card fade-in visible">
+      <div class="r-icon"> 
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+        
+      </div>
+      <div class="r-title" onblur="syncR('r1','title',this.textContent)">시스템 생물학</div>
+      <div class="r-desc" onblur="syncR('r1','desc',this.textContent)">유전자 조절 네트워크와 신호 전달 경로를 수학적 모델로 분석하고 생명 시스템의 전체적인 동작 원리를 연구합니다.</div></div><div class="research-card fade-in visible">
+      <div class="r-icon"> 
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 18h8M3 22h18M14 22a7 7 0 000-14h-1"></path><rect x="7" y="5" width="6" height="8" rx="1"></rect><path d="M9 5V3"></path></svg>
+        
+      </div>
+      <div class="r-title" onblur="syncR('r3','title',this.textContent)">게놈 데이터 분석</div>
+      <div class="r-desc" onblur="syncR('r3','desc',this.textContent)">대규모 시퀀싱 데이터를 처리하고, 유전체 변이와 질병의 연관성을 통계적·계산적 방법으로 규명합니다.</div></div><div class="research-card fade-in visible">
+      <div class="r-icon"> 
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+        
+      </div>
+      <div class="r-title" onblur="syncR('r2','title',this.textContent)">머신러닝 &amp; AI</div>
+      <div class="r-desc" onblur="syncR('r2','desc',this.textContent)">딥러닝 및 그래프 신경망을 활용하여 단백질 구조 예측, 약물 표적 발굴 등 생물정보학 문제를 해결합니다.</div></div></div>
+    <div id="research-add-row" class="add-section-row" style="display: none;">
+      <button class="add-row-btn" onclick="openAddResearch()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>+ 연구 분야 추가</button>
     </div>
   </div>
 </section>
 
 <section id="publications">
   <div class="container">
-    <div class="fade-in"><p class="section-label" data-edit>Publications</p><h2 class="section-title" data-edit>주요 논문</h2></div>
-    <div class="pub-list" id="main-pub-list"></div>
+    <div class="fade-in visible"><p class="section-label" data-edit="" contenteditable="false">Publications</p><h2 class="section-title" data-edit="" contenteditable="false">주요 논문</h2></div>
+    <div class="pub-list" id="main-pub-list"><div class="pub-item">
+  <div class="pub-year">2024</div><div style="flex:1">
+  <div class="pub-title">Graph Neural Network-Based Drug-Target Interaction Prediction with Multi-Omics Integration</div>
+  <div class="pub-meta"><span class="pub-tag">Nature Methods</span>Kim J., Lee S., Park H. et al.</div>
+  <div class="pub-actions">
+    
+    
+  </div></div></div><div class="pub-item">
+  <div class="pub-year">2024</div><div style="flex:1">
+  <div class="pub-title">Single-Cell Trajectory Analysis Reveals Developmental Bifurcation in Neural Progenitor Cells</div>
+  <div class="pub-meta"><span class="pub-tag">Cell Systems</span>Park H., Choi Y., Kim J. et al.</div>
+  <div class="pub-actions">
+    
+    
+  </div></div></div><div class="pub-item">
+  <div class="pub-year">2023</div><div style="flex:1">
+  <div class="pub-title">Regulatory Network Rewiring During Cancer Progression: A Computational Perspective</div>
+  <div class="pub-meta"><span class="pub-tag">Genome Biology</span>Lee S., Yoon K., Park H. et al.</div>
+  <div class="pub-actions">
+    
+    
+  </div></div></div><div class="pub-item">
+  <div class="pub-year">2023</div><div style="flex:1">
+  <div class="pub-title">Deep Learning Framework for Genome-Wide Association Study with Epistatic Interactions</div>
+  <div class="pub-meta"><span class="pub-tag">Bioinformatics</span>Choi Y., Kim J., Lee S. et al.</div>
+  <div class="pub-actions">
+    
+    
+  </div></div></div></div>
     <div class="pub-more-row">
-      <div id="main-add-row" style="display:none">
-        <button class="add-row-btn" onclick="openAddForm('main')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 논문 추가</button>
+      <div id="main-add-row" style="display: none;">
+        <button class="add-row-btn" onclick="openAddForm('main')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>+ 논문 추가</button>
       </div>
       <button class="btn-more" onclick="openPubModal()">전체 논문 보기 →</button>
     </div>
@@ -291,48 +359,66 @@ body.edit-mode .bg-btn{display:flex}
 
 <section id="members">
   <div class="container">
-    <div class="fade-in"><p class="section-label" data-edit>Lab Members</p><h2 class="section-title" data-edit>구성원</h2></div>
-    <div id="members-container"></div>
-    <div id="members-add-row" class="add-section-row" style="margin-top:28px">
-      <button class="add-row-btn" onclick="openAddMember()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 구성원 추가</button>
+    <div class="fade-in visible"><p class="section-label" data-edit="" contenteditable="false">Lab Members</p><h2 class="section-title" data-edit="" contenteditable="false">구성원</h2></div>
+    <div id="members-container"><div class="members-group fade-in visible"><div class="members-group-title">지도교수</div><div class="members-grid"><div class="member-card fade-in visible">
+        <div class="avatar" style="background:#0f2c5c">남</div>
+        <div class="member-name" onblur="syncM('mb1','name',this.textContent)">남정수 교수</div>
+        <div class="member-role" onblur="syncM('mb1','role',this.textContent)">Principal Investigator</div></div></div></div><div class="members-group fade-in visible"><div class="members-group-title">박사과정</div><div class="members-grid"><div class="member-card fade-in visible">
+        <div class="avatar" style="background:#2563eb">최</div>
+        <div class="member-name" onblur="syncM('mb2','name',this.textContent)">최병철</div>
+        <div class="member-role" onblur="syncM('mb2','role',this.textContent)">PhD Candidate · 4년차</div></div><div class="member-card fade-in visible">
+        <div class="avatar" style="background:#2563eb">지</div>
+        <div class="member-name" onblur="syncM('mb3','name',this.textContent)">지성준</div>
+        <div class="member-role" onblur="syncM('mb3','role',this.textContent)">PhD Candidate · 2년차</div></div><div class="member-card fade-in visible">
+        <div class="avatar" style="background:#2563eb">윤</div>
+        <div class="member-name" onblur="syncM('mb4','name',this.textContent)">윤혜영</div>
+        <div class="member-role" onblur="syncM('mb4','role',this.textContent)">PhD Student · 1년차</div></div></div></div><div class="members-group fade-in visible"><div class="members-group-title">석사과정</div><div class="members-grid"><div class="member-card fade-in visible">
+        <div class="avatar" style="background:#374151">고</div>
+        <div class="member-name" onblur="syncM('mb6','name',this.textContent)">고연우</div>
+        <div class="member-role" onblur="syncM('mb6','role',this.textContent)">MS Student · 1년차</div></div><div class="member-card fade-in visible">
+        <div class="avatar" style="background:#374151">송</div>
+        <div class="member-name" onblur="syncM('mb7','name',this.textContent)">송승훈</div>
+        <div class="member-role" onblur="syncM('mb7','role',this.textContent)">MS Student · 1년차</div></div></div></div></div>
+    <div id="members-add-row" class="add-section-row" style="margin-top: 28px; display: none;">
+      <button class="add-row-btn" onclick="openAddMember()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>+ 구성원 추가</button>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <div class="contact-overlay"></div>
-  <button class="bg-btn" onclick="openImgPanel('contact')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>배경 이미지 변경</button>
+  <button class="bg-btn" onclick="openImgPanel('contact')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>배경 이미지 변경</button>
   <div class="container contact-inner">
-    <div class="fade-in"><p class="section-label" data-edit>Contact</p><h2 class="section-title" data-edit>연락처</h2></div>
-    <p class="contact-intro fade-in" data-edit>연구실 참여, 공동 연구, 또는 학술 문의가 있으시면 언제든지 연락해 주세요.</p>
-    <div class="contact-cards fade-in">
-      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="c-label">주소</div><div class="c-value" data-edit>서울특별시 XX구 대학로 XX<br>XX대학교 공학관 XXX호</div></div></div>
-      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="c-label">이메일</div><div class="c-value" data-edit>sbcsl@university.ac.kr</div></div></div>
-      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.022 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z"/></svg></div><div><div class="c-label">전화</div><div class="c-value" data-edit>02-XXXX-XXXX</div></div></div>
+    <div class="fade-in visible"><p class="section-label" data-edit="" contenteditable="false">Contact</p><h2 class="section-title" data-edit="" contenteditable="false">연락처</h2></div>
+    <p class="contact-intro fade-in visible" data-edit="" contenteditable="false">연구실 참여, 공동 연구, 또는 학술 문의가 있으시면 언제든지 연락해 주세요.</p>
+    <div class="contact-cards fade-in visible">
+      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div><div><div class="c-label">주소</div><div class="c-value" data-edit="" contenteditable="false">College of Engineeringg 2-104-1, 99 Daehak-ro(St), Yuseong-gu, Daejeon, 34134, Korea</div></div></div>
+      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div><div><div class="c-label">이메일</div><div class="c-value" data-edit="" contenteditable="false">j.nam@cnu.ac.kr</div></div></div>
+      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.022 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z"></path></svg></div><div><div class="c-label">전화</div><div class="c-value" data-edit="" contenteditable="false">042-821-5629</div></div></div>
     </div>
     <!-- 외부 링크 섹션 -->
-    <div id="ext-links-section">
+    <div id="ext-links-section" style="display: block;">
       <div class="ext-links-header">
-        <span class="ext-links-title">프로필 & 외부 링크</span>
+        <span class="ext-links-title">프로필 &amp; 외부 링크</span>
       </div>
-      <div class="ext-links-row" id="ext-links-row"></div>
+      <div class="ext-links-row" id="ext-links-row"><div class="ext-link-wrap" style="position: relative;"><a href="https://scholar.google.com/citations?user=u1ojeP4AAAAJ&amp;hl=ko&amp;oi=ao" target="_blank" rel="noopener noreferrer" style="display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none"><div class="ext-link-icon" style="background:#4285f4"><span style="color:#fff">GS</span></div><span class="ext-link-name">Google Scholar</span></a></div></div>
     </div>
   </div>
 </section>
-<footer><p data-edit>© 2024 SBCSL — Systems, Biology & Computational Science Laboratory. All rights reserved.</p></footer>
+<footer><p data-edit="" contenteditable="false">© 2017 SBCSL — Smart Building Construction System Laboratory. All rights reserved.</p></footer>
 
 <!-- PUB MODAL -->
 <div id="pub-modal">
   <div class="pub-modal-box">
     <div class="pub-modal-header"><h2>전체 논문 목록</h2><button class="modal-close" onclick="closePubModal()">✕</button></div>
     <div class="ptab-bar">
-      <button class="ptab active" data-tab="sci" onclick="switchPubTab('sci')">SCI <span class="ptab-count" id="cnt-sci">0</span></button>
-      <button class="ptab" data-tab="domestic" onclick="switchPubTab('domestic')">국내 <span class="ptab-count" id="cnt-domestic">0</span></button>
-      <button class="ptab" data-tab="conference" onclick="switchPubTab('conference')">학술대회 <span class="ptab-count" id="cnt-conference">0</span></button>
+      <button class="ptab active" data-tab="sci" onclick="switchPubTab('sci')">SCI <span class="ptab-count" id="cnt-sci">6</span></button>
+      <button class="ptab" data-tab="domestic" onclick="switchPubTab('domestic')">국내 <span class="ptab-count" id="cnt-domestic">4</span></button>
+      <button class="ptab" data-tab="conference" onclick="switchPubTab('conference')">학술대회 <span class="ptab-count" id="cnt-conference">5</span></button>
     </div>
     <div id="modal-pub-list" class="pub-list"></div>
     <div id="modal-add-row" style="display:none;margin-top:16px">
-      <button class="add-row-btn" onclick="openAddForm('modal')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 논문 추가</button>
+      <button class="add-row-btn" onclick="openAddForm('modal')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>+ 논문 추가</button>
     </div>
   </div>
 </div>
@@ -342,9 +428,9 @@ body.edit-mode .bg-btn{display:flex}
   <div class="modal-box" style="width:480px">
     <h3>외부 링크 추가</h3>
     <p class="modal-subtitle">플랫폼을 선택하고 URL을 입력하세요.</p>
-    <div class="plat-grid" id="add-link-plat-grid"></div>
-    <div id="al-url-section">
-      <label class="mf-label" id="al-url-label">URL</label>
+    <div class="plat-grid" id="add-link-plat-grid"><button class="plat-btn"><div class="plat-ico" style="background:#4285f4"><span style="color:#fff">GS</span></div><span class="plat-lbl">Google Scholar</span></button><button class="plat-btn"><div class="plat-ico" style="background:#24292e"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"></path></svg></div><span class="plat-lbl">GitHub</span></button><button class="plat-btn"><div class="plat-ico" style="background:#00d0af"><span style="color:#fff">RG</span></div><span class="plat-lbl">ResearchGate</span></button><button class="plat-btn"><div class="plat-ico" style="background:#0077b5"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg></div><span class="plat-lbl">LinkedIn</span></button><button class="plat-btn"><div class="plat-ico" style="background:#a6ce39"><span style="color:#1a1a1a">iD</span></div><span class="plat-lbl">ORCID</span></button><button class="plat-btn"><div class="plat-ico" style="background:#1a1a1a"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></div><span class="plat-lbl">X (Twitter)</span></button><button class="plat-btn"><div class="plat-ico" style="background:#ff0000"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><rect x="2" y="7" width="20" height="15" rx="2"></rect><polygon points="10 11 16 14.5 10 18" fill="#fff" stroke="none"></polygon></svg></div><span class="plat-lbl">YouTube</span></button><button class="plat-btn"><div class="plat-ico" style="background:#326699"><span style="color:#fff">PM</span></div><span class="plat-lbl">PubMed</span></button><button class="plat-btn"><div class="plat-ico" style="background:#6366f1"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"></path></svg></div><span class="plat-lbl">웹사이트</span></button><button class="plat-btn"><div class="plat-ico" style="background:#ea4335"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div><span class="plat-lbl">이메일</span></button></div>
+    <div id="al-url-section" style="display: none;">
+      <label class="mf-label" id="al-url-label">Google Scholar URL</label>
       <input type="text" id="al-url" class="mf-input" placeholder="https://" onkeydown="if(event.key==='Enter')submitAddLink()">
     </div>
     <div class="modal-actions">
@@ -372,7 +458,7 @@ body.edit-mode .bg-btn{display:flex}
   <div class="modal-box" style="width:480px">
     <h3>아이콘 선택</h3>
     <p class="modal-subtitle">적용할 아이콘을 클릭하세요.</p>
-    <div class="icon-picker-grid" id="icon-picker-grid"></div>
+    <div class="icon-picker-grid" id="icon-picker-grid"><button class="icon-pick-btn" title="globe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"></path></svg></button><button class="icon-pick-btn" title="microscope"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 18h8M3 22h18M14 22a7 7 0 000-14h-1"></path><rect x="7" y="5" width="6" height="8" rx="1"></rect><path d="M9 5V3"></path></svg></button><button class="icon-pick-btn" title="atom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="1"></circle><path d="M20.2 20.2c2-2.04.02-7.36-4.5-11.9C11.2 3.78 5.84 1.76 3.8 3.8c-2.04 2.04-.02 7.36 4.5 11.9 4.54 4.52 9.86 6.54 11.9 4.5z"></path><path d="M15.7 15.7c4.52-4.52 6.54-9.84 4.5-11.9-2.04-2.04-7.36-.02-11.9 4.5-4.52 4.52-6.54 9.86-4.5 11.9 2.04 2.04 7.36.02 11.9-4.5z"></path></svg></button><button class="icon-pick-btn" title="dna"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 15c6.667-6 13.333 0 20-6M2 9c6.667 6 13.333 0 20 6M5 4.5l-.5-2M19 4.5l.5-2M5 19.5l-.5 2M19 19.5l.5 2"></path></svg></button><button class="icon-pick-btn" title="flask"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 2h6v6l4 10H5L9 8V2z"></path><line x1="9" y1="12" x2="15" y2="12"></line></svg></button><button class="icon-pick-btn" title="brain"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9.5 2A2.5 2.5 0 0112 4.5v15a2.5 2.5 0 01-4.96-.44 2.5 2.5 0 01-2.96-3.08 3 3 0 01-.34-5.58 2.5 2.5 0 011.32-4.24A2.5 2.5 0 016.98 3 2.5 2.5 0 019.5 2z"></path><path d="M14.5 2A2.5 2.5 0 0112 4.5v15a2.5 2.5 0 004.96-.44 2.5 2.5 0 002.96-3.08 3 3 0 00.34-5.58 2.5 2.5 0 00-1.32-4.24A2.5 2.5 0 0017.02 3 2.5 2.5 0 0014.5 2z"></path></svg></button><button class="icon-pick-btn" title="monitor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg></button><button class="icon-pick-btn" title="code"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></button><button class="icon-pick-btn" title="database"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></button><button class="icon-pick-btn" title="cpu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M15 2v2M9 2v2M15 20v2M9 20v2M2 15h2M2 9h2M20 15h2M20 9h2"></path></svg></button><button class="icon-pick-btn" title="network"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="4" r="2"></circle><circle cx="4" cy="20" r="2"></circle><circle cx="20" cy="20" r="2"></circle><path d="M12 6v5M7.5 18.5l2.5-3.5M16.5 18.5l-2.5-3.5M12 11l-4.5 6.5M12 11l4.5 6.5"></path></svg></button><button class="icon-pick-btn" title="activity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></button><button class="icon-pick-btn" title="book"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"></path></svg></button><button class="icon-pick-btn" title="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button><button class="icon-pick-btn selected" title="lightbulb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 22h4M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17H8v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z"></path></svg></button><button class="icon-pick-btn" title="bar-chart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><path d="M2 20h20"></path></svg></button><button class="icon-pick-btn" title="target"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></button><button class="icon-pick-btn" title="shield"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></button><button class="icon-pick-btn" title="users"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path></svg></button><button class="icon-pick-btn" title="layers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></button><button class="icon-pick-btn" title="grid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><button class="icon-pick-btn" title="package"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></button><button class="icon-pick-btn" title="star"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button><button class="icon-pick-btn" title="zap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></button></div>
     <div class="modal-actions"><button class="ma-btn ma-cancel" onclick="document.getElementById('icon-picker-modal').classList.remove('open')">닫기</button></div>
   </div>
 </div>
@@ -380,10 +466,10 @@ body.edit-mode .bg-btn{display:flex}
 <!-- LOGIN MODAL -->
 <div id="pw-modal" class="modal-backdrop">
   <div class="modal-box" style="text-align:center;width:360px">
-    <div class="pw-lock"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+    <div class="pw-lock"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0110 0v4"></path></svg></div>
     <h3 style="margin-bottom:4px">관리자 로그인</h3>
     <p class="modal-subtitle">편집 모드는 관리자만 사용할 수 있습니다.</p>
-    <div class="pw-attempts" id="pw-attempts"></div>
+    <div class="pw-attempts" id="pw-attempts"><div class="attempt-dot"></div><div class="attempt-dot"></div><div class="attempt-dot"></div><div class="attempt-dot"></div><div class="attempt-dot"></div></div>
     <input type="password" id="pw-input-field" placeholder="비밀번호 입력" onkeydown="if(event.key==='Enter')checkPw()" autocomplete="off">
     <div id="pw-msg"></div>
     <div class="modal-actions" style="justify-content:center">
@@ -426,7 +512,7 @@ body.edit-mode .bg-btn{display:flex}
 <!-- ADD PUB MODAL -->
 <div id="add-pub-modal" class="modal-backdrop">
   <div class="modal-box">
-    <h3 id="add-pub-title">논문 추가</h3>
+    <h3 id="add-pub-title">메인 페이지 논문 추가</h3>
     <label class="mf-label">연도</label><input type="text" id="af-year" class="mf-input" placeholder="2024">
     <label class="mf-label">제목</label><textarea id="af-title-input" class="mf-input" rows="3" placeholder="논문 제목" style="resize:vertical"></textarea>
     <label class="mf-label">저널 / 학술대회명</label><input type="text" id="af-journal" class="mf-input" placeholder="Nature Methods">
@@ -457,7 +543,7 @@ body.edit-mode .bg-btn{display:flex}
     <h3>구성원 추가</h3>
     <label class="mf-label">소속 그룹</label>
     <select id="am-group" class="mf-select" style="background:var(--gray);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:10px 14px">
-      <option value="pi">지도교수</option><option value="phd" selected>박사과정</option><option value="ms">석사과정</option>
+      <option value="pi">지도교수</option><option value="phd" selected="">박사과정</option><option value="ms">석사과정</option>
     </select>
     <label class="mf-label">이름</label><input type="text" id="am-name" class="mf-input" placeholder="홍OO">
     <label class="mf-label">직함 / 과정</label><input type="text" id="am-role" class="mf-input" placeholder="PhD Student · 1년차">
@@ -488,9 +574,9 @@ body.edit-mode .bg-btn{display:flex}
 </div>
 
 <div class="fab-group">
-  <button id="pw-fab" class="fab-btn" onclick="openPwChange()"><svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>비밀번호 변경</button>
+  <button id="pw-fab" class="fab-btn" onclick="openPwChange()" style="display: none;"><svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>비밀번호 변경</button>
   <button id="edit-fab" class="fab-btn" onclick="toggleEdit()">
-    <svg viewBox="0 0 24 24" id="fab-icon"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+    <svg viewBox="0 0 24 24" id="fab-icon"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
     <span id="fab-text">편집 모드</span>
   </button>
 </div>
@@ -846,5 +932,6 @@ document.getElementById('pub-modal').addEventListener('click',function(e){if(e.t
 /* ── INIT ── */
 renderAboutValues();renderResearch();renderMembers();renderMainPubs();updateTabCounts();renderExtLinks();
 </script>
-</body>
-</html>
+
+
+</body></html>
