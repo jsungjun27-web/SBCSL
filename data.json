@@ -95,20 +95,20 @@
     {
       "agency": "중소벤처기업부, 중소기업기술정보진흥원",
       "featured": true,
-      "id": "pj508",
-      "period": "2025.04 - 2027.03",
-      "role": "",
-      "status": "ongoing",
-      "title": "손상 아스팔트포장의 수명연장용 부분도포형 긴급예방보수기술 개발"
-    },
-    {
-      "agency": "중소벤처기업부, 중소기업기술정보진흥원",
-      "featured": true,
       "id": "pj509",
       "period": "2026.04 - 2028.03",
       "role": "",
       "status": "ongoing",
       "title": "폐플라스틱 열분해애시를 활용한 탄소저감형 투수블록 개발"
+    },
+    {
+      "agency": "중소벤처기업부, 중소기업기술정보진흥원",
+      "featured": true,
+      "id": "pj508",
+      "period": "2025.04 - 2027.03",
+      "role": "",
+      "status": "ongoing",
+      "title": "손상 아스팔트포장의 수명연장용 부분도포형 긴급예방보수기술 개발"
     }
   ],
   "sbcsl-pubs": {
