@@ -1,0 +1,35 @@
+// 저장 (편집 완료 시 호출)
+async function saveToGitHub(data) {
+  const token = 'ghp_YOUR_TOKEN'; // Personal Access Token
+  const repo  = 'username/repo-name';
+  const path  = 'data.json';
+
+  // 현재 파일 SHA 가져오기
+  const res = await fetch(
+    `https://api.github.com/repos/${repo}/contents/${path}`,
+    { headers: { Authorization: `token ${token}` } }
+  );
+  const current = await res.json();
+
+  // 파일 업데이트
+  await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
+    method: 'PUT',
+    headers: {
+      Authorization: `token ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      message: 'Update site data',
+      content: btoa(unescape(encodeURIComponent(JSON.stringify(data)))),
+      sha: current.sha
+    })
+  });
+}
+
+// 불러오기 (페이지 로드 시)
+async function loadFromGitHub() {
+  const res = await fetch(
+    'https://raw.githubusercontent.com/username/repo-name/main/data.json'
+  );
+  return res.ok ? res.json() : null;
+}
