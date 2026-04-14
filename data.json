@@ -81,14 +81,6 @@
       "status": "applied",
       "title": "그래프 신경망을 이용한 약물-표적 상호작용 예측 시스템",
       "year": "2024"
-    },
-    {
-      "id": "pt3",
-      "inventor": "이OO, 최OO, 김OO",
-      "num": "PCT/KR2023/012345",
-      "status": "intl",
-      "title": "Single-Cell Omics Data Integration Method Using Contrastive Learning",
-      "year": "2023"
     }
   ],
   "sbcsl-projects": [
@@ -185,14 +177,6 @@
         "journal": "Genome Biology",
         "link": "",
         "title": "Regulatory Network Rewiring During Cancer Progression: A Computational Perspective",
-        "year": "2023"
-      },
-      {
-        "authors": "Choi Y., Kim J., Lee S. et al.",
-        "id": "m4",
-        "journal": "Bioinformatics",
-        "link": "",
-        "title": "Deep Learning Framework for Genome-Wide Association Study with Epistatic Interactions",
         "year": "2023"
       }
     ],
@@ -298,7 +282,7 @@
     "s31": "j.nam@cnu.ac.kr",
     "s32": "042-821-5629",
     "s33": "© 2024 SBCSL — Systems, Biology &amp; Computational Science Laboratory. All rights reserved.",
-    "s4": "12",
+    "s4": "5",
     "s5": "연구원",
     "s6": "48",
     "s7": "발표 논문",
