@@ -599,12 +599,13 @@ let _saving    = false;
 /* ── 데이터 불러오기: raw URL로 토큰 없이 읽기 ── */
 async function ghLoadAll() {
   try {
-    const res = await fetch(`${GH_RAW_BASE}/data.json?t=${Date.now()}`, {
-      cache: 'no-store',
-      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache' }
+    const res = await fetch(`${GH_API_BASE}/data.json`, {
+      headers: { Accept: 'application/vnd.github.v3+json' }
     });
-    if (!res.ok) return {};          // 아직 파일 없으면 기본값 사용
-    return await res.json();
+    if (!res.ok) return {};
+    const json = await res.json();
+    const decoded = decodeURIComponent(escape(atob(json.content.replace(/\n/g, ''))));
+    return JSON.parse(decoded);
   } catch(e) {
     console.warn('데이터 로드 실패 (기본값 사용):', e);
     return {};
