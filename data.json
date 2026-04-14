@@ -32,36 +32,42 @@
       "group": "pi",
       "id": "mb1",
       "name": "남정수 교수",
+      "photo": "",
       "role": "Principal Investigator"
     },
     {
       "group": "phd",
       "id": "mb2",
       "name": "최병철",
+      "photo": "",
       "role": "PhD Candidate · 5년차"
     },
     {
       "group": "phd",
       "id": "mb3",
       "name": "지성준",
+      "photo": "",
       "role": "PhD Student · 2년차"
     },
     {
       "group": "phd",
       "id": "mb4",
       "name": "윤혜영",
+      "photo": "",
       "role": "PhD Student · 1년차"
     },
     {
       "group": "ms",
       "id": "mb6",
       "name": "고연우",
+      "photo": "",
       "role": "MS Student · 1년차"
     },
     {
       "group": "ms",
       "id": "mb7",
       "name": "송승훈",
+      "photo": "",
       "role": "MS Student · 1년차"
     }
   ],
@@ -249,7 +255,7 @@
     "s30": "34134<div>대전광역시 유성구 대학로 99</div><div>충남대학교 공과대학2호관 104-1호</div>",
     "s31": "j.nam@cnu.ac.kr",
     "s32": "042-821-5629",
-    "s33": "© 2024 SBCSL — Systems, Biology &amp; Computational Science Laboratory. All rights reserved.",
+    "s33": "© 2017 SBCSL — Smart Building Construction System Laboratory. All rights reserved.",
     "s4": "5",
     "s5": "연구원",
     "s6": "(집계중)",
