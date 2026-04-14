@@ -1,4 +1,6 @@
-<html lang="ko"><head>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>SBCSL</title>
@@ -10,8 +12,8 @@ body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--text);background:va
 nav{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:200;padding:0 5%}
 .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
 .logo{font-size:18px;font-weight:700;color:var(--navy);letter-spacing:1px}
-.nav-links{display:flex;gap:28px;list-style:none}
-.nav-links a{text-decoration:none;font-size:14px;color:var(--muted);transition:color .2s;position:relative;padding-bottom:4px}
+.nav-links{display:flex;gap:20px;list-style:none}
+.nav-links a{text-decoration:none;font-size:13px;color:var(--muted);transition:color .2s;position:relative;padding-bottom:4px}
 .nav-links a:hover{color:var(--navy)}
 .nav-links a.active{color:var(--navy);font-weight:600}
 .nav-links a.active::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:2px;background:var(--accent);border-radius:2px}
@@ -53,6 +55,7 @@ section{padding:90px 5%;scroll-margin-top:70px}
 .value-icon svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:2}
 .value-title{font-weight:600;font-size:15px;color:var(--navy);margin-bottom:4px}
 .value-desc{font-size:14px;color:var(--muted)}
+/* RESEARCH */
 #research{background:var(--white)}
 .research-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-top:48px}
 .research-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:28px;transition:box-shadow .2s,transform .2s;position:relative}
@@ -67,12 +70,13 @@ section{padding:90px 5%;scroll-margin-top:70px}
 .icon-overlay svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:2.5}
 body.edit-mode .r-icon:hover .icon-overlay,body.edit-mode .value-icon:hover .icon-overlay{display:flex}
 body.edit-mode .r-icon,body.edit-mode .value-icon{cursor:pointer}
-.icon-picker-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:16px;max-height:300px;overflow-y:auto;padding:2px}
+.icon-picker-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:8px;max-height:280px;overflow-y:auto;padding:2px}
 .icon-pick-btn{aspect-ratio:1;border-radius:10px;border:1.5px solid var(--border);background:var(--gray);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;padding:10px}
 .icon-pick-btn:hover{border-color:var(--accent);background:#eff6ff;transform:scale(1.06)}
 .icon-pick-btn.selected{border-color:var(--accent);background:#dbeafe}
 .icon-pick-btn svg{width:20px;height:20px;fill:none;stroke:var(--navy);stroke-width:1.8}
 .icon-pick-btn.selected svg,.icon-pick-btn:hover svg{stroke:var(--accent)}
+/* PUBLICATIONS */
 #publications{background:var(--gray)}
 .pub-list{display:flex;flex-direction:column;gap:12px;margin-top:32px}
 .pub-item{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px 22px;display:flex;gap:18px;align-items:flex-start;position:relative}
@@ -90,6 +94,30 @@ body.edit-mode .r-icon,body.edit-mode .value-icon{cursor:pointer}
 .pub-more-row{margin-top:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .btn-more{padding:10px 24px;background:var(--white);border:1.5px solid var(--navy);color:var(--navy);border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s}
 .btn-more:hover{background:var(--navy);color:#fff}
+/* PATENTS */
+#patents{background:var(--white)}
+.patent-list{display:flex;flex-direction:column;gap:12px;margin-top:32px}
+.patent-item{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px 24px;position:relative;display:flex;gap:16px;align-items:flex-start}
+.patent-badge{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.patent-badge.registered{background:#d1fae5;color:#065f46}
+.patent-badge.applied{background:#fef3c7;color:#92400e}
+.patent-badge.intl{background:#dbeafe;color:#1e40af}
+.patent-title{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:5px}
+.patent-meta{font-size:13px;color:var(--muted)}
+/* PROJECTS */
+#projects{background:var(--gray)}
+.proj-tab-bar{display:flex;border-bottom:2px solid var(--border);margin-bottom:28px;margin-top:36px}
+.proj-tab{padding:10px 24px;background:transparent;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;transition:all .2s}
+.proj-tab.active{color:var(--navy);border-bottom-color:var(--accent)}
+.proj-list{display:flex;flex-direction:column;gap:12px}
+.proj-item{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px 24px;position:relative;display:flex;gap:16px;align-items:flex-start}
+.proj-badge{display:inline-flex;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.proj-badge.ongoing{background:#d1fae5;color:#065f46}
+.proj-badge.done{background:#f3f4f6;color:#6b7280}
+.proj-title{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:5px}
+.proj-meta{font-size:13px;color:var(--muted)}
+.proj-period{display:inline-block;font-size:11px;background:#f3f4f6;color:#374151;padding:2px 8px;border-radius:4px;margin-right:6px}
+/* MEMBERS */
 #members{background:var(--white)}
 .members-group{margin-top:36px}
 .members-group-title{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:18px}
@@ -114,16 +142,15 @@ body.edit-mode .r-icon,body.edit-mode .value-icon{cursor:pointer}
 .c-icon svg{width:18px;height:18px;fill:none;stroke:#93c5fd;stroke-width:2}
 .c-label{font-size:12px;color:#93c5fd;margin-bottom:4px;font-weight:600;letter-spacing:.5px}
 .c-value{font-size:15px;color:#f1f5f9;line-height:1.5}
-/* EXTERNAL LINKS */
+/* EXT LINKS */
 #ext-links-section{margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.12);display:none}
-.ext-links-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
-.ext-links-title{font-size:11px;font-weight:600;letter-spacing:1.5px;color:#64748b;text-transform:uppercase}
+.ext-links-title{font-size:11px;font-weight:600;letter-spacing:1.5px;color:#64748b;text-transform:uppercase;margin-bottom:16px}
 .ext-links-row{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end}
 .ext-link-wrap{position:relative;display:flex;flex-direction:column;align-items:center;gap:7px}
 .ext-link-icon{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;transition:transform .2s,box-shadow .2s;color:#fff;font-weight:800;font-size:13px;letter-spacing:-.5px;flex-shrink:0}
 .ext-link-icon svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:1.8}
 .ext-link-icon.no-url{opacity:.5;border:2px dashed rgba(255,255,255,0.3)}
-.ext-link-name{font-size:10px;color:#64748b;text-align:center;max-width:62px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.3}
+.ext-link-name{font-size:10px;color:#64748b;text-align:center;max-width:62px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .ext-link-wrap a .ext-link-icon:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,0.35)}
 .ext-del-btn{display:none;position:absolute;top:-7px;right:-7px;width:19px;height:19px;border-radius:50%;background:#ef4444;border:2px solid var(--navy);color:#fff;font-size:9px;cursor:pointer;align-items:center;justify-content:center;z-index:3;line-height:1}
 body.edit-mode .ext-del-btn{display:flex}
@@ -134,14 +161,13 @@ body.edit-mode .ext-link-icon:hover{transform:translateY(-3px);box-shadow:0 6px 
 .add-ext-btn:hover .add-ext-icon{border-color:rgba(255,255,255,0.5);color:rgba(255,255,255,0.7);transform:translateY(-3px)}
 .add-ext-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.5}
 .add-ext-label{font-size:10px;color:#64748b}
-/* PLATFORM GRID */
 .plat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:12px 0 4px}
 .plat-btn{border:1.5px solid var(--border);border-radius:10px;padding:10px 4px;cursor:pointer;background:var(--gray);display:flex;flex-direction:column;align-items:center;gap:5px;transition:all .15s;width:100%}
 .plat-btn:hover{border-color:var(--accent);background:#eff6ff}
 .plat-btn.sel{border-color:var(--accent);background:#dbeafe}
 .plat-ico{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:10px;letter-spacing:-.3px;flex-shrink:0}
 .plat-ico svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:1.8}
-.plat-lbl{font-size:9px;color:var(--muted);font-weight:600;text-align:center;line-height:1.3;word-break:keep-all}
+.plat-lbl{font-size:9px;color:var(--muted);font-weight:600;text-align:center;word-break:keep-all}
 footer{background:#0a1f45;padding:28px 5%;text-align:center}
 footer p{color:#64748b;font-size:13px}
 .fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}
@@ -164,6 +190,8 @@ body.edit-mode .research-card,body.edit-mode .member-card{cursor:grab}
 #pw-fab{background:var(--white);color:var(--navy);border:1.5px solid var(--navy);display:none}
 #pw-fab:hover{background:var(--gray)}
 .fab-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2}
+/* SAVE INDICATOR */
+#save-indicator{position:fixed;bottom:28px;left:28px;z-index:9999;font-size:12px;font-weight:600;padding:8px 14px;border-radius:20px;background:#059669;color:#fff;opacity:0;transition:opacity .4s;pointer-events:none}
 body.edit-mode [data-edit]:hover{outline:2px dashed #2563eb;outline-offset:3px;border-radius:4px;cursor:text}
 body.edit-mode [data-edit]:focus{outline:2px solid #2563eb;outline-offset:3px;border-radius:4px}
 [data-edit]{position:relative}
@@ -212,225 +240,198 @@ body.edit-mode .bg-btn{display:flex}
 .pw-strength{margin-top:6px;height:4px;border-radius:4px;background:var(--border);overflow:hidden}
 .pw-strength-bar{height:100%;border-radius:4px;transition:width .3s,background .3s;width:0}
 .pw-hint{font-size:11px;color:var(--muted);margin-top:4px}
-/* LINK URL INPUT SECTION */
 #al-url-section{display:none;margin-top:4px}
 @media(max-width:768px){.about-grid{grid-template-columns:1fr}.hero-stats{gap:28px}.nav-links{display:none}.pub-modal-box{margin:0;border-radius:0;min-height:100vh}.contact-cards{grid-template-columns:1fr}.plat-grid{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
-<body class="">
+<body>
+<div id="save-indicator">✓ 저장됨</div>
 <nav>
   <div class="nav-inner">
-    <span class="logo" data-edit="" contenteditable="false">SBCSL - Smart Building Construction System Laboratory</span>
+    <span class="logo" data-edit>SBCSL</span>
     <ul class="nav-links">
-      <li><a href="#about" class="">About</a></li><li><a href="#research" class="">Research</a></li>
-      <li><a href="#publications" class="">Publications</a></li><li><a href="#members" class="active">Members</a></li>
-      <li><a href="#contact" class="">Contact</a></li>
+      <li><a href="#about">About</a></li><li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li><li><a href="#patents">특허</a></li>
+      <li><a href="#projects">연구과제</a></li><li><a href="#members">Members</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
 <section id="hero">
   <div class="hero-overlay"></div>
-  <button class="bg-btn" onclick="openImgPanel('hero')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>배경 이미지 변경</button>
+  <button class="bg-btn" onclick="openImgPanel('hero')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>배경 이미지 변경</button>
   <div class="container hero-content">
-    <div class="fade-in visible">
-      <p class="hero-tag" data-edit="" contenteditable="false">Research Laboratory</p>
-      <h1 class="hero-title" data-edit="" contenteditable="false">Smart Building<br><span style="color:var(--accent)">Construction System</span><br>Laboratory</h1>
-      <p class="hero-sub" data-edit="" contenteditable="false">스마트 기술 기반 첨단 건설 시스템과 차세대 기능성 건설재료를 개발해&nbsp;<div>현장에 적용하기 위한 연구를 수행하고 있습니다.</div></p>
+    <div class="fade-in">
+      <p class="hero-tag" data-edit>Graduate Research Laboratory</p>
+      <h1 class="hero-title" data-edit>Systems, Biology &<br><span style="color:var(--accent)">Computational</span><br>Science Lab</h1>
+      <p class="hero-sub" data-edit>복잡계 생물학과 데이터 기반 컴퓨팅의 교차점에서 차세대 연구를 이끌어갑니다.</p>
       <div class="hero-btns"><a href="#research" class="btn-primary">연구 분야 보기</a><a href="#publications" class="btn-outline">논문 목록</a></div>
     </div>
-    <div class="hero-stats fade-in visible">
-      <div><div class="stat-num" data-edit="" contenteditable="false">5</div><div class="stat-label" data-edit="" contenteditable="false">연구원</div></div>
-      <div><div class="stat-num" data-edit="" contenteditable="false">48+</div><div class="stat-label" data-edit="" contenteditable="false">발표 논문</div></div>
-      <div><div class="stat-num" data-edit="" contenteditable="false">8+</div><div class="stat-label" data-edit="" contenteditable="false">연구 프로젝트</div></div>
-      <div><div class="stat-num" data-edit="" contenteditable="false">2017</div><div class="stat-label" data-edit="" contenteditable="false">설립</div></div>
+    <div class="hero-stats fade-in">
+      <div><div class="stat-num" data-edit>12+</div><div class="stat-label" data-edit>연구원</div></div>
+      <div><div class="stat-num" data-edit>48+</div><div class="stat-label" data-edit>발표 논문</div></div>
+      <div><div class="stat-num" data-edit>8+</div><div class="stat-label" data-edit>연구 프로젝트</div></div>
+      <div><div class="stat-num" data-edit>2015</div><div class="stat-label" data-edit>설립</div></div>
     </div>
   </div>
 </section>
 
 <section id="about">
   <div class="about-overlay"></div>
-  <button class="bg-btn" onclick="openImgPanel('about')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>배경 이미지 변경</button>
+  <button class="bg-btn" onclick="openImgPanel('about')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>배경 이미지 변경</button>
   <div class="container about-inner">
-    <div class="fade-in visible"><p class="section-label" data-edit="" contenteditable="false">About the Lab</p><h2 class="section-title" data-edit="" contenteditable="false">연구실 소개</h2></div>
+    <div class="fade-in"><p class="section-label" data-edit>About the Lab</p><h2 class="section-title" data-edit>연구실 소개</h2></div>
     <div class="about-grid">
-      <div class="about-text fade-in visible">
-        <p data-edit="" contenteditable="false">SBCSL은 시스템 생물학, 계산과학, 머신러닝을 융합하여 복잡한 생물학적 현상을 이해하고 해석하는 연구를 수행합니다.</p>
-        <p data-edit="" contenteditable="false">우리는 대규모 생물학적 데이터를 분석하고, 수리 모델과 알고리즘을 개발하여 생명 현상의 근본적인 원리를 탐구합니다.</p>
-        <p data-edit="" contenteditable="false">창의적이고 다학제적인 연구 환경에서 다음 세대 연구자들을 양성하는 것을 중요한 사명으로 여깁니다.</p>
+      <div class="about-text fade-in">
+        <p data-edit>SBCSL은 시스템 생물학, 계산과학, 머신러닝을 융합하여 복잡한 생물학적 현상을 이해하고 해석하는 연구를 수행합니다.</p>
+        <p data-edit>우리는 대규모 생물학적 데이터를 분석하고, 수리 모델과 알고리즘을 개발하여 생명 현상의 근본적인 원리를 탐구합니다.</p>
+        <p data-edit>창의적이고 다학제적인 연구 환경에서 다음 세대 연구자들을 양성하는 것을 중요한 사명으로 여깁니다.</p>
       </div>
-      <div class="about-values fade-in visible" id="about-values-container"><div class="value-item">
-      <div class="value-icon"> 
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M15 2v2M9 2v2M15 20v2M9 20v2M2 15h2M2 9h2M20 15h2M20 9h2"></path></svg>
-        
-      </div>
-      <div>
-        <div class="value-title" onblur="syncAV('av1','title',this.textContent)">다학제 융합 연구</div>
-        <div class="value-desc" onblur="syncAV('av1','desc',this.textContent)">생물학·컴퓨터과학·통계학의 경계를 넘나드는 연구</div>
-      </div></div><div class="value-item">
-      <div class="value-icon"> 
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        
-      </div>
-      <div>
-        <div class="value-title" onblur="syncAV('av2','title',this.textContent)">데이터 중심 접근</div>
-        <div class="value-desc" onblur="syncAV('av2','desc',this.textContent)">대규모 생물학적 데이터 기반 인사이트 도출</div>
-      </div></div><div class="value-item">
-      <div class="value-icon"> 
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="4" r="2"></circle><circle cx="4" cy="20" r="2"></circle><circle cx="20" cy="20" r="2"></circle><path d="M12 6v5M7.5 18.5l2.5-3.5M16.5 18.5l-2.5-3.5M12 11l-4.5 6.5M12 11l4.5 6.5"></path></svg>
-        
-      </div>
-      <div>
-        <div class="value-title" onblur="syncAV('av3','title',this.textContent)">협력 연구 문화</div>
-        <div class="value-desc" onblur="syncAV('av3','desc',this.textContent)">국내외 기관과의 활발한 공동 연구 네트워크</div>
-      </div></div></div>
+      <div class="about-values fade-in" id="about-values-container"></div>
     </div>
   </div>
 </section>
 
 <section id="research">
   <div class="container">
-    <div class="fade-in visible"><p class="section-label" data-edit="" contenteditable="false">Research Areas</p><h2 class="section-title" data-edit="" contenteditable="false">주요 연구 분야</h2></div>
-    <div class="research-grid" id="research-grid"><div class="research-card fade-in visible">
-      <div class="r-icon"> 
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-        
-      </div>
-      <div class="r-title" onblur="syncR('r1','title',this.textContent)">시스템 생물학</div>
-      <div class="r-desc" onblur="syncR('r1','desc',this.textContent)">유전자 조절 네트워크와 신호 전달 경로를 수학적 모델로 분석하고 생명 시스템의 전체적인 동작 원리를 연구합니다.</div></div><div class="research-card fade-in visible">
-      <div class="r-icon"> 
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 18h8M3 22h18M14 22a7 7 0 000-14h-1"></path><rect x="7" y="5" width="6" height="8" rx="1"></rect><path d="M9 5V3"></path></svg>
-        
-      </div>
-      <div class="r-title" onblur="syncR('r3','title',this.textContent)">게놈 데이터 분석</div>
-      <div class="r-desc" onblur="syncR('r3','desc',this.textContent)">대규모 시퀀싱 데이터를 처리하고, 유전체 변이와 질병의 연관성을 통계적·계산적 방법으로 규명합니다.</div></div><div class="research-card fade-in visible">
-      <div class="r-icon"> 
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-        
-      </div>
-      <div class="r-title" onblur="syncR('r2','title',this.textContent)">머신러닝 &amp; AI</div>
-      <div class="r-desc" onblur="syncR('r2','desc',this.textContent)">딥러닝 및 그래프 신경망을 활용하여 단백질 구조 예측, 약물 표적 발굴 등 생물정보학 문제를 해결합니다.</div></div></div>
-    <div id="research-add-row" class="add-section-row" style="display: none;">
-      <button class="add-row-btn" onclick="openAddResearch()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>+ 연구 분야 추가</button>
+    <div class="fade-in"><p class="section-label" data-edit>Research Areas</p><h2 class="section-title" data-edit>주요 연구 분야</h2></div>
+    <div class="research-grid" id="research-grid"></div>
+    <div id="research-add-row" class="add-section-row">
+      <button class="add-row-btn" onclick="openAddResearch()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 연구 분야 추가</button>
     </div>
   </div>
 </section>
 
 <section id="publications">
   <div class="container">
-    <div class="fade-in visible"><p class="section-label" data-edit="" contenteditable="false">Publications</p><h2 class="section-title" data-edit="" contenteditable="false">주요 논문</h2></div>
-    <div class="pub-list" id="main-pub-list"><div class="pub-item">
-  <div class="pub-year">2024</div><div style="flex:1">
-  <div class="pub-title">Graph Neural Network-Based Drug-Target Interaction Prediction with Multi-Omics Integration</div>
-  <div class="pub-meta"><span class="pub-tag">Nature Methods</span>Kim J., Lee S., Park H. et al.</div>
-  <div class="pub-actions">
-    
-    
-  </div></div></div><div class="pub-item">
-  <div class="pub-year">2024</div><div style="flex:1">
-  <div class="pub-title">Single-Cell Trajectory Analysis Reveals Developmental Bifurcation in Neural Progenitor Cells</div>
-  <div class="pub-meta"><span class="pub-tag">Cell Systems</span>Park H., Choi Y., Kim J. et al.</div>
-  <div class="pub-actions">
-    
-    
-  </div></div></div><div class="pub-item">
-  <div class="pub-year">2023</div><div style="flex:1">
-  <div class="pub-title">Regulatory Network Rewiring During Cancer Progression: A Computational Perspective</div>
-  <div class="pub-meta"><span class="pub-tag">Genome Biology</span>Lee S., Yoon K., Park H. et al.</div>
-  <div class="pub-actions">
-    
-    
-  </div></div></div><div class="pub-item">
-  <div class="pub-year">2023</div><div style="flex:1">
-  <div class="pub-title">Deep Learning Framework for Genome-Wide Association Study with Epistatic Interactions</div>
-  <div class="pub-meta"><span class="pub-tag">Bioinformatics</span>Choi Y., Kim J., Lee S. et al.</div>
-  <div class="pub-actions">
-    
-    
-  </div></div></div></div>
+    <div class="fade-in"><p class="section-label" data-edit>Publications</p><h2 class="section-title" data-edit>주요 논문</h2></div>
+    <div class="pub-list" id="main-pub-list"></div>
     <div class="pub-more-row">
-      <div id="main-add-row" style="display: none;">
-        <button class="add-row-btn" onclick="openAddForm('main')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>+ 논문 추가</button>
+      <div id="main-add-row" style="display:none">
+        <button class="add-row-btn" onclick="openAddForm('main')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 논문 추가</button>
       </div>
       <button class="btn-more" onclick="openPubModal()">전체 논문 보기 →</button>
     </div>
   </div>
 </section>
 
+<!-- 특허 -->
+<section id="patents">
+  <div class="container">
+    <div class="fade-in"><p class="section-label" data-edit>Patents</p><h2 class="section-title" data-edit>특허 현황</h2></div>
+    <div class="patent-list" id="patent-list"></div>
+    <div id="patent-add-row" class="add-section-row">
+      <button class="add-row-btn" onclick="openAddPatent()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 특허 추가</button>
+    </div>
+  </div>
+</section>
+
+<!-- 연구과제 -->
+<section id="projects">
+  <div class="container">
+    <div class="fade-in"><p class="section-label" data-edit>Research Projects</p><h2 class="section-title" data-edit>연구과제</h2></div>
+    <div class="proj-tab-bar fade-in">
+      <button class="proj-tab active" data-ptab="ongoing" onclick="switchProjTab('ongoing')">수행 중인 과제</button>
+      <button class="proj-tab" data-ptab="done" onclick="switchProjTab('done')">수행한 과제</button>
+    </div>
+    <div class="proj-list" id="proj-list"></div>
+    <div id="proj-add-row" class="add-section-row">
+      <button class="add-row-btn" onclick="openAddProject()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 과제 추가</button>
+    </div>
+  </div>
+</section>
+
 <section id="members">
   <div class="container">
-    <div class="fade-in visible"><p class="section-label" data-edit="" contenteditable="false">Lab Members</p><h2 class="section-title" data-edit="" contenteditable="false">구성원</h2></div>
-    <div id="members-container"><div class="members-group fade-in visible"><div class="members-group-title">지도교수</div><div class="members-grid"><div class="member-card fade-in visible">
-        <div class="avatar" style="background:#0f2c5c">남</div>
-        <div class="member-name" onblur="syncM('mb1','name',this.textContent)">남정수 교수</div>
-        <div class="member-role" onblur="syncM('mb1','role',this.textContent)">Principal Investigator</div></div></div></div><div class="members-group fade-in visible"><div class="members-group-title">박사과정</div><div class="members-grid"><div class="member-card fade-in visible">
-        <div class="avatar" style="background:#2563eb">최</div>
-        <div class="member-name" onblur="syncM('mb2','name',this.textContent)">최병철</div>
-        <div class="member-role" onblur="syncM('mb2','role',this.textContent)">PhD Candidate · 4년차</div></div><div class="member-card fade-in visible">
-        <div class="avatar" style="background:#2563eb">지</div>
-        <div class="member-name" onblur="syncM('mb3','name',this.textContent)">지성준</div>
-        <div class="member-role" onblur="syncM('mb3','role',this.textContent)">PhD Candidate · 2년차</div></div><div class="member-card fade-in visible">
-        <div class="avatar" style="background:#2563eb">윤</div>
-        <div class="member-name" onblur="syncM('mb4','name',this.textContent)">윤혜영</div>
-        <div class="member-role" onblur="syncM('mb4','role',this.textContent)">PhD Student · 1년차</div></div></div></div><div class="members-group fade-in visible"><div class="members-group-title">석사과정</div><div class="members-grid"><div class="member-card fade-in visible">
-        <div class="avatar" style="background:#374151">고</div>
-        <div class="member-name" onblur="syncM('mb6','name',this.textContent)">고연우</div>
-        <div class="member-role" onblur="syncM('mb6','role',this.textContent)">MS Student · 1년차</div></div><div class="member-card fade-in visible">
-        <div class="avatar" style="background:#374151">송</div>
-        <div class="member-name" onblur="syncM('mb7','name',this.textContent)">송승훈</div>
-        <div class="member-role" onblur="syncM('mb7','role',this.textContent)">MS Student · 1년차</div></div></div></div></div>
-    <div id="members-add-row" class="add-section-row" style="margin-top: 28px; display: none;">
-      <button class="add-row-btn" onclick="openAddMember()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>+ 구성원 추가</button>
+    <div class="fade-in"><p class="section-label" data-edit>Lab Members</p><h2 class="section-title" data-edit>구성원</h2></div>
+    <div id="members-container"></div>
+    <div id="members-add-row" class="add-section-row" style="margin-top:28px">
+      <button class="add-row-btn" onclick="openAddMember()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 구성원 추가</button>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <div class="contact-overlay"></div>
-  <button class="bg-btn" onclick="openImgPanel('contact')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>배경 이미지 변경</button>
+  <button class="bg-btn" onclick="openImgPanel('contact')"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>배경 이미지 변경</button>
   <div class="container contact-inner">
-    <div class="fade-in visible"><p class="section-label" data-edit="" contenteditable="false">Contact</p><h2 class="section-title" data-edit="" contenteditable="false">연락처</h2></div>
-    <p class="contact-intro fade-in visible" data-edit="" contenteditable="false">연구실 참여, 공동 연구, 또는 학술 문의가 있으시면 언제든지 연락해 주세요.</p>
-    <div class="contact-cards fade-in visible">
-      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div><div><div class="c-label">주소</div><div class="c-value" data-edit="" contenteditable="false">College of Engineeringg 2-104-1, 99 Daehak-ro(St), Yuseong-gu, Daejeon, 34134, Korea</div></div></div>
-      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div><div><div class="c-label">이메일</div><div class="c-value" data-edit="" contenteditable="false">j.nam@cnu.ac.kr</div></div></div>
-      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.022 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z"></path></svg></div><div><div class="c-label">전화</div><div class="c-value" data-edit="" contenteditable="false">042-821-5629</div></div></div>
+    <div class="fade-in"><p class="section-label" data-edit>Contact</p><h2 class="section-title" data-edit>연락처</h2></div>
+    <p class="contact-intro fade-in" data-edit>연구실 참여, 공동 연구, 또는 학술 문의가 있으시면 언제든지 연락해 주세요.</p>
+    <div class="contact-cards fade-in">
+      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="c-label">주소</div><div class="c-value" data-edit>서울특별시 XX구 대학로 XX<br>XX대학교 공학관 XXX호</div></div></div>
+      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="c-label">이메일</div><div class="c-value" data-edit>sbcsl@university.ac.kr</div></div></div>
+      <div class="contact-card"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.022 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z"/></svg></div><div><div class="c-label">전화</div><div class="c-value" data-edit>02-XXXX-XXXX</div></div></div>
     </div>
-    <!-- 외부 링크 섹션 -->
-    <div id="ext-links-section" style="display: block;">
-      <div class="ext-links-header">
-        <span class="ext-links-title">프로필 &amp; 외부 링크</span>
-      </div>
-      <div class="ext-links-row" id="ext-links-row"><div class="ext-link-wrap" style="position: relative;"><a href="https://scholar.google.com/citations?user=u1ojeP4AAAAJ&amp;hl=ko&amp;oi=ao" target="_blank" rel="noopener noreferrer" style="display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none"><div class="ext-link-icon" style="background:#4285f4"><span style="color:#fff">GS</span></div><span class="ext-link-name">Google Scholar</span></a></div></div>
+    <div id="ext-links-section">
+      <div class="ext-links-title">프로필 & 외부 링크</div>
+      <div class="ext-links-row" id="ext-links-row"></div>
     </div>
   </div>
 </section>
-<footer><p data-edit="" contenteditable="false">© 2017 SBCSL — Smart Building Construction System Laboratory. All rights reserved.</p></footer>
+<footer><p data-edit>© 2024 SBCSL — Systems, Biology & Computational Science Laboratory. All rights reserved.</p></footer>
 
 <!-- PUB MODAL -->
 <div id="pub-modal">
   <div class="pub-modal-box">
     <div class="pub-modal-header"><h2>전체 논문 목록</h2><button class="modal-close" onclick="closePubModal()">✕</button></div>
     <div class="ptab-bar">
-      <button class="ptab active" data-tab="sci" onclick="switchPubTab('sci')">SCI <span class="ptab-count" id="cnt-sci">6</span></button>
-      <button class="ptab" data-tab="domestic" onclick="switchPubTab('domestic')">국내 <span class="ptab-count" id="cnt-domestic">4</span></button>
-      <button class="ptab" data-tab="conference" onclick="switchPubTab('conference')">학술대회 <span class="ptab-count" id="cnt-conference">5</span></button>
+      <button class="ptab active" data-tab="sci" onclick="switchPubTab('sci')">SCI <span class="ptab-count" id="cnt-sci">0</span></button>
+      <button class="ptab" data-tab="domestic" onclick="switchPubTab('domestic')">국내 <span class="ptab-count" id="cnt-domestic">0</span></button>
+      <button class="ptab" data-tab="conference" onclick="switchPubTab('conference')">학술대회 <span class="ptab-count" id="cnt-conference">0</span></button>
     </div>
     <div id="modal-pub-list" class="pub-list"></div>
     <div id="modal-add-row" style="display:none;margin-top:16px">
-      <button class="add-row-btn" onclick="openAddForm('modal')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>+ 논문 추가</button>
+      <button class="add-row-btn" onclick="openAddForm('modal')"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 논문 추가</button>
     </div>
   </div>
 </div>
 
-<!-- ADD LINK MODAL -->
+<!-- ADD PATENT MODAL -->
+<div id="add-patent-modal" class="modal-backdrop">
+  <div class="modal-box">
+    <h3>특허 추가</h3>
+    <label class="mf-label">구분</label>
+    <select id="ap-status" class="mf-select" style="background:var(--gray);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:10px 14px">
+      <option value="registered">등록</option><option value="applied">출원</option><option value="intl">국제출원(PCT)</option>
+    </select>
+    <label class="mf-label">특허명</label><input type="text" id="ap-title" class="mf-input" placeholder="특허 명칭을 입력하세요">
+    <label class="mf-label">출원번호 / 등록번호</label><input type="text" id="ap-num" class="mf-input" placeholder="10-2024-XXXXXXX">
+    <label class="mf-label">출원인 / 발명자</label><input type="text" id="ap-inventor" class="mf-input" placeholder="김OO, 이OO">
+    <label class="mf-label">연도</label><input type="text" id="ap-year" class="mf-input" placeholder="2024">
+    <div class="modal-actions">
+      <button class="ma-btn ma-cancel" onclick="document.getElementById('add-patent-modal').classList.remove('open')">취소</button>
+      <button class="ma-btn ma-apply" onclick="submitAddPatent()">추가</button>
+    </div>
+  </div>
+</div>
+
+<!-- ADD PROJECT MODAL -->
+<div id="add-project-modal" class="modal-backdrop">
+  <div class="modal-box">
+    <h3>연구과제 추가</h3>
+    <label class="mf-label">상태</label>
+    <select id="aproj-status" class="mf-select" style="background:var(--gray);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:10px 14px">
+      <option value="ongoing">수행 중</option><option value="done">완료</option>
+    </select>
+    <label class="mf-label">과제명</label><input type="text" id="aproj-title" class="mf-input" placeholder="과제명을 입력하세요">
+    <label class="mf-label">지원기관</label><input type="text" id="aproj-agency" class="mf-input" placeholder="예: 과학기술정보통신부, NRF">
+    <label class="mf-label">연구기간</label><input type="text" id="aproj-period" class="mf-input" placeholder="2022.03 – 2025.02">
+    <label class="mf-label">역할 / 책임연구원</label><input type="text" id="aproj-role" class="mf-input" placeholder="책임연구원: 김OO">
+    <div class="modal-actions">
+      <button class="ma-btn ma-cancel" onclick="document.getElementById('add-project-modal').classList.remove('open')">취소</button>
+      <button class="ma-btn ma-apply" onclick="submitAddProject()">추가</button>
+    </div>
+  </div>
+</div>
+
+<!-- ADD EXT LINK MODAL -->
 <div id="add-link-modal" class="modal-backdrop">
   <div class="modal-box" style="width:480px">
-    <h3>외부 링크 추가</h3>
-    <p class="modal-subtitle">플랫폼을 선택하고 URL을 입력하세요.</p>
-    <div class="plat-grid" id="add-link-plat-grid"><button class="plat-btn"><div class="plat-ico" style="background:#4285f4"><span style="color:#fff">GS</span></div><span class="plat-lbl">Google Scholar</span></button><button class="plat-btn"><div class="plat-ico" style="background:#24292e"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"></path></svg></div><span class="plat-lbl">GitHub</span></button><button class="plat-btn"><div class="plat-ico" style="background:#00d0af"><span style="color:#fff">RG</span></div><span class="plat-lbl">ResearchGate</span></button><button class="plat-btn"><div class="plat-ico" style="background:#0077b5"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg></div><span class="plat-lbl">LinkedIn</span></button><button class="plat-btn"><div class="plat-ico" style="background:#a6ce39"><span style="color:#1a1a1a">iD</span></div><span class="plat-lbl">ORCID</span></button><button class="plat-btn"><div class="plat-ico" style="background:#1a1a1a"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></div><span class="plat-lbl">X (Twitter)</span></button><button class="plat-btn"><div class="plat-ico" style="background:#ff0000"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><rect x="2" y="7" width="20" height="15" rx="2"></rect><polygon points="10 11 16 14.5 10 18" fill="#fff" stroke="none"></polygon></svg></div><span class="plat-lbl">YouTube</span></button><button class="plat-btn"><div class="plat-ico" style="background:#326699"><span style="color:#fff">PM</span></div><span class="plat-lbl">PubMed</span></button><button class="plat-btn"><div class="plat-ico" style="background:#6366f1"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"></path></svg></div><span class="plat-lbl">웹사이트</span></button><button class="plat-btn"><div class="plat-ico" style="background:#ea4335"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div><span class="plat-lbl">이메일</span></button></div>
-    <div id="al-url-section" style="display: none;">
-      <label class="mf-label" id="al-url-label">Google Scholar URL</label>
+    <h3>외부 링크 추가</h3><p class="modal-subtitle">플랫폼을 선택하고 URL을 입력하세요.</p>
+    <div class="plat-grid" id="add-link-plat-grid"></div>
+    <div id="al-url-section">
+      <label class="mf-label" id="al-url-label">URL</label>
       <input type="text" id="al-url" class="mf-input" placeholder="https://" onkeydown="if(event.key==='Enter')submitAddLink()">
     </div>
     <div class="modal-actions">
@@ -440,7 +441,7 @@ body.edit-mode .bg-btn{display:flex}
   </div>
 </div>
 
-<!-- EDIT LINK URL MODAL -->
+<!-- EDIT EXT LINK URL -->
 <div id="edit-link-modal" class="modal-backdrop">
   <div class="modal-box" style="width:400px">
     <h3>링크 URL 수정</h3>
@@ -453,23 +454,22 @@ body.edit-mode .bg-btn{display:flex}
   </div>
 </div>
 
-<!-- ICON PICKER MODAL -->
+<!-- ICON PICKER -->
 <div id="icon-picker-modal" class="modal-backdrop" style="z-index:9500">
   <div class="modal-box" style="width:480px">
-    <h3>아이콘 선택</h3>
-    <p class="modal-subtitle">적용할 아이콘을 클릭하세요.</p>
-    <div class="icon-picker-grid" id="icon-picker-grid"><button class="icon-pick-btn" title="globe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"></path></svg></button><button class="icon-pick-btn" title="microscope"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 18h8M3 22h18M14 22a7 7 0 000-14h-1"></path><rect x="7" y="5" width="6" height="8" rx="1"></rect><path d="M9 5V3"></path></svg></button><button class="icon-pick-btn" title="atom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="1"></circle><path d="M20.2 20.2c2-2.04.02-7.36-4.5-11.9C11.2 3.78 5.84 1.76 3.8 3.8c-2.04 2.04-.02 7.36 4.5 11.9 4.54 4.52 9.86 6.54 11.9 4.5z"></path><path d="M15.7 15.7c4.52-4.52 6.54-9.84 4.5-11.9-2.04-2.04-7.36-.02-11.9 4.5-4.52 4.52-6.54 9.86-4.5 11.9 2.04 2.04 7.36.02 11.9-4.5z"></path></svg></button><button class="icon-pick-btn" title="dna"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 15c6.667-6 13.333 0 20-6M2 9c6.667 6 13.333 0 20 6M5 4.5l-.5-2M19 4.5l.5-2M5 19.5l-.5 2M19 19.5l.5 2"></path></svg></button><button class="icon-pick-btn" title="flask"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 2h6v6l4 10H5L9 8V2z"></path><line x1="9" y1="12" x2="15" y2="12"></line></svg></button><button class="icon-pick-btn" title="brain"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9.5 2A2.5 2.5 0 0112 4.5v15a2.5 2.5 0 01-4.96-.44 2.5 2.5 0 01-2.96-3.08 3 3 0 01-.34-5.58 2.5 2.5 0 011.32-4.24A2.5 2.5 0 016.98 3 2.5 2.5 0 019.5 2z"></path><path d="M14.5 2A2.5 2.5 0 0112 4.5v15a2.5 2.5 0 004.96-.44 2.5 2.5 0 002.96-3.08 3 3 0 00.34-5.58 2.5 2.5 0 00-1.32-4.24A2.5 2.5 0 0017.02 3 2.5 2.5 0 0014.5 2z"></path></svg></button><button class="icon-pick-btn" title="monitor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg></button><button class="icon-pick-btn" title="code"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></button><button class="icon-pick-btn" title="database"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></button><button class="icon-pick-btn" title="cpu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M15 2v2M9 2v2M15 20v2M9 20v2M2 15h2M2 9h2M20 15h2M20 9h2"></path></svg></button><button class="icon-pick-btn" title="network"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="4" r="2"></circle><circle cx="4" cy="20" r="2"></circle><circle cx="20" cy="20" r="2"></circle><path d="M12 6v5M7.5 18.5l2.5-3.5M16.5 18.5l-2.5-3.5M12 11l-4.5 6.5M12 11l4.5 6.5"></path></svg></button><button class="icon-pick-btn" title="activity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></button><button class="icon-pick-btn" title="book"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"></path></svg></button><button class="icon-pick-btn" title="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button><button class="icon-pick-btn selected" title="lightbulb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 22h4M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17H8v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z"></path></svg></button><button class="icon-pick-btn" title="bar-chart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line><path d="M2 20h20"></path></svg></button><button class="icon-pick-btn" title="target"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></button><button class="icon-pick-btn" title="shield"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></button><button class="icon-pick-btn" title="users"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path></svg></button><button class="icon-pick-btn" title="layers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></button><button class="icon-pick-btn" title="grid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><button class="icon-pick-btn" title="package"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></button><button class="icon-pick-btn" title="star"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button><button class="icon-pick-btn" title="zap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></button></div>
+    <h3>아이콘 선택</h3><p class="modal-subtitle">적용할 아이콘을 클릭하세요.</p>
+    <div class="icon-picker-grid" id="icon-picker-grid"></div>
     <div class="modal-actions"><button class="ma-btn ma-cancel" onclick="document.getElementById('icon-picker-modal').classList.remove('open')">닫기</button></div>
   </div>
 </div>
 
-<!-- LOGIN MODAL -->
+<!-- LOGIN -->
 <div id="pw-modal" class="modal-backdrop">
   <div class="modal-box" style="text-align:center;width:360px">
-    <div class="pw-lock"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0110 0v4"></path></svg></div>
+    <div class="pw-lock"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
     <h3 style="margin-bottom:4px">관리자 로그인</h3>
     <p class="modal-subtitle">편집 모드는 관리자만 사용할 수 있습니다.</p>
-    <div class="pw-attempts" id="pw-attempts"><div class="attempt-dot"></div><div class="attempt-dot"></div><div class="attempt-dot"></div><div class="attempt-dot"></div><div class="attempt-dot"></div></div>
+    <div class="pw-attempts" id="pw-attempts"></div>
     <input type="password" id="pw-input-field" placeholder="비밀번호 입력" onkeydown="if(event.key==='Enter')checkPw()" autocomplete="off">
     <div id="pw-msg"></div>
     <div class="modal-actions" style="justify-content:center">
@@ -479,7 +479,7 @@ body.edit-mode .bg-btn{display:flex}
   </div>
 </div>
 
-<!-- PW CHANGE MODAL -->
+<!-- PW CHANGE -->
 <div id="pw-change-modal" class="modal-backdrop">
   <div class="modal-box" style="width:400px">
     <h3>비밀번호 변경</h3><p class="modal-subtitle">8자 이상, 영문+숫자 필수</p>
@@ -496,10 +496,10 @@ body.edit-mode .bg-btn{display:flex}
   </div>
 </div>
 
-<!-- LINK EDIT MODAL (pub) -->
+<!-- PUB LINK EDIT -->
 <div id="link-edit-modal" class="modal-backdrop">
   <div class="modal-box" style="width:420px">
-    <h3>게재 링크 설정</h3><p class="modal-subtitle">DOI 또는 온라인 게재 페이지 URL을 입력하세요.</p>
+    <h3>게재 링크 설정</h3><p class="modal-subtitle">DOI 또는 온라인 게재 페이지 URL</p>
     <label class="mf-label">URL</label><input type="text" id="le-url" class="mf-input" placeholder="https://doi.org/10.xxxx/...">
     <div class="modal-actions">
       <button class="ma-btn ma-remove" onclick="removePubLink()">링크 제거</button>
@@ -509,10 +509,10 @@ body.edit-mode .bg-btn{display:flex}
   </div>
 </div>
 
-<!-- ADD PUB MODAL -->
+<!-- ADD PUB -->
 <div id="add-pub-modal" class="modal-backdrop">
   <div class="modal-box">
-    <h3 id="add-pub-title">메인 페이지 논문 추가</h3>
+    <h3 id="add-pub-title">논문 추가</h3>
     <label class="mf-label">연도</label><input type="text" id="af-year" class="mf-input" placeholder="2024">
     <label class="mf-label">제목</label><textarea id="af-title-input" class="mf-input" rows="3" placeholder="논문 제목" style="resize:vertical"></textarea>
     <label class="mf-label">저널 / 학술대회명</label><input type="text" id="af-journal" class="mf-input" placeholder="Nature Methods">
@@ -524,12 +524,12 @@ body.edit-mode .bg-btn{display:flex}
   </div>
 </div>
 
-<!-- ADD RESEARCH MODAL -->
+<!-- ADD RESEARCH -->
 <div id="add-research-modal" class="modal-backdrop">
   <div class="modal-box">
     <h3>연구 분야 추가</h3>
     <label class="mf-label">분야명</label><input type="text" id="ar-title" class="mf-input" placeholder="예: 바이오인포매틱스">
-    <label class="mf-label">설명</label><textarea id="ar-desc" class="mf-input" rows="4" placeholder="연구 분야 설명을 입력하세요." style="resize:vertical"></textarea>
+    <label class="mf-label">설명</label><textarea id="ar-desc" class="mf-input" rows="4" placeholder="설명을 입력하세요." style="resize:vertical"></textarea>
     <div class="modal-actions">
       <button class="ma-btn ma-cancel" onclick="document.getElementById('add-research-modal').classList.remove('open')">취소</button>
       <button class="ma-btn ma-apply" onclick="submitAddResearch()">추가</button>
@@ -537,13 +537,13 @@ body.edit-mode .bg-btn{display:flex}
   </div>
 </div>
 
-<!-- ADD MEMBER MODAL -->
+<!-- ADD MEMBER -->
 <div id="add-member-modal" class="modal-backdrop">
   <div class="modal-box">
     <h3>구성원 추가</h3>
     <label class="mf-label">소속 그룹</label>
     <select id="am-group" class="mf-select" style="background:var(--gray);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:10px 14px">
-      <option value="pi">지도교수</option><option value="phd" selected="">박사과정</option><option value="ms">석사과정</option>
+      <option value="pi">지도교수</option><option value="phd" selected>박사과정</option><option value="ms">석사과정</option>
     </select>
     <label class="mf-label">이름</label><input type="text" id="am-name" class="mf-input" placeholder="홍OO">
     <label class="mf-label">직함 / 과정</label><input type="text" id="am-role" class="mf-input" placeholder="PhD Student · 1년차">
@@ -574,35 +574,96 @@ body.edit-mode .bg-btn{display:flex}
 </div>
 
 <div class="fab-group">
-  <button id="pw-fab" class="fab-btn" onclick="openPwChange()" style="display: none;"><svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>비밀번호 변경</button>
+  <button id="pw-fab" class="fab-btn" onclick="openPwChange()"><svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>비밀번호 변경</button>
   <button id="edit-fab" class="fab-btn" onclick="toggleEdit()">
-    <svg viewBox="0 0 24 24" id="fab-icon"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+    <svg viewBox="0 0 24 24" id="fab-icon"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
     <span id="fab-text">편집 모드</span>
   </button>
 </div>
 
 <script>
-/* ── SECURITY ── */
+/* ══════════════════════════════════════
+   STORAGE HELPERS
+══════════════════════════════════════ */
+async function storeSave(key, val){
+  try{ await window.storage.set(key, JSON.stringify(val)); }catch(e){console.warn('save err',e);}
+}
+async function storeLoad(key, fallback){
+  try{
+    const r = await window.storage.get(key);
+    return r ? JSON.parse(r.value) : fallback;
+  }catch(e){ return fallback; }
+}
+
+let saveTimer=null;
+function scheduleSave(){
+  clearTimeout(saveTimer);
+  saveTimer=setTimeout(()=>saveAll(), 800);
+}
+async function saveAll(){
+  await Promise.all([
+    storeSave('sbcsl-research', research),
+    storeSave('sbcsl-members', members),
+    storeSave('sbcsl-pubs', pubs),
+    storeSave('sbcsl-patents', patents),
+    storeSave('sbcsl-projects', projects),
+    storeSave('sbcsl-extlinks', externalLinks),
+    storeSave('sbcsl-aboutvalues', aboutValues),
+    storeSave('sbcsl-bgs', bgImages),
+    storeSave('sbcsl-texts', collectTexts()),
+  ]);
+  showSaved();
+}
+function showSaved(){
+  const el=document.getElementById('save-indicator');
+  el.style.opacity='1';
+  setTimeout(()=>el.style.opacity='0', 2000);
+}
+
+function collectTexts(){
+  const out={};
+  document.querySelectorAll('[data-edit][data-sid]').forEach(el=>{
+    out[el.dataset.sid]=el.innerHTML;
+  });
+  return out;
+}
+function applyTexts(texts){
+  if(!texts) return;
+  document.querySelectorAll('[data-edit][data-sid]').forEach(el=>{
+    if(texts[el.dataset.sid]!==undefined) el.innerHTML=texts[el.dataset.sid];
+  });
+}
+
+/* Assign stable IDs to static data-edit elements */
+function assignSids(){
+  document.querySelectorAll('[data-edit]').forEach((el,i)=>{
+    if(!el.dataset.sid) el.dataset.sid='s'+i;
+  });
+}
+
+/* ══════════════════════════════════════
+   SECURITY
+══════════════════════════════════════ */
 const _INIT_PW='sbcsl2024';
 let ADMIN_HASH='',loginAttempts=0,lockoutUntil=0,lockTimer=null;
-const MAX_ATTEMPTS=5,LOCKOUT_SEC=60;
+const MAX_ATT=5,LOCK_SEC=60;
 async function sha256(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('');}
-(async()=>{ADMIN_HASH=await sha256(_INIT_PW);})();
-function renderAttemptDots(){document.getElementById('pw-attempts').innerHTML=Array.from({length:MAX_ATTEMPTS},(_,i)=>`<div class="attempt-dot${i<loginAttempts?' used':''}"></div>`).join('');}
+function renderAttemptDots(){document.getElementById('pw-attempts').innerHTML=Array.from({length:MAX_ATT},(_,i)=>`<div class="attempt-dot${i<loginAttempts?' used':''}"></div>`).join('');}
 async function checkPw(){
   const inp=document.getElementById('pw-input-field'),msg=document.getElementById('pw-msg');
   if(Date.now()<lockoutUntil)return;
-  const hash=await sha256(inp.value);
-  if(hash===ADMIN_HASH){loginAttempts=0;clearInterval(lockTimer);document.getElementById('pw-modal').classList.remove('open');activateEdit();}
+  if(await sha256(inp.value)===ADMIN_HASH){loginAttempts=0;clearInterval(lockTimer);document.getElementById('pw-modal').classList.remove('open');activateEdit();}
   else{loginAttempts++;inp.classList.add('error');inp.value='';renderAttemptDots();setTimeout(()=>inp.classList.remove('error'),400);
-    if(loginAttempts>=MAX_ATTEMPTS){lockoutUntil=Date.now()+LOCKOUT_SEC*1000;inp.disabled=true;clearInterval(lockTimer);lockTimer=setInterval(()=>{const r=Math.ceil((lockoutUntil-Date.now())/1000);if(r<=0){clearInterval(lockTimer);loginAttempts=0;inp.disabled=false;msg.textContent='';renderAttemptDots();}else msg.textContent=`${r}초 후 재시도 가능합니다.`;},1000);}
-    else msg.textContent=`비밀번호가 올바르지 않습니다. (${loginAttempts}/${MAX_ATTEMPTS})`;}
+    if(loginAttempts>=MAX_ATT){lockoutUntil=Date.now()+LOCK_SEC*1000;inp.disabled=true;clearInterval(lockTimer);lockTimer=setInterval(()=>{const r=Math.ceil((lockoutUntil-Date.now())/1000);if(r<=0){clearInterval(lockTimer);loginAttempts=0;inp.disabled=false;msg.textContent='';renderAttemptDots();}else msg.textContent=`${r}초 후 재시도 가능합니다.`;},1000);}
+    else msg.textContent=`비밀번호가 올바르지 않습니다. (${loginAttempts}/${MAX_ATT})`;}
 }
 function checkPwStrength(pw){const bar=document.getElementById('pw-str-bar'),hint=document.getElementById('pw-str-hint');let s=0,tips=[];if(pw.length>=8)s++;else tips.push('8자 이상');if(/[A-Za-z]/.test(pw))s++;else tips.push('영문');if(/[0-9]/.test(pw))s++;else tips.push('숫자');if(/[^A-Za-z0-9]/.test(pw))s++;bar.style.width=(s*25)+'%';bar.style.background=['#ef4444','#f97316','#eab308','#22c55e'][s-1]||'#e5e7eb';hint.textContent=pw?(tips.length?`부족: ${tips.join(', ')}`:`강도: ${'매우 약함,약함,보통,강함'.split(',')[s-1]||''}`):''}
-async function submitPwChange(){const cur=document.getElementById('pc-cur').value,nw=document.getElementById('pc-new').value,cf=document.getElementById('pc-cf').value,err=document.getElementById('pc-error');err.textContent='';if(await sha256(cur)!==ADMIN_HASH){err.textContent='현재 비밀번호가 올바르지 않습니다.';return;}if(nw.length<8||!/[A-Za-z]/.test(nw)||!/[0-9]/.test(nw)){err.textContent='8자 이상, 영문+숫자를 포함해야 합니다.';return;}if(nw!==cf){err.textContent='새 비밀번호가 일치하지 않습니다.';return;}ADMIN_HASH=await sha256(nw);document.getElementById('pw-change-modal').classList.remove('open');alert('비밀번호가 변경되었습니다.');}
+async function submitPwChange(){const cur=document.getElementById('pc-cur').value,nw=document.getElementById('pc-new').value,cf=document.getElementById('pc-cf').value,err=document.getElementById('pc-error');err.textContent='';if(await sha256(cur)!==ADMIN_HASH){err.textContent='현재 비밀번호가 올바르지 않습니다.';return;}if(nw.length<8||!/[A-Za-z]/.test(nw)||!/[0-9]/.test(nw)){err.textContent='8자 이상, 영문+숫자를 포함해야 합니다.';return;}if(nw!==cf){err.textContent='새 비밀번호가 일치하지 않습니다.';return;}ADMIN_HASH=await sha256(nw);await storeSave('sbcsl-pwhash',ADMIN_HASH);document.getElementById('pw-change-modal').classList.remove('open');alert('비밀번호가 변경되었습니다.');}
 function openPwChange(){['pc-cur','pc-new','pc-cf'].forEach(id=>document.getElementById(id).value='');document.getElementById('pc-error').textContent='';document.getElementById('pw-str-bar').style.width='0';document.getElementById('pw-str-hint').textContent='';document.getElementById('pw-change-modal').classList.add('open');}
 
-/* ── ICON LIBRARY ── */
+/* ══════════════════════════════════════
+   ICON LIBRARY
+══════════════════════════════════════ */
 const ICON_LIB=[
   {name:'globe',path:'<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>'},
   {name:'microscope',path:'<path d="M6 18h8M3 22h18M14 22a7 7 0 000-14h-1"/><rect x="7" y="5" width="6" height="8" rx="1"/><path d="M9 5V3"/>'},
@@ -629,158 +690,36 @@ const ICON_LIB=[
   {name:'star',path:'<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>'},
   {name:'zap',path:'<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>'}
 ];
-const PENCIL_SVG=`<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>`;
+const PENCIL=`<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>`;
 let iconEditTarget=null;
-function iconOverlayHTML(){return`<div class="icon-overlay">${PENCIL_SVG}</div>`;}
-function openIconPicker(type,id,e){if(e)e.stopPropagation();iconEditTarget={type,id};let cur=-1;if(type==='research'){const r=research.find(x=>x.id===id);if(r)cur=r.icon;}else if(type==='about'){const av=aboutValues.find(x=>x.id===id);if(av)cur=av.icon;}const grid=document.getElementById('icon-picker-grid');grid.innerHTML='';ICON_LIB.forEach((ic,idx)=>{const btn=document.createElement('button');btn.className='icon-pick-btn'+(cur===idx?' selected':'');btn.title=ic.name;btn.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${ic.path}</svg>`;btn.onclick=()=>selectIcon(idx);grid.appendChild(btn);});document.getElementById('icon-picker-modal').classList.add('open');}
-function selectIcon(idx){if(!iconEditTarget)return;if(iconEditTarget.type==='research'){const r=research.find(x=>x.id===iconEditTarget.id);if(r)r.icon=idx;renderResearch();}else if(iconEditTarget.type==='about'){const av=aboutValues.find(x=>x.id===iconEditTarget.id);if(av)av.icon=idx;renderAboutValues();}document.getElementById('icon-picker-modal').classList.remove('open');}
+function iconOverlay(){return`<div class="icon-overlay">${PENCIL}</div>`;}
+function openIconPicker(type,id,e){if(e)e.stopPropagation();iconEditTarget={type,id};let cur=-1;if(type==='research'){const r=research.find(x=>x.id===id);if(r)cur=r.icon;}else if(type==='about'){const av=aboutValues.find(x=>x.id===id);if(av)cur=av.icon;}const g=document.getElementById('icon-picker-grid');g.innerHTML='';ICON_LIB.forEach((ic,idx)=>{const b=document.createElement('button');b.className='icon-pick-btn'+(cur===idx?' selected':'');b.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${ic.path}</svg>`;b.onclick=()=>{if(iconEditTarget.type==='research'){const r=research.find(x=>x.id===iconEditTarget.id);if(r)r.icon=idx;renderResearch();}else if(iconEditTarget.type==='about'){const av=aboutValues.find(x=>x.id===iconEditTarget.id);if(av)av.icon=idx;renderAboutValues();}document.getElementById('icon-picker-modal').classList.remove('open');scheduleSave();};g.appendChild(b);});document.getElementById('icon-picker-modal').classList.add('open');}
 
-/* ── PLATFORMS ── */
+/* ══════════════════════════════════════
+   PLATFORMS
+══════════════════════════════════════ */
 const PLATFORMS=[
-  {key:'scholar',    label:'Google Scholar', color:'#4285f4', type:'text', icon:'GS'},
-  {key:'github',     label:'GitHub',         color:'#24292e', type:'svg',  svg:'<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>'},
-  {key:'researchgate',label:'ResearchGate', color:'#00d0af', type:'text', icon:'RG'},
-  {key:'linkedin',   label:'LinkedIn',       color:'#0077b5', type:'svg',  svg:'<path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/>'},
-  {key:'orcid',      label:'ORCID',          color:'#a6ce39', type:'text', icon:'iD', tc:'#1a1a1a'},
-  {key:'twitter',    label:'X (Twitter)',    color:'#1a1a1a', type:'svg',  svg:'<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>'},
-  {key:'youtube',    label:'YouTube',        color:'#ff0000', type:'svg',  svg:'<rect x="2" y="7" width="20" height="15" rx="2"/><polygon points="10 11 16 14.5 10 18" fill="#fff" stroke="none"/>'},
-  {key:'pubmed',     label:'PubMed',         color:'#326699', type:'text', icon:'PM'},
-  {key:'website',    label:'웹사이트',       color:'#6366f1', type:'svg',  svg:'<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>'},
-  {key:'email',      label:'이메일',         color:'#ea4335', type:'svg',  svg:'<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>'}
+  {key:'scholar',label:'Google Scholar',color:'#4285f4',type:'text',icon:'GS'},
+  {key:'github',label:'GitHub',color:'#24292e',type:'svg',svg:'<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>'},
+  {key:'researchgate',label:'ResearchGate',color:'#00d0af',type:'text',icon:'RG'},
+  {key:'linkedin',label:'LinkedIn',color:'#0077b5',type:'svg',svg:'<path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/>'},
+  {key:'orcid',label:'ORCID',color:'#a6ce39',type:'text',icon:'iD',tc:'#1a1a1a'},
+  {key:'twitter',label:'X (Twitter)',color:'#1a1a1a',type:'svg',svg:'<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>'},
+  {key:'youtube',label:'YouTube',color:'#ff0000',type:'svg',svg:'<rect x="2" y="7" width="20" height="15" rx="2"/><polygon points="10 11 16 14.5 10 18" fill="#fff" stroke="none"/>'},
+  {key:'pubmed',label:'PubMed',color:'#326699',type:'text',icon:'PM'},
+  {key:'website',label:'웹사이트',color:'#6366f1',type:'svg',svg:'<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>'},
+  {key:'email',label:'이메일',color:'#ea4335',type:'svg',svg:'<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>'}
 ];
+function platIconHTML(p,size='big'){const s=size==='big'?22:16,cls=size==='big'?'ext-link-icon':'plat-ico';const inner=p.type==='text'?`<span style="color:${p.tc||'#fff'}">${p.icon}</span>`:`<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="${s}" height="${s}">${p.svg}</svg>`;return`<div class="${cls}" style="background:${p.color}">${inner}</div>`;}
 
-function platIconHTML(p, size='big') {
-  const s = size==='big'?22:16, cls = size==='big'?'ext-link-icon':'plat-ico';
-  const inner = p.type==='text'
-    ? `<span style="color:${p.tc||'#fff'}">${p.icon}</span>`
-    : `<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="${s}" height="${s}">${p.svg}</svg>`;
-  return `<div class="${cls}" style="background:${p.color}">${inner}</div>`;
-}
-
-/* EXTERNAL LINKS DATA */
-let externalLinks=[];
-let addLinkSelKey=null, editLinkId=null;
-
-function renderExtLinks(){
-  const row=document.getElementById('ext-links-row');
-  const sec=document.getElementById('ext-links-section');
-  row.innerHTML='';
-  const show=editMode?externalLinks:externalLinks.filter(l=>l.url);
-  if(!editMode&&!show.length){sec.style.display='none';return;}
-  sec.style.display='block';
-  show.forEach(l=>{
-    const p=PLATFORMS.find(x=>x.key===l.platform)||PLATFORMS[PLATFORMS.length-1];
-    const wrap=document.createElement('div');
-    wrap.className='ext-link-wrap';
-    const iconEl=platIconHTML(p,'big');
-    const nameEl=`<span class="ext-link-name">${p.label}</span>`;
-    const delEl=editMode?`<button class="ext-del-btn" onclick="delExtLink('${l.id}')">✕</button>`:'';
-    if(l.url&&!editMode){
-      wrap.innerHTML=`<a href="${l.url}" target="_blank" rel="noopener noreferrer" style="display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">${iconEl}${nameEl}</a>${delEl}`;
-    } else {
-      const noUrl=!l.url?` no-url`:'';
-      const icoHtml=p.type==='text'
-        ?`<div class="ext-link-icon${noUrl}" style="background:${p.color}"><span style="color:${p.tc||'#fff'}">${p.icon}</span></div>`
-        :`<div class="ext-link-icon${noUrl}" style="background:${p.color}"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="22" height="22">${p.svg}</svg></div>`;
-      wrap.innerHTML=`${icoHtml}${nameEl}${delEl}`;
-      if(editMode){
-        wrap.querySelector('.ext-link-icon').onclick=()=>openEditLinkUrl(l.id);
-        if(!l.url){
-          const tip=document.createElement('div');
-          tip.style.cssText='position:absolute;top:58px;font-size:9px;color:#64748b;white-space:nowrap;background:rgba(15,44,92,0.7);padding:2px 6px;border-radius:4px;pointer-events:none';
-          tip.textContent='URL 없음';
-          wrap.appendChild(tip);
-        }
-      }
-    }
-    wrap.style.position='relative';
-    row.appendChild(wrap);
-  });
-  if(editMode){
-    const addBtn=document.createElement('button');
-    addBtn.className='add-ext-btn';
-    addBtn.innerHTML=`<div class="add-ext-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><span class="add-ext-label">추가</span>`;
-    addBtn.onclick=openAddLink;
-    row.appendChild(addBtn);
-  }
-}
-
-function openAddLink(){
-  addLinkSelKey=null;
-  document.getElementById('al-url').value='';
-  document.getElementById('al-url-section').style.display='none';
-  const grid=document.getElementById('add-link-plat-grid');
-  grid.innerHTML='';
-  PLATFORMS.forEach(p=>{
-    const btn=document.createElement('button');
-    btn.className='plat-btn';
-    btn.innerHTML=`${platIconHTML(p,'sm')}<span class="plat-lbl">${p.label}</span>`;
-    btn.onclick=()=>{
-      grid.querySelectorAll('.plat-btn').forEach(b=>b.classList.remove('sel'));
-      btn.classList.add('sel');
-      addLinkSelKey=p.key;
-      document.getElementById('al-url-label').textContent=`${p.label} URL`;
-      document.getElementById('al-url').placeholder=p.key==='email'?'mailto:your@email.com':'https://';
-      document.getElementById('al-url-section').style.display='block';
-      setTimeout(()=>document.getElementById('al-url').focus(),50);
-    };
-    grid.appendChild(btn);
-  });
-  document.getElementById('add-link-modal').classList.add('open');
-}
-
-function submitAddLink(){
-  if(!addLinkSelKey){alert('플랫폼을 선택해 주세요.');return;}
-  const url=document.getElementById('al-url').value.trim();
-  if(!url){alert('URL을 입력해 주세요.');return;}
-  externalLinks.push({id:'el'+(++idCnt),platform:addLinkSelKey,url});
-  renderExtLinks();
-  document.getElementById('add-link-modal').classList.remove('open');
-}
-
-function openEditLinkUrl(id){
-  editLinkId=id;
-  const l=externalLinks.find(x=>x.id===id);
-  const p=PLATFORMS.find(x=>x.key===l?.platform);
-  document.getElementById('el-url').value=l?l.url:'';
-  document.getElementById('el-url-label').textContent=p?`${p.label} URL`:'URL';
-  document.getElementById('edit-link-modal').classList.add('open');
-  setTimeout(()=>document.getElementById('el-url').focus(),50);
-}
-
-function saveEditLinkUrl(){
-  const l=externalLinks.find(x=>x.id===editLinkId);
-  if(l)l.url=document.getElementById('el-url').value.trim();
-  renderExtLinks();
-  document.getElementById('edit-link-modal').classList.remove('open');
-}
-
-function delExtLink(id){externalLinks=externalLinks.filter(l=>l.id!==id);renderExtLinks();}
-
-/* ── DATA ── */
+/* ══════════════════════════════════════
+   DATA (defaults — overwritten by storage)
+══════════════════════════════════════ */
 let aboutValues=[
   {id:'av1',title:'다학제 융합 연구',desc:'생물학·컴퓨터과학·통계학의 경계를 넘나드는 연구',icon:19},
   {id:'av2',title:'데이터 중심 접근',desc:'대규모 생물학적 데이터 기반 인사이트 도출',icon:8},
   {id:'av3',title:'협력 연구 문화',desc:'국내외 기관과의 활발한 공동 연구 네트워크',icon:18}
 ];
-function syncAV(id,f,v){const av=aboutValues.find(x=>x.id===id);if(av)av[f]=v;}
-function renderAboutValues(){
-  const c=document.getElementById('about-values-container');c.innerHTML='';
-  aboutValues.forEach(av=>{
-    const div=document.createElement('div');div.className='value-item';
-    div.innerHTML=`
-      <div class="value-icon"${editMode?` onclick="openIconPicker('about','${av.id}',event)" title="클릭하여 아이콘 변경"`:''}> 
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">${ICON_LIB[av.icon%ICON_LIB.length].path}</svg>
-        ${editMode?iconOverlayHTML():''}
-      </div>
-      <div>
-        <div class="value-title"${editMode?' contenteditable="true" data-edit':''} onblur="syncAV('${av.id}','title',this.textContent)">${av.title}</div>
-        <div class="value-desc"${editMode?' contenteditable="true" data-edit':''} onblur="syncAV('${av.id}','desc',this.textContent)">${av.desc}</div>
-      </div>`;
-    c.appendChild(div);
-  });
-}
-
 let research=[
   {id:'r1',title:'시스템 생물학',desc:'유전자 조절 네트워크와 신호 전달 경로를 수학적 모델로 분석하고 생명 시스템의 전체적인 동작 원리를 연구합니다.',icon:0},
   {id:'r2',title:'머신러닝 & AI',desc:'딥러닝 및 그래프 신경망을 활용하여 단백질 구조 예측, 약물 표적 발굴 등 생물정보학 문제를 해결합니다.',icon:14},
@@ -789,28 +728,17 @@ let research=[
   {id:'r5',title:'단일세포 분석',desc:'단일세포 RNA-seq 데이터의 차원 축소, 클러스터링, 궤적 분석을 통해 세포 다양성과 발달 과정을 연구합니다.',icon:1},
   {id:'r6',title:'네트워크 의학',desc:'질병 네트워크와 인터랙톰 분석을 통해 복잡한 질환의 분자적 기반을 이해하고 새로운 치료 타겟을 제안합니다.',icon:10}
 ];
-function syncR(id,f,v){const r=research.find(x=>x.id===id);if(r)r[f]=v;}
-function renderResearch(){
-  const g=document.getElementById('research-grid');g.innerHTML='';
-  research.forEach(r=>{
-    const d=document.createElement('div');d.className='research-card fade-in visible';
-    d.innerHTML=`${editMode?`<div class="drag-handle">⠿</div>`:''}${editMode?`<button class="item-del" onclick="delResearch('${r.id}')">✕</button>`:''}
-      <div class="r-icon"${editMode?` onclick="openIconPicker('research','${r.id}',event)" title="클릭하여 아이콘 변경"`:''}> 
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${ICON_LIB[r.icon%ICON_LIB.length].path}</svg>
-        ${editMode?iconOverlayHTML():''}
-      </div>
-      <div class="r-title"${editMode?' contenteditable="true" data-edit':''} onblur="syncR('${r.id}','title',this.textContent)">${r.title}</div>
-      <div class="r-desc"${editMode?' contenteditable="true" data-edit':''} onblur="syncR('${r.id}','desc',this.textContent)">${r.desc}</div>`;
-    if(editMode)addDragEvents(d,r.id,'research',(si,ti)=>{const a=research.findIndex(x=>x.id===si),b=research.findIndex(x=>x.id===ti);const[it]=research.splice(a,1);research.splice(b,0,it);renderResearch();});
-    g.appendChild(d);
-  });
-  document.getElementById('research-add-row').style.display=editMode?'block':'none';
-}
-function delResearch(id){research=research.filter(r=>r.id!==id);renderResearch();}
-function openAddResearch(){document.getElementById('ar-title').value='';document.getElementById('ar-desc').value='';document.getElementById('add-research-modal').classList.add('open');}
-function submitAddResearch(){const t=document.getElementById('ar-title').value.trim();if(!t){alert('분야명을 입력해 주세요.');return;}research.push({id:'r'+(++idCnt),title:t,desc:document.getElementById('ar-desc').value.trim()||'설명을 입력해 주세요.',icon:idCnt%ICON_LIB.length});renderResearch();document.getElementById('add-research-modal').classList.remove('open');}
-
-const GRP_COLOR={pi:'#0f2c5c',phd:'#2563eb',ms:'#374151'},GRP_LABEL={pi:'지도교수',phd:'박사과정',ms:'석사과정'};
+let patents=[
+  {id:'pt1',status:'registered',title:'유전자 발현 데이터 기반 암 진단 방법 및 장치',num:'10-2456789',inventor:'김OO, 이OO',year:'2023'},
+  {id:'pt2',status:'applied',title:'그래프 신경망을 이용한 약물-표적 상호작용 예측 시스템',num:'10-2024-0123456',inventor:'박OO, 김OO',year:'2024'},
+  {id:'pt3',status:'intl',title:'Single-Cell Omics Data Integration Method Using Contrastive Learning',num:'PCT/KR2023/012345',inventor:'이OO, 최OO, 김OO',year:'2023'}
+];
+let projects=[
+  {id:'pj1',status:'ongoing',title:'대규모 멀티오믹스 데이터 기반 복합질환 네트워크 분석 연구',agency:'과학기술정보통신부 / NRF',period:'2023.03 – 2026.02',role:'책임연구원: 김OO'},
+  {id:'pj2',status:'ongoing',title:'AI 기반 신약 후보물질 발굴 플랫폼 개발',agency:'산업통상자원부',period:'2022.06 – 2025.05',role:'공동연구원'},
+  {id:'pj3',status:'done',title:'단일세포 전사체 분석을 통한 면역세포 분화 경로 규명',agency:'한국연구재단 (NRF)',period:'2020.03 – 2023.02',role:'책임연구원: 김OO'},
+  {id:'pj4',status:'done',title:'딥러닝 기반 유전체 변이 분석 알고리즘 개발',agency:'정보통신기획평가원 (IITP)',period:'2019.01 – 2021.12',role:'공동연구원'}
+];
 let members=[
   {id:'mb1',group:'pi',name:'김OO 교수',role:'Principal Investigator'},
   {id:'mb2',group:'phd',name:'이OO',role:'PhD Candidate · 4년차'},{id:'mb3',group:'phd',name:'박OO',role:'PhD Candidate · 3년차'},
@@ -818,7 +746,120 @@ let members=[
   {id:'mb6',group:'ms',name:'윤OO',role:'MS Student · 2년차'},{id:'mb7',group:'ms',name:'강OO',role:'MS Student · 2년차'},
   {id:'mb8',group:'ms',name:'조OO',role:'MS Student · 1년차'},{id:'mb9',group:'ms',name:'한OO',role:'MS Student · 1년차'}
 ];
-function syncM(id,f,v){const m=members.find(x=>x.id===id);if(m)m[f]=v;}
+let pubs={
+  main:[
+    {id:'m1',year:'2024',title:'Graph Neural Network-Based Drug-Target Interaction Prediction with Multi-Omics Integration',journal:'Nature Methods',authors:'Kim J., Lee S., Park H. et al.',link:''},
+    {id:'m2',year:'2024',title:'Single-Cell Trajectory Analysis Reveals Developmental Bifurcation in Neural Progenitor Cells',journal:'Cell Systems',authors:'Park H., Choi Y., Kim J. et al.',link:''},
+    {id:'m3',year:'2023',title:'Regulatory Network Rewiring During Cancer Progression: A Computational Perspective',journal:'Genome Biology',authors:'Lee S., Yoon K., Park H. et al.',link:''},
+    {id:'m4',year:'2023',title:'Deep Learning Framework for Genome-Wide Association Study with Epistatic Interactions',journal:'Bioinformatics',authors:'Choi Y., Kim J., Lee S. et al.',link:''}
+  ],
+  sci:[
+    {id:'s1',year:'2024',title:'Graph Neural Network-Based Drug-Target Interaction Prediction',journal:'Nature Methods',authors:'Kim J. et al.',link:''},
+    {id:'s2',year:'2024',title:'Single-Cell Trajectory Analysis Reveals Developmental Bifurcation',journal:'Cell Systems',authors:'Park H. et al.',link:''},
+    {id:'s3',year:'2023',title:'Regulatory Network Rewiring During Cancer Progression',journal:'Genome Biology',authors:'Lee S. et al.',link:''},
+    {id:'s4',year:'2022',title:'Multi-scale Network Analysis of Metabolic Pathways',journal:'PLOS Computational Biology',authors:'Kim J. et al.',link:''}
+  ],
+  domestic:[
+    {id:'d1',year:'2024',title:'암 유전체 변이 패턴 분석을 위한 딥러닝 모델 개발',journal:'한국정보과학회논문지',authors:'이OO, 박OO, 김OO',link:''},
+    {id:'d2',year:'2023',title:'단일세포 전사체 데이터의 효율적 클러스터링 알고리즘',journal:'한국생물정보학회지',authors:'박OO, 최OO, 김OO',link:''}
+  ],
+  conference:[
+    {id:'c1',year:'2024',title:'Scalable Graph Learning for Protein Interaction Networks',journal:'ISMB 2024',authors:'Kim J., Lee S.',link:''},
+    {id:'c2',year:'2024',title:'Attention-based Multi-omics Integration for Drug Sensitivity Prediction',journal:'RECOMB 2024',authors:'Park H., Choi Y.',link:''}
+  ]
+};
+let externalLinks=[];
+let bgImages={};
+let idCnt=500;
+
+/* ══════════════════════════════════════
+   RENDER FUNCTIONS
+══════════════════════════════════════ */
+function syncAV(id,f,v){const av=aboutValues.find(x=>x.id===id);if(av){av[f]=v;scheduleSave();}}
+function renderAboutValues(){
+  const c=document.getElementById('about-values-container');c.innerHTML='';
+  aboutValues.forEach(av=>{
+    const div=document.createElement('div');div.className='value-item';
+    div.innerHTML=`<div class="value-icon"${editMode?` onclick="openIconPicker('about','${av.id}',event)" title="클릭하여 아이콘 변경"`:''}>
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">${ICON_LIB[av.icon%ICON_LIB.length].path}</svg>
+      ${editMode?iconOverlay():''}</div>
+      <div><div class="value-title"${editMode?' contenteditable="true" data-edit':''} onblur="syncAV('${av.id}','title',this.textContent)">${av.title}</div>
+      <div class="value-desc"${editMode?' contenteditable="true" data-edit':''} onblur="syncAV('${av.id}','desc',this.textContent)">${av.desc}</div></div>`;
+    c.appendChild(div);
+  });
+}
+
+function syncR(id,f,v){const r=research.find(x=>x.id===id);if(r){r[f]=v;scheduleSave();}}
+function renderResearch(){
+  const g=document.getElementById('research-grid');g.innerHTML='';
+  research.forEach(r=>{
+    const d=document.createElement('div');d.className='research-card fade-in visible';
+    d.innerHTML=`${editMode?`<div class="drag-handle">⠿</div>`:''} ${editMode?`<button class="item-del" onclick="delResearch('${r.id}')">✕</button>`:''}
+      <div class="r-icon"${editMode?` onclick="openIconPicker('research','${r.id}',event)" title="클릭하여 아이콘 변경"`:''}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${ICON_LIB[r.icon%ICON_LIB.length].path}</svg>
+        ${editMode?iconOverlay():''}</div>
+      <div class="r-title"${editMode?' contenteditable="true" data-edit':''} onblur="syncR('${r.id}','title',this.textContent)">${r.title}</div>
+      <div class="r-desc"${editMode?' contenteditable="true" data-edit':''} onblur="syncR('${r.id}','desc',this.textContent)">${r.desc}</div>`;
+    if(editMode)addDrag(d,r.id,'research',(si,ti)=>{const a=research.findIndex(x=>x.id===si),b=research.findIndex(x=>x.id===ti);const[it]=research.splice(a,1);research.splice(b,0,it);renderResearch();scheduleSave();});
+    g.appendChild(d);
+  });
+  document.getElementById('research-add-row').style.display=editMode?'block':'none';
+}
+function delResearch(id){research=research.filter(r=>r.id!==id);renderResearch();scheduleSave();}
+function openAddResearch(){document.getElementById('ar-title').value='';document.getElementById('ar-desc').value='';document.getElementById('add-research-modal').classList.add('open');}
+function submitAddResearch(){const t=document.getElementById('ar-title').value.trim();if(!t){alert('분야명을 입력해 주세요.');return;}research.push({id:'r'+(++idCnt),title:t,desc:document.getElementById('ar-desc').value.trim()||'설명을 입력해 주세요.',icon:idCnt%ICON_LIB.length});renderResearch();document.getElementById('add-research-modal').classList.remove('open');scheduleSave();}
+
+/* PATENTS */
+const PATENT_LABELS={registered:{cls:'registered',txt:'등록'},applied:{cls:'applied',txt:'출원'},intl:{cls:'intl',txt:'국제출원(PCT)'}};
+function renderPatents(){
+  const c=document.getElementById('patent-list');c.innerHTML='';
+  if(!patents.length&&!editMode){c.innerHTML='<p style="color:var(--muted);font-size:14px;padding:8px 0">등록된 특허가 없습니다.</p>';return;}
+  patents.forEach(p=>{
+    const st=PATENT_LABELS[p.status]||PATENT_LABELS.applied;
+    const d=document.createElement('div');d.className='patent-item';
+    d.innerHTML=`${editMode?`<button class="item-del" onclick="delPatent('${p.id}')">✕</button>`:''}
+      <span class="patent-badge ${st.cls}">${st.txt}</span>
+      <div style="flex:1">
+        <div class="patent-title"${editMode?' contenteditable="true" data-edit':''} onblur="syncPatent('${p.id}','title',this.textContent)">${p.title}</div>
+        <div class="patent-meta">${p.num} &nbsp;·&nbsp; 발명자: ${p.inventor} &nbsp;·&nbsp; ${p.year}</div>
+      </div>`;
+    c.appendChild(d);
+  });
+  document.getElementById('patent-add-row').style.display=editMode?'block':'none';
+}
+function syncPatent(id,f,v){const p=patents.find(x=>x.id===id);if(p){p[f]=v;scheduleSave();}}
+function delPatent(id){patents=patents.filter(p=>p.id!==id);renderPatents();scheduleSave();}
+function openAddPatent(){['ap-title','ap-num','ap-inventor','ap-year'].forEach(i=>document.getElementById(i).value='');document.getElementById('ap-status').value='registered';document.getElementById('add-patent-modal').classList.add('open');}
+function submitAddPatent(){const t=document.getElementById('ap-title').value.trim();if(!t){alert('특허명을 입력해 주세요.');return;}patents.push({id:'pt'+(++idCnt),status:document.getElementById('ap-status').value,title:t,num:document.getElementById('ap-num').value.trim(),inventor:document.getElementById('ap-inventor').value.trim(),year:document.getElementById('ap-year').value.trim()||new Date().getFullYear()+''});renderPatents();document.getElementById('add-patent-modal').classList.remove('open');scheduleSave();}
+
+/* PROJECTS */
+let currentProjTab='ongoing';
+function switchProjTab(tab){currentProjTab=tab;document.querySelectorAll('.proj-tab').forEach(t=>t.classList.toggle('active',t.dataset.ptab===tab));renderProjects();}
+function renderProjects(){
+  const c=document.getElementById('proj-list');c.innerHTML='';
+  const list=projects.filter(p=>p.status===currentProjTab);
+  if(!list.length&&!editMode){c.innerHTML='<p style="color:var(--muted);font-size:14px;padding:8px 0">등록된 과제가 없습니다.</p>';return;}
+  list.forEach(p=>{
+    const d=document.createElement('div');d.className='proj-item';
+    const badge=p.status==='ongoing'?'<span class="proj-badge ongoing">수행 중</span>':'<span class="proj-badge done">완료</span>';
+    d.innerHTML=`${editMode?`<button class="item-del" onclick="delProject('${p.id}')">✕</button>`:''}
+      ${badge}
+      <div style="flex:1">
+        <div class="proj-title"${editMode?' contenteditable="true" data-edit':''} onblur="syncProject('${p.id}','title',this.textContent)">${p.title}</div>
+        <div class="proj-meta"><span class="proj-period">${p.period}</span>${p.agency} &nbsp;·&nbsp; ${p.role}</div>
+      </div>`;
+    c.appendChild(d);
+  });
+  document.getElementById('proj-add-row').style.display=editMode?'block':'none';
+}
+function syncProject(id,f,v){const p=projects.find(x=>x.id===id);if(p){p[f]=v;scheduleSave();}}
+function delProject(id){projects=projects.filter(p=>p.id!==id);renderProjects();scheduleSave();}
+function openAddProject(){['aproj-title','aproj-agency','aproj-period','aproj-role'].forEach(i=>document.getElementById(i).value='');document.getElementById('aproj-status').value='ongoing';document.getElementById('add-project-modal').classList.add('open');}
+function submitAddProject(){const t=document.getElementById('aproj-title').value.trim();if(!t){alert('과제명을 입력해 주세요.');return;}const p={id:'pj'+(++idCnt),status:document.getElementById('aproj-status').value,title:t,agency:document.getElementById('aproj-agency').value.trim(),period:document.getElementById('aproj-period').value.trim(),role:document.getElementById('aproj-role').value.trim()};projects.push(p);renderProjects();document.getElementById('add-project-modal').classList.remove('open');scheduleSave();}
+
+/* MEMBERS */
+const GRP_COLOR={pi:'#0f2c5c',phd:'#2563eb',ms:'#374151'},GRP_LABEL={pi:'지도교수',phd:'박사과정',ms:'석사과정'};
+function syncM(id,f,v){const m=members.find(x=>x.id===id);if(m){m[f]=v;scheduleSave();}}
 function renderMembers(){
   const c=document.getElementById('members-container');c.innerHTML='';
   ['pi','phd','ms'].forEach(g=>{
@@ -828,23 +869,24 @@ function renderMembers(){
     const grid=document.createElement('div');grid.className='members-grid';
     list.forEach(m=>{
       const card=document.createElement('div');card.className='member-card fade-in visible';
-      card.innerHTML=`${editMode?`<div class="drag-handle">⠿</div>`:''}${editMode?`<button class="item-del" onclick="delMember('${m.id}')">✕</button>`:''}
+      card.innerHTML=`${editMode?`<div class="drag-handle">⠿</div>`:''} ${editMode?`<button class="item-del" onclick="delMember('${m.id}')">✕</button>`:''}
         <div class="avatar" style="background:${GRP_COLOR[m.group]}">${m.name.charAt(0)}</div>
         <div class="member-name"${editMode?' contenteditable="true" data-edit':''} onblur="syncM('${m.id}','name',this.textContent)">${m.name}</div>
         <div class="member-role"${editMode?' contenteditable="true" data-edit':''} onblur="syncM('${m.id}','role',this.textContent)">${m.role}</div>`;
-      if(editMode)addDragEvents(card,m.id,'member',(si,ti)=>{const src=members.find(x=>x.id===si),tgt=members.find(x=>x.id===ti);if(!src||!tgt||src.group!==tgt.group)return;const a=members.indexOf(src),b=members.indexOf(tgt);const[it]=members.splice(a,1);members.splice(b,0,it);renderMembers();});
+      if(editMode)addDrag(card,m.id,'member',(si,ti)=>{const src=members.find(x=>x.id===si),tgt=members.find(x=>x.id===ti);if(!src||!tgt||src.group!==tgt.group)return;const a=members.indexOf(src),b=members.indexOf(tgt);const[it]=members.splice(a,1);members.splice(b,0,it);renderMembers();scheduleSave();});
       grid.appendChild(card);
     });
     sec.appendChild(grid);c.appendChild(sec);
   });
   document.getElementById('members-add-row').style.display=editMode?'block':'none';
 }
-function delMember(id){members=members.filter(m=>m.id!==id);renderMembers();}
+function delMember(id){members=members.filter(m=>m.id!==id);renderMembers();scheduleSave();}
 function openAddMember(){document.getElementById('am-name').value='';document.getElementById('am-role').value='';document.getElementById('am-group').value='phd';document.getElementById('add-member-modal').classList.add('open');}
-function submitAddMember(){const name=document.getElementById('am-name').value.trim();if(!name){alert('이름을 입력해 주세요.');return;}members.push({id:'mb'+(++idCnt),group:document.getElementById('am-group').value,name,role:document.getElementById('am-role').value.trim()||'연구원'});renderMembers();document.getElementById('add-member-modal').classList.remove('open');}
+function submitAddMember(){const name=document.getElementById('am-name').value.trim();if(!name){alert('이름을 입력해 주세요.');return;}members.push({id:'mb'+(++idCnt),group:document.getElementById('am-group').value,name,role:document.getElementById('am-role').value.trim()||'연구원'});renderMembers();document.getElementById('add-member-modal').classList.remove('open');scheduleSave();}
 
+/* DRAG */
 let dragSrc=null;
-function addDragEvents(el,id,type,fn){
+function addDrag(el,id,type,fn){
   el.draggable=true;
   el.addEventListener('dragstart',e=>{dragSrc={id,type};el.classList.add('dragging');e.dataTransfer.effectAllowed='move';});
   el.addEventListener('dragend',()=>{el.classList.remove('dragging');document.querySelectorAll('.drag-over').forEach(x=>x.classList.remove('drag-over'));});
@@ -853,42 +895,14 @@ function addDragEvents(el,id,type,fn){
   el.addEventListener('drop',e=>{e.preventDefault();el.classList.remove('drag-over');if(!dragSrc||dragSrc.id===id||dragSrc.type!==type)return;fn(dragSrc.id,id);dragSrc=null;});
 }
 
-let pubs={
-  main:[
-    {id:'m1',year:'2024',title:'Graph Neural Network-Based Drug-Target Interaction Prediction with Multi-Omics Integration',journal:'Nature Methods',authors:'Kim J., Lee S., Park H. et al.',link:''},
-    {id:'m2',year:'2024',title:'Single-Cell Trajectory Analysis Reveals Developmental Bifurcation in Neural Progenitor Cells',journal:'Cell Systems',authors:'Park H., Choi Y., Kim J. et al.',link:''},
-    {id:'m3',year:'2023',title:'Regulatory Network Rewiring During Cancer Progression: A Computational Perspective',journal:'Genome Biology',authors:'Lee S., Yoon K., Park H. et al.',link:''},
-    {id:'m4',year:'2023',title:'Deep Learning Framework for Genome-Wide Association Study with Epistatic Interactions',journal:'Bioinformatics',authors:'Choi Y., Kim J., Lee S. et al.',link:''}
-  ],
-  sci:[
-    {id:'s1',year:'2024',title:'Graph Neural Network-Based Drug-Target Interaction Prediction with Multi-Omics Integration',journal:'Nature Methods',authors:'Kim J., Lee S., Park H. et al.',link:''},
-    {id:'s2',year:'2024',title:'Single-Cell Trajectory Analysis Reveals Developmental Bifurcation in Neural Progenitor Cells',journal:'Cell Systems',authors:'Park H., Choi Y., Kim J. et al.',link:''},
-    {id:'s3',year:'2023',title:'Regulatory Network Rewiring During Cancer Progression: A Computational Perspective',journal:'Genome Biology',authors:'Lee S., Yoon K., Park H. et al.',link:''},
-    {id:'s4',year:'2023',title:'Deep Learning Framework for Genome-Wide Association Study with Epistatic Interactions',journal:'Bioinformatics',authors:'Choi Y., Kim J., Lee S. et al.',link:''},
-    {id:'s5',year:'2022',title:'Multi-scale Network Analysis of Metabolic Pathways in Disease Progression',journal:'PLOS Computational Biology',authors:'Kim J., Park H. et al.',link:''},
-    {id:'s6',year:'2021',title:'Integrative Analysis of Single-cell Multi-omics Data Using Graph Autoencoders',journal:'Nature Communications',authors:'Lee S., Kim J. et al.',link:''}
-  ],
-  domestic:[
-    {id:'d1',year:'2024',title:'암 유전체 변이 패턴 분석을 위한 딥러닝 모델 개발',journal:'한국정보과학회논문지',authors:'이OO, 박OO, 김OO',link:''},
-    {id:'d2',year:'2023',title:'단일세포 전사체 데이터의 효율적 클러스터링 알고리즘',journal:'한국생물정보학회지',authors:'박OO, 최OO, 김OO',link:''},
-    {id:'d3',year:'2022',title:'유전자 네트워크 기반 질병 예측 모델의 임상 적용 연구',journal:'정보과학회논문지',authors:'정OO, 김OO',link:''},
-    {id:'d4',year:'2021',title:'멀티오믹스 데이터 통합 분석을 통한 암 서브타입 분류',journal:'한국컴퓨터종합학술대회',authors:'윤OO, 강OO, 김OO',link:''}
-  ],
-  conference:[
-    {id:'c1',year:'2024',title:'Scalable Graph Learning for Protein Interaction Networks',journal:'ISMB 2024',authors:'Kim J., Lee S.',link:''},
-    {id:'c2',year:'2024',title:'Attention-based Multi-omics Integration for Drug Sensitivity Prediction',journal:'RECOMB 2024',authors:'Park H., Choi Y.',link:''},
-    {id:'c3',year:'2023',title:'Self-supervised Learning for Single-cell RNA-seq Analysis',journal:'NeurIPS Workshop 2023',authors:'Lee S., Yoon K.',link:''},
-    {id:'c4',year:'2023',title:'Graph Transformer for Genome-wide Epistasis Detection',journal:'ECCB 2023',authors:'Choi Y., Kim J.',link:''},
-    {id:'c5',year:'2022',title:'Contrastive Learning on Biological Knowledge Graphs',journal:'ICLR Workshop 2022',authors:'Kim J., Park H.',link:''}
-  ]
-};
-let idCnt=500,addFormTarget='main',currentPubTab='sci',linkTarget={src:null,id:null};
+/* PUBS */
+let addFormTarget='main',currentPubTab='sci',linkTarget={src:null,id:null};
 function mkPubItem(p,src){const d=document.createElement('div');d.className='pub-item';d.innerHTML=`${editMode?`<button class="item-del" onclick="delPub('${src}','${p.id}')">✕</button>`:''}
   <div class="pub-year">${p.year}</div><div style="flex:1">
   <div class="pub-title">${p.title}</div>
   <div class="pub-meta"><span class="pub-tag">${p.journal}</span>${p.authors}</div>
   <div class="pub-actions">
-    ${p.link?`<a href="${p.link}" target="_blank" rel="noopener noreferrer" class="pub-link-btn"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Journal Link</a>`:''}
+    ${p.link?`<a href="${p.link}" target="_blank" rel="noopener" class="pub-link-btn"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Journal Link</a>`:''}
     ${editMode?`<button class="pub-link-edit" onclick="openLinkEdit('${src}','${p.id}')"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>${p.link?'링크 편집':'링크 추가'}</button>`:''}
   </div></div>`;return d;}
 function renderMainPubs(){const c=document.getElementById('main-pub-list');c.innerHTML='';if(!pubs.main.length){c.innerHTML='<p style="color:var(--muted);font-size:14px;padding:8px 0">등록된 논문이 없습니다.</p>';return;}pubs.main.forEach(p=>c.appendChild(mkPubItem(p,'main')));document.getElementById('main-add-row').style.display=editMode?'block':'none';}
@@ -897,41 +911,91 @@ function updateTabCounts(){['sci','domestic','conference'].forEach(t=>{document.
 function openPubModal(){currentPubTab='sci';document.querySelectorAll('.ptab').forEach(t=>t.classList.toggle('active',t.dataset.tab==='sci'));renderModalPubs();document.getElementById('pub-modal').style.display='block';document.body.style.overflow='hidden';}
 function closePubModal(){document.getElementById('pub-modal').style.display='none';document.body.style.overflow='';}
 function switchPubTab(tab){currentPubTab=tab;document.querySelectorAll('.ptab').forEach(t=>t.classList.toggle('active',t.dataset.tab===tab));renderModalPubs();}
-function openAddForm(target){addFormTarget=target;['af-year','af-title-input','af-journal','af-authors'].forEach(id=>document.getElementById(id).value='');document.getElementById('add-pub-title').textContent=target==='main'?'메인 페이지 논문 추가':`논문 추가 (${currentPubTab==='sci'?'SCI':currentPubTab==='domestic'?'국내':'학술대회'})`;document.getElementById('add-pub-modal').classList.add('open');}
+function openAddForm(t){addFormTarget=t;['af-year','af-title-input','af-journal','af-authors'].forEach(id=>document.getElementById(id).value='');document.getElementById('add-pub-title').textContent=t==='main'?'메인 논문 추가':`논문 추가 (${currentPubTab==='sci'?'SCI':currentPubTab==='domestic'?'국내':'학술대회'})`;document.getElementById('add-pub-modal').classList.add('open');}
 function closeAddForm(){document.getElementById('add-pub-modal').classList.remove('open');}
-function submitAddPub(){const title=document.getElementById('af-title-input').value.trim();if(!title){alert('제목을 입력해 주세요.');return;}const p={id:'p'+(++idCnt),year:document.getElementById('af-year').value.trim()||new Date().getFullYear()+'',title,journal:document.getElementById('af-journal').value.trim()||'미정',authors:document.getElementById('af-authors').value.trim(),link:''};pubs[addFormTarget==='main'?'main':currentPubTab].push(p);if(addFormTarget==='main')renderMainPubs();else renderModalPubs();closeAddForm();}
-function delPub(src,id){pubs[src]=pubs[src].filter(p=>p.id!==id);if(src==='main')renderMainPubs();else renderModalPubs();}
+function submitAddPub(){const title=document.getElementById('af-title-input').value.trim();if(!title){alert('제목을 입력해 주세요.');return;}const p={id:'p'+(++idCnt),year:document.getElementById('af-year').value.trim()||new Date().getFullYear()+'',title,journal:document.getElementById('af-journal').value.trim()||'미정',authors:document.getElementById('af-authors').value.trim(),link:''};pubs[addFormTarget==='main'?'main':currentPubTab].push(p);if(addFormTarget==='main')renderMainPubs();else renderModalPubs();closeAddForm();scheduleSave();}
+function delPub(src,id){pubs[src]=pubs[src].filter(p=>p.id!==id);if(src==='main')renderMainPubs();else renderModalPubs();scheduleSave();}
 function openLinkEdit(src,id){linkTarget={src,id};const p=(src==='main'?pubs.main:pubs[src]).find(x=>x.id===id);document.getElementById('le-url').value=p?p.link:'';document.getElementById('link-edit-modal').classList.add('open');}
-function savePubLink(){const p=(linkTarget.src==='main'?pubs.main:pubs[linkTarget.src]).find(x=>x.id===linkTarget.id);if(p)p.link=document.getElementById('le-url').value.trim();if(linkTarget.src==='main')renderMainPubs();else renderModalPubs();document.getElementById('link-edit-modal').classList.remove('open');}
-function removePubLink(){const p=(linkTarget.src==='main'?pubs.main:pubs[linkTarget.src]).find(x=>x.id===linkTarget.id);if(p)p.link='';if(linkTarget.src==='main')renderMainPubs();else renderModalPubs();document.getElementById('link-edit-modal').classList.remove('open');}
+function savePubLink(){const p=(linkTarget.src==='main'?pubs.main:pubs[linkTarget.src]).find(x=>x.id===linkTarget.id);if(p)p.link=document.getElementById('le-url').value.trim();if(linkTarget.src==='main')renderMainPubs();else renderModalPubs();document.getElementById('link-edit-modal').classList.remove('open');scheduleSave();}
+function removePubLink(){const p=(linkTarget.src==='main'?pubs.main:pubs[linkTarget.src]).find(x=>x.id===linkTarget.id);if(p)p.link='';if(linkTarget.src==='main')renderMainPubs();else renderModalPubs();document.getElementById('link-edit-modal').classList.remove('open');scheduleSave();}
 
-/* ── EDIT MODE ── */
-let editMode=false;
-function toggleEdit(){if(editMode){deactivateEdit();return;}renderAttemptDots();const inp=document.getElementById('pw-input-field');inp.value='';document.getElementById('pw-msg').textContent='';inp.disabled=Date.now()<lockoutUntil;inp.classList.remove('error');document.getElementById('pw-modal').classList.add('open');setTimeout(()=>{if(!inp.disabled)inp.focus();},100);}
-function activateEdit(){editMode=true;document.body.classList.add('edit-mode');document.getElementById('edit-fab').classList.add('active');document.getElementById('fab-text').textContent='편집 완료';document.getElementById('fab-icon').innerHTML='<path d="M20 6L9 17l-5-5"/>';document.getElementById('pw-fab').style.display='flex';document.querySelectorAll('[data-edit]').forEach(el=>el.contentEditable='true');renderResearch();renderMembers();renderMainPubs();renderAboutValues();renderExtLinks();if(document.getElementById('pub-modal').style.display==='block')renderModalPubs();}
-function deactivateEdit(){editMode=false;document.body.classList.remove('edit-mode');document.getElementById('edit-fab').classList.remove('active');document.getElementById('fab-text').textContent='편집 모드';document.getElementById('fab-icon').innerHTML='<path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>';document.getElementById('pw-fab').style.display='none';document.querySelectorAll('[data-edit]').forEach(el=>{el.contentEditable='false';el.blur();});document.getElementById('main-add-row').style.display='none';renderResearch();renderMembers();renderMainPubs();renderAboutValues();renderExtLinks();if(document.getElementById('pub-modal').style.display==='block')renderModalPubs();}
+/* EXT LINKS */
+let addLinkSelKey=null,editLinkId=null;
+function renderExtLinks(){
+  const row=document.getElementById('ext-links-row'),sec=document.getElementById('ext-links-section');
+  row.innerHTML='';
+  const show=editMode?externalLinks:externalLinks.filter(l=>l.url);
+  if(!editMode&&!show.length){sec.style.display='none';return;}
+  sec.style.display='block';
+  show.forEach(l=>{
+    const p=PLATFORMS.find(x=>x.key===l.platform)||PLATFORMS[PLATFORMS.length-1];
+    const wrap=document.createElement('div');wrap.className='ext-link-wrap';wrap.style.position='relative';
+    const noUrl=!l.url?' no-url':'';
+    const icoHtml=p.type==='text'?`<div class="ext-link-icon${noUrl}" style="background:${p.color}"><span style="color:${p.tc||'#fff'}">${p.icon}</span></div>`:`<div class="ext-link-icon${noUrl}" style="background:${p.color}"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" width="22" height="22">${p.svg}</svg></div>`;
+    const nameHtml=`<span class="ext-link-name">${p.label}</span>`;
+    const delHtml=editMode?`<button class="ext-del-btn" onclick="delExtLink('${l.id}')">✕</button>`:'';
+    if(l.url&&!editMode){wrap.innerHTML=`<a href="${l.url}" target="_blank" rel="noopener" style="display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none">${icoHtml}${nameHtml}</a>${delHtml}`;}
+    else{wrap.innerHTML=`${icoHtml}${nameHtml}${delHtml}`;if(editMode)wrap.querySelector('.ext-link-icon').onclick=()=>openEditLinkUrl(l.id);}
+    row.appendChild(wrap);
+  });
+  if(editMode){const ab=document.createElement('button');ab.className='add-ext-btn';ab.innerHTML=`<div class="add-ext-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><span class="add-ext-label">추가</span>`;ab.onclick=openAddLink;row.appendChild(ab);}
+}
+function openAddLink(){addLinkSelKey=null;document.getElementById('al-url').value='';document.getElementById('al-url-section').style.display='none';const g=document.getElementById('add-link-plat-grid');g.innerHTML='';PLATFORMS.forEach(p=>{const b=document.createElement('button');b.className='plat-btn';b.innerHTML=`${platIconHTML(p,'sm')}<span class="plat-lbl">${p.label}</span>`;b.onclick=()=>{g.querySelectorAll('.plat-btn').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');addLinkSelKey=p.key;document.getElementById('al-url-label').textContent=`${p.label} URL`;document.getElementById('al-url').placeholder=p.key==='email'?'mailto:your@email.com':'https://';document.getElementById('al-url-section').style.display='block';setTimeout(()=>document.getElementById('al-url').focus(),50);};g.appendChild(b);});document.getElementById('add-link-modal').classList.add('open');}
+function submitAddLink(){if(!addLinkSelKey){alert('플랫폼을 선택해 주세요.');return;}const url=document.getElementById('al-url').value.trim();if(!url){alert('URL을 입력해 주세요.');return;}externalLinks.push({id:'el'+(++idCnt),platform:addLinkSelKey,url});renderExtLinks();document.getElementById('add-link-modal').classList.remove('open');scheduleSave();}
+function openEditLinkUrl(id){editLinkId=id;const l=externalLinks.find(x=>x.id===id),p=PLATFORMS.find(x=>x.key===l?.platform);document.getElementById('el-url').value=l?l.url:'';document.getElementById('el-url-label').textContent=p?`${p.label} URL`:'URL';document.getElementById('edit-link-modal').classList.add('open');setTimeout(()=>document.getElementById('el-url').focus(),50);}
+function saveEditLinkUrl(){const l=externalLinks.find(x=>x.id===editLinkId);if(l)l.url=document.getElementById('el-url').value.trim();renderExtLinks();document.getElementById('edit-link-modal').classList.remove('open');scheduleSave();}
+function delExtLink(id){externalLinks=externalLinks.filter(l=>l.id!==id);renderExtLinks();scheduleSave();}
 
-/* ── BG IMAGE ── */
+/* BG */
 let targetSection=null,pendingUrl=null;
 function openImgPanel(sec){targetSection=sec;pendingUrl=null;document.getElementById('img-url').value='';document.getElementById('img-preview').style.display='none';document.getElementById('img-panel').classList.add('open');}
 function closePanel(){document.getElementById('img-panel').classList.remove('open');}
 function handleFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{pendingUrl=ev.target.result;document.getElementById('preview-img').src=pendingUrl;document.getElementById('img-preview').style.display='block';};r.readAsDataURL(f);}
-function applyBg(){const url=pendingUrl||document.getElementById('img-url').value.trim();if(!url){alert('이미지 URL을 입력하거나 파일을 선택해 주세요.');return;}const s=document.getElementById(targetSection);s.style.backgroundImage=`url(${url})`;s.classList.add('has-bg');closePanel();}
-function removeBg(){const s=document.getElementById(targetSection);s.style.backgroundImage='';s.classList.remove('has-bg');closePanel();}
+function applyBg(){const url=pendingUrl||document.getElementById('img-url').value.trim();if(!url){alert('이미지 URL을 입력하거나 파일을 선택해 주세요.');return;}const s=document.getElementById(targetSection);s.style.backgroundImage=`url(${url})`;s.classList.add('has-bg');bgImages[targetSection]=url;closePanel();scheduleSave();}
+function removeBg(){const s=document.getElementById(targetSection);s.style.backgroundImage='';s.classList.remove('has-bg');delete bgImages[targetSection];closePanel();scheduleSave();}
+function applyBgImages(){Object.entries(bgImages).forEach(([sec,url])=>{const s=document.getElementById(sec);if(s){s.style.backgroundImage=`url(${url})`;s.classList.add('has-bg');}});}
 
-/* ── NAV ── */
+/* EDIT MODE */
+let editMode=false;
+function toggleEdit(){if(editMode){deactivateEdit();return;}renderAttemptDots();const inp=document.getElementById('pw-input-field');inp.value='';document.getElementById('pw-msg').textContent='';inp.disabled=Date.now()<lockoutUntil;inp.classList.remove('error');document.getElementById('pw-modal').classList.add('open');setTimeout(()=>{if(!inp.disabled)inp.focus();},100);}
+function activateEdit(){editMode=true;document.body.classList.add('edit-mode');document.getElementById('edit-fab').classList.add('active');document.getElementById('fab-text').textContent='편집 완료';document.getElementById('fab-icon').innerHTML='<path d="M20 6L9 17l-5-5"/>';document.getElementById('pw-fab').style.display='flex';document.querySelectorAll('[data-edit]').forEach(el=>el.contentEditable='true');renderAll();}
+function deactivateEdit(){editMode=false;document.body.classList.remove('edit-mode');document.getElementById('edit-fab').classList.remove('active');document.getElementById('fab-text').textContent='편집 모드';document.getElementById('fab-icon').innerHTML='<path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>';document.getElementById('pw-fab').style.display='none';document.getElementById('main-add-row').style.display='none';document.querySelectorAll('[data-edit]').forEach(el=>{el.contentEditable='false';el.blur();});scheduleSave();renderAll();}
+function renderAll(){renderAboutValues();renderResearch();renderPatents();renderProjects();renderMembers();renderMainPubs();renderExtLinks();if(document.getElementById('pub-modal').style.display==='block')renderModalPubs();}
+
+/* NAV */
 const navLinks=document.querySelectorAll('.nav-links a');
-document.querySelectorAll('section[id]').forEach(s=>new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){navLinks.forEach(a=>a.classList.remove('active'));const l=document.querySelector(`.nav-links a[href="#${s.id}"]`);if(l)l.classList.add('active');}});},{threshold:0.4}).observe(s));
+document.querySelectorAll('section[id]').forEach(s=>new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){navLinks.forEach(a=>a.classList.remove('active'));const l=document.querySelector(`.nav-links a[href="#${s.id}"]`);if(l)l.classList.add('active');}});},{threshold:0.35}).observe(s));
 navLinks.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});}));
 document.querySelectorAll('.fade-in').forEach(el=>new IntersectionObserver(en=>{en.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')});},{threshold:0.1}).observe(el));
 
-/* ── MODAL CLOSE ── */
-['pw-modal','pw-change-modal','link-edit-modal','add-pub-modal','add-research-modal','add-member-modal','img-panel','icon-picker-modal','add-link-modal','edit-link-modal'].forEach(id=>{document.getElementById(id).addEventListener('click',function(e){if(e.target===this)this.classList.remove('open');});});
+/* MODAL CLOSE */
+['pw-modal','pw-change-modal','link-edit-modal','add-pub-modal','add-research-modal','add-member-modal','img-panel','icon-picker-modal','add-link-modal','edit-link-modal','add-patent-modal','add-project-modal'].forEach(id=>{document.getElementById(id)?.addEventListener('click',function(e){if(e.target===this)this.classList.remove('open');});});
 document.getElementById('pub-modal').addEventListener('click',function(e){if(e.target===this)closePubModal();});
 
-/* ── INIT ── */
-renderAboutValues();renderResearch();renderMembers();renderMainPubs();updateTabCounts();renderExtLinks();
+/* data-edit text changes trigger save */
+document.addEventListener('input',e=>{if(e.target.hasAttribute('data-edit')&&editMode)scheduleSave();});
+
+/* ══════════════════════════════════════
+   INIT — load from storage then render
+══════════════════════════════════════ */
+(async()=>{
+  ADMIN_HASH = await storeLoad('sbcsl-pwhash', null) || await sha256(_INIT_PW);
+  research     = await storeLoad('sbcsl-research', research);
+  members      = await storeLoad('sbcsl-members',  members);
+  pubs         = await storeLoad('sbcsl-pubs',      pubs);
+  patents      = await storeLoad('sbcsl-patents',   patents);
+  projects     = await storeLoad('sbcsl-projects',  projects);
+  externalLinks= await storeLoad('sbcsl-extlinks',  externalLinks);
+  aboutValues  = await storeLoad('sbcsl-aboutvalues',aboutValues);
+  bgImages     = await storeLoad('sbcsl-bgs',        {});
+  const texts  = await storeLoad('sbcsl-texts',      null);
+
+  assignSids();
+  applyTexts(texts);
+  applyBgImages();
+  renderAll();
+  updateTabCounts();
+})();
 </script>
-
-
-</body></html>
+</body>
+</html>
