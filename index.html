@@ -502,6 +502,19 @@ body.edit-mode .edit-hint{display:block}
   </div>
 </div>
 <!-- ADD MEMBER -->
+<!-- EDIT PROJECT -->
+<div id="edit-project-modal" class="modal-backdrop">
+  <div class="modal-box">
+    <h3>연구과제 수정</h3>
+    <label class="mf-label">상태</label>
+    <select id="epj-status" class="mf-select" style="background:var(--gray);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:10px 14px"><option value="ongoing">수행 중</option><option value="done">완료</option></select>
+    <label class="mf-label">과제명</label><input type="text" id="epj-title" class="mf-input" placeholder="과제명">
+    <label class="mf-label">지원기관</label><input type="text" id="epj-agency" class="mf-input" placeholder="지원기관">
+    <label class="mf-label">연구기간</label><input type="text" id="epj-period" class="mf-input" placeholder="2022.03 – 2025.02">
+    <label class="mf-label">역할 / 책임연구원</label><input type="text" id="epj-role" class="mf-input" placeholder="책임연구원: 김OO">
+    <div class="modal-actions"><button class="ma-btn ma-cancel" onclick="closeEditProjectModal()">취소</button><button class="ma-btn ma-apply" onclick="submitEditProject()">저장</button></div>
+  </div>
+</div>
 <div id="add-member-modal" class="modal-backdrop">
   <div class="modal-box">
     <h3>구성원 추가</h3>
@@ -804,4 +817,164 @@ function submitEditPatent(){const p=patents.find(x=>x.id===editPatentId);if(!p)r
 /* ══ PROJECTS ══ */
 let currentProjModalTab='ongoing';
 function mkProjItem(p,inModal){
-  const d=document.createElement('div');d.
+  const d=document.createElement('div');d.className='list-item';
+  const statusCls=p.status==='ongoing'?'badge-ongoing':'badge-done';
+  const statusTxt=p.status==='ongoing'?'진행중':'완료';
+  d.innerHTML=`${editMode?`<span class="item-drag-handle">⠿</span>`:''}
+    ${editMode&&inModal?`<button class="item-del" onclick="delProject('${p.id}')">✕</button>`:''}
+    <div class="item-badge-wrap">
+      <span class="status-badge proj-badge ${statusCls}">${statusTxt}</span>
+      ${editMode&&inModal?`<select class="proj-status-select ${p.status}" onchange="updateProjStatus('${p.id}',this.value);this.className='proj-status-select '+this.value"><option value="ongoing"${p.status==='ongoing'?' selected':''}>진행중</option><option value="done"${p.status==='done'?' selected':''}>완료</option></select>`:''}
+    </div>
+    <div style="flex:1">
+      <div class="item-title-txt">${p.title}</div>
+      <div class="item-meta"><span class="proj-period">${p.period||''}</span>${p.agency||''} ${p.role?'· '+p.role:''}</div>
+      <div class="item-actions">
+        ${editMode&&inModal?editBtnHTML(`openEditProject('${p.id}')`):''}
+        ${inModal?featBtnHTML(p.id,!!p.featured,`toggleProjFeatured('${p.id}')`):''}
+      </div>
+    </div>`;
+  if(editMode&&inModal)addListDrag(d,p.id,(si,ti)=>{reorderArr(projects,si,ti);renderModalProjects();renderMainProjects();});
+  return d;
+}
+function updateProjStatus(id,val){const p=projects.find(x=>x.id===id);if(p)p.status=val;}
+function toggleProjFeatured(id){const p=projects.find(x=>x.id===id);if(p){p.featured=!p.featured;renderModalProjects();renderMainProjects();}}
+function renderMainProjects(){const c=document.getElementById('main-proj-list');c.innerHTML='';const list=projects.filter(p=>p.featured);if(!list.length){c.innerHTML='<p style="color:var(--muted);font-size:14px;padding:8px 0">전체 과제 보기에서 메인 표시 항목을 선택해 주세요.</p>';return;}list.forEach(p=>c.appendChild(mkProjItem(p,false)));document.getElementById('proj-add-row').style.display=editMode?'block':'none';}
+function renderModalProjects(){const c=document.getElementById('modal-proj-list');c.innerHTML='';const tab=currentProjModalTab;const list=projects.filter(p=>p.status===tab);if(!list.length){c.innerHTML='<p style="color:var(--muted);font-size:14px;padding:20px 0">등록된 과제가 없습니다.</p>';return;}list.forEach(p=>c.appendChild(mkProjItem(p,true)));document.getElementById('modal-proj-add-row').style.display=editMode?'block':'none';updateProjCounts();}
+function updateProjCounts(){['ongoing','done'].forEach(t=>{const el=document.getElementById('cnt-'+t);if(el)el.textContent=projects.filter(p=>p.status===t).length;});}
+function switchProjModalTab(tab){switchProjTab(tab);}
+function switchProjTab(tab){currentProjModalTab=tab;document.querySelectorAll('.tab-btn[data-pjtab]').forEach(t=>t.classList.toggle('active',t.dataset.pjtab===tab));renderModalProjects();}
+function openProjModal(){currentProjModalTab='ongoing';document.querySelectorAll('.tab-btn[data-pjtab]').forEach(t=>t.classList.toggle('active',t.dataset.pjtab==='ongoing'));renderModalProjects();document.getElementById('proj-modal').classList.add('open');document.body.style.overflow='hidden';}
+function closeProjModal(){document.getElementById('proj-modal').classList.remove('open');document.body.style.overflow='';renderMainProjects();}
+function delProject(id){projects=projects.filter(p=>p.id!==id);renderModalProjects();renderMainProjects();}
+function openAddProject(){['aproj-title','aproj-agency','aproj-period','aproj-role'].forEach(i=>{const el=document.getElementById(i);if(el)el.value='';});const s=document.getElementById('aproj-status');if(s)s.value='ongoing';const m=document.getElementById('add-project-modal');if(m)m.classList.add('open');}
+function submitAddProject(){const t=document.getElementById('aproj-title')?.value.trim();if(!t){alert('과제명을 입력해 주세요.');return;}projects.push({id:'pj'+(++idCnt),status:document.getElementById('aproj-status')?.value||'ongoing',title:t,agency:document.getElementById('aproj-agency')?.value.trim()||'',period:document.getElementById('aproj-period')?.value.trim()||'',role:document.getElementById('aproj-role')?.value.trim()||'',featured:false});renderModalProjects();renderMainProjects();document.getElementById('add-project-modal')?.classList.remove('open');}
+let editProjId=null;
+function openEditProject(id){editProjId=id;const p=projects.find(x=>x.id===id);if(!p)return;const f=(i,v)=>{const el=document.getElementById(i);if(el)el.value=v;};f('epj-status',p.status);f('epj-title',p.title);f('epj-agency',p.agency||'');f('epj-period',p.period||'');f('epj-role',p.role||'');document.getElementById('edit-project-modal')?.classList.add('open');}
+function closeEditProjectModal(){document.getElementById('edit-project-modal')?.classList.remove('open');}
+function submitEditProject(){const p=projects.find(x=>x.id===editProjId);if(!p)return;const g=(i)=>document.getElementById(i)?.value.trim();p.status=document.getElementById('epj-status')?.value||p.status;p.title=g('epj-title')||p.title;p.agency=g('epj-agency');p.period=g('epj-period');p.role=g('epj-role');renderModalProjects();renderMainProjects();closeEditProjectModal();}
+
+/* ══ MEMBERS ══ */
+const GROUP_LABELS={pi:'Principal Investigator',phd:'PhD Students',ms:'MS Students',undergrad:'Undergraduate',alumni:'Alumni'};
+function mkMemberCard(m){
+  const d=document.createElement('div');d.className='member-card';
+  const initials=m.name?m.name.charAt(0):'?';
+  d.innerHTML=`${editMode?`<button class="item-del" onclick="delMember('${m.id}')">✕</button>`:''}
+    <div class="avatar-wrap">
+      ${m.photo?`<img src="${m.photo}" alt="${m.name}">`:`<span style="color:rgba(255,255,255,0.85);font-size:22px;font-weight:600">${initials}</span>`}
+      ${editMode?`<button class="avatar-edit-btn" onclick="triggerAvatarUpload('${m.id}')"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>`:''}
+    </div>
+    <div class="member-name"${editMode?' contenteditable="true"':''} onblur="syncMember('${m.id}','name',this.textContent)">${m.name}</div>
+    <div class="member-role"${editMode?' contenteditable="true"':''} onblur="syncMember('${m.id}','role',this.textContent)">${m.role}</div>`;
+  if(editMode)addDrag(d,m.id,'member',(si,ti)=>{reorderArr(members,si,ti);renderMembers();});
+  return d;
+}
+function syncMember(id,f,v){const m=members.find(x=>x.id===id);if(m)m[f]=v;}
+function triggerAvatarUpload(id){const inp=document.createElement('input');inp.type='file';inp.accept='image/*';inp.onchange=e=>{const file=e.target.files[0];if(!file)return;const r=new FileReader();r.onload=ev=>{const m=members.find(x=>x.id===id);if(m){m.photo=ev.target.result;renderMembers();}};r.readAsDataURL(file);};inp.click();}
+function renderMembers(){
+  const c=document.getElementById('members-container');c.innerHTML='';
+  const groups=Object.keys(GROUP_LABELS);
+  groups.forEach(g=>{
+    const list=members.filter(m=>m.group===g);
+    if(!list.length&&!editMode)return;
+    const sec=document.createElement('div');sec.className='members-group';
+    sec.innerHTML=`<div class="members-group-title">${GROUP_LABELS[g]}</div><div class="members-grid" id="mg-${g}"></div>`;
+    c.appendChild(sec);
+    const grid=sec.querySelector('.members-grid');
+    list.forEach(m=>grid.appendChild(mkMemberCard(m)));
+  });
+  document.getElementById('members-add-row').style.display=editMode?'block':'none';
+}
+function delMember(id){members=members.filter(m=>m.id!==id);renderMembers();}
+function openAddMember(){['am-name','am-role'].forEach(i=>{const el=document.getElementById(i);if(el)el.value='';});const s=document.getElementById('am-group');if(s)s.value='phd';document.getElementById('add-member-modal')?.classList.add('open');}
+function submitAddMember(){const name=document.getElementById('am-name')?.value.trim();if(!name){alert('이름을 입력해 주세요.');return;}members.push({id:'mb'+(++idCnt),group:document.getElementById('am-group')?.value||'phd',name,role:document.getElementById('am-role')?.value.trim()||'',photo:''});renderMembers();document.getElementById('add-member-modal')?.classList.remove('open');}
+
+/* ══ EXTERNAL LINKS ══ */
+function renderExtLinks(){
+  const row=document.getElementById('ext-links-row');if(!row)return;
+  row.innerHTML='';
+  externalLinks.forEach(lk=>{
+    const p=PLATFORMS.find(x=>x.key===lk.platform);if(!p)return;
+    const wrap=document.createElement('div');wrap.className='ext-link-wrap';
+    const inner=lk.url?`<a href="${lk.url}" target="_blank" rel="noopener">${platIconHTML(p,'big')}</a>`:`<div class="ext-link-icon no-url">${platIconHTML(p,'big').replace('ext-link-icon','')}</div>`;
+    wrap.innerHTML=`${inner}<span class="ext-link-name">${p.label}</span>${editMode?`<button class="ext-del-btn" onclick="delExtLink('${lk.id}')">✕</button>`:''}`;
+    row.appendChild(wrap);
+  });
+  if(editMode){const btn=document.createElement('button');btn.className='add-ext-btn';btn.onclick=openAddExtLink;btn.innerHTML=`<div class="add-ext-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><span class="add-ext-label">추가</span>`;row.appendChild(btn);}
+  const sec=document.getElementById('ext-links-section');if(sec)sec.style.display=(externalLinks.length||editMode)?'block':'none';
+}
+function delExtLink(id){externalLinks=externalLinks.filter(x=>x.id!==id);renderExtLinks();}
+let selPlatKey=null;
+function openAddExtLink(){selPlatKey=null;const g=document.getElementById('add-link-plat-grid');if(!g)return;g.innerHTML='';PLATFORMS.forEach(p=>{const b=document.createElement('button');b.className='plat-btn';b.innerHTML=`${platIconHTML(p,'small')}<span class="plat-lbl">${p.label}</span>`;b.onclick=()=>{selPlatKey=p.key;g.querySelectorAll('.plat-btn').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');};g.appendChild(b);});const urlSec=document.getElementById('al-url-section');if(urlSec)urlSec.style.display='block';const inp=document.getElementById('al-url');if(inp)inp.value='';document.getElementById('add-link-modal')?.classList.add('open');}
+function submitAddLink(){if(!selPlatKey){alert('플랫폼을 선택해 주세요.');return;}const url=document.getElementById('al-url')?.value.trim()||'';externalLinks.push({id:'el'+(++idCnt),platform:selPlatKey,url});renderExtLinks();document.getElementById('add-link-modal')?.classList.remove('open');}
+
+/* ══ DRAG (cards) ══ */
+let dragSrc=null;
+function addDrag(el,id,type,reorderFn){
+  el.draggable=true;
+  el.addEventListener('dragstart',e=>{if(!editMode)return;dragSrc={id,type};el.classList.add('dragging');e.dataTransfer.effectAllowed='move';});
+  el.addEventListener('dragend',()=>{el.classList.remove('dragging');document.querySelectorAll('.drag-over').forEach(x=>x.classList.remove('drag-over'));dragSrc=null;});
+  el.addEventListener('dragover',e=>{if(!editMode||!dragSrc||dragSrc.id===id||dragSrc.type!==type)return;e.preventDefault();el.classList.add('drag-over');});
+  el.addEventListener('dragleave',()=>el.classList.remove('drag-over'));
+  el.addEventListener('drop',e=>{e.preventDefault();el.classList.remove('drag-over');if(!dragSrc||dragSrc.id===id||dragSrc.type!==type)return;reorderFn(dragSrc.id,id);dragSrc=null;});
+}
+
+/* ══ EDIT MODE ══ */
+let editMode=false;
+function activateEdit(){editMode=true;document.body.classList.add('edit-mode');document.getElementById('fab-text').textContent='저장 & 종료';document.getElementById('edit-fab').classList.add('active');document.getElementById('pw-fab').style.display='flex';const fabIcon=document.getElementById('fab-icon');fabIcon.innerHTML='<path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v14a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>';renderAll();}
+function deactivateEdit(){editMode=false;document.body.classList.remove('edit-mode');document.getElementById('fab-text').textContent='편집 모드';document.getElementById('edit-fab').classList.remove('active');document.getElementById('pw-fab').style.display='none';const fabIcon=document.getElementById('fab-icon');fabIcon.innerHTML='<path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>';_siteData.aboutValues=aboutValues;_siteData.research=research;_siteData.pubs=pubs;_siteData.patents=patents;_siteData.projects=projects;_siteData.members=members;_siteData.externalLinks=externalLinks;_siteData.bgImages=bgImages;_siteData.texts=collectTexts();ghSaveAll();renderAll();}
+function toggleEdit(){if(editMode){deactivateEdit();}else{document.getElementById('pw-modal').classList.add('open');document.getElementById('pw-input-field').focus();}}
+
+/* ══ BG IMAGE ══ */
+let bgTarget=null;
+function openImgPanel(sec){bgTarget=sec;const url=bgImages[sec]||'';document.getElementById('img-url').value=url;const prev=document.getElementById('img-preview');const img=document.getElementById('preview-img');if(url){img.src=url;prev.style.display='block';}else{prev.style.display='none';}document.getElementById('img-panel').classList.add('open');}
+function closePanel(){document.getElementById('img-panel').classList.remove('open');}
+function handleFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{document.getElementById('img-url').value=ev.target.result;const img=document.getElementById('preview-img');img.src=ev.target.result;document.getElementById('img-preview').style.display='block';};r.readAsDataURL(f);}
+function applyBg(){const url=document.getElementById('img-url').value.trim();if(!url){alert('URL을 입력하거나 파일을 선택해 주세요.');return;}bgImages[bgTarget]=url;applyBgImages();closePanel();}
+function removeBg(){delete bgImages[bgTarget];const el=document.getElementById(bgTarget);if(el){el.style.backgroundImage='';el.classList.remove('has-bg');}closePanel();}
+
+/* ══ SCROLL & FADE ══ */
+function setupScroll(){const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.12});document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));}
+function setupNavHighlight(){const secs=document.querySelectorAll('section[id]');const links=document.querySelectorAll('.nav-links a');window.addEventListener('scroll',()=>{let cur='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id;});links.forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+cur);});},{passive:true});}
+
+/* ══ RENDER ALL ══ */
+function renderAll(){renderAboutValues();renderResearch();renderMainPubs();renderMainPatents();renderMainProjects();renderMembers();renderExtLinks();}
+
+/* ══ INIT ══ */
+async function init(){
+  const overlay=document.getElementById('loading-overlay');
+  try{
+    const data=await Promise.race([
+      ghLoadAll(),
+      new Promise(resolve=>setTimeout(()=>resolve({}),4000))
+    ]);
+    _siteData=data||{};
+    if(_siteData.aboutValues)aboutValues=_siteData.aboutValues;
+    if(_siteData.research)research=_siteData.research;
+    if(_siteData.pubs)pubs=_siteData.pubs;
+    if(_siteData.patents)patents=_siteData.patents;
+    if(_siteData.projects)projects=_siteData.projects;
+    if(_siteData.members)members=_siteData.members;
+    if(_siteData.externalLinks)externalLinks=_siteData.externalLinks;
+    if(_siteData.bgImages)bgImages=_siteData.bgImages;
+    if(_siteData['sbcsl-pwhash'])ADMIN_HASH=_siteData['sbcsl-pwhash'];
+    else ADMIN_HASH=await sha256(_INIT_PW);
+    if(_siteData.texts){assignSids();applyTexts(_siteData.texts);}
+    else assignSids();
+    applyBgImages();
+  }catch(e){
+    console.warn('초기화 오류:',e);
+    ADMIN_HASH=await sha256(_INIT_PW);
+    assignSids();
+  }finally{
+    renderAll();
+    setupScroll();
+    setupNavHighlight();
+    renderAttemptDots();
+    if(overlay)overlay.style.display='none';
+  }
+}
+document.addEventListener('DOMContentLoaded',init);
+</script>
+</body>
+</html>
