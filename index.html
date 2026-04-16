@@ -297,7 +297,7 @@ body.edit-mode .edit-hint{display:block}
       <p class="hero-tag" data-edit>Graduate Research Laboratory</p>
       <h1 class="hero-title" data-edit>Systems, Biology &<br><span style="color:var(--accent)">Computational</span><br>Science Lab</h1>
       <p class="hero-sub" data-edit>복잡계 생물학과 데이터 기반 컴퓨팅의 교차점에서 차세대 연구를 이끌어갑니다.</p>
-      <div class="hero-btns"><a href="#research" class="btn-primary">연구 분야 보기</a><a href="#publications" class="btn-outline">논문 목록</a></div>
+      <div class="hero-btns"><a href="#research" class="btn-primary">연구 분야</a><a href="#publications" class="btn-outline">논문 목록</a></div>
     </div>
     <div class="hero-stats fade-in">
       <div><div class="stat-num" data-edit>12+</div><div class="stat-label" data-edit>연구원</div></div>
@@ -327,7 +327,7 @@ body.edit-mode .edit-hint{display:block}
     <div class="fade-in"><p class="section-label" data-edit>Research Areas</p><h2 class="section-title" data-edit>주요 연구 분야</h2></div>
     <div class="research-grid" id="research-grid"></div>
     <div id="research-add-row" class="add-section-row">
-      <button class="add-row-btn" onclick="openAddResearch()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 연구 분야 추가</button>
+      <button class="add-row-btn" onclick="openAddResearch()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>연구 분야 추가</button>
     </div>
   </div>
 </section>
@@ -336,7 +336,7 @@ body.edit-mode .edit-hint{display:block}
     <div class="fade-in"><p class="section-label" data-edit>Publications</p><h2 class="section-title" data-edit>주요 논문</h2></div>
     <div class="pub-list" id="main-pub-list"></div>
     <div class="section-footer-row">
-      <div id="main-add-row" style="display:none"><button class="add-row-btn" onclick="openAddForm()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 논문 추가</button></div>
+      <div id="main-add-row" style="display:none"><button class="add-row-btn" onclick="openAddForm()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>논문 추가</button></div>
       <button class="btn-more" onclick="openPubModal()">전체 논문 보기 →</button>
     </div>
   </div>
@@ -346,7 +346,7 @@ body.edit-mode .edit-hint{display:block}
     <div class="fade-in"><p class="section-label" data-edit>Patents</p><h2 class="section-title" data-edit>특허 현황</h2></div>
     <div class="patent-list" id="main-patent-list"></div>
     <div class="section-footer-row">
-      <div id="patent-add-row" style="display:none"><button class="add-row-btn" onclick="openAddPatent()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 특허 추가</button></div>
+      <div id="patent-add-row" style="display:none"><button class="add-row-btn" onclick="openAddPatent()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>특허 추가</button></div>
       <button class="btn-more" onclick="openPatentModal()">전체 특허 보기 →</button>
     </div>
   </div>
@@ -356,7 +356,7 @@ body.edit-mode .edit-hint{display:block}
     <div class="fade-in"><p class="section-label" data-edit>Research Projects</p><h2 class="section-title" data-edit>연구과제</h2></div>
     <div class="proj-list" id="main-proj-list"></div>
     <div class="section-footer-row" style="margin-top:20px">
-      <div id="proj-add-row" style="display:none"><button class="add-row-btn" onclick="openAddProject()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 과제 추가</button></div>
+      <div id="proj-add-row" style="display:none"><button class="add-row-btn" onclick="openAddProject()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>과제 추가</button></div>
       <button class="btn-more" onclick="openProjModal()">전체 과제 보기 →</button>
     </div>
   </div>
@@ -365,7 +365,7 @@ body.edit-mode .edit-hint{display:block}
   <div class="container">
     <div class="fade-in"><p class="section-label" data-edit>Lab Members</p><h2 class="section-title" data-edit>구성원</h2></div>
     <div id="members-container"></div>
-    <div id="members-add-row" class="add-section-row" style="margin-top:28px"><button class="add-row-btn" onclick="openAddMember()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 구성원 추가</button></div>
+    <div id="members-add-row" class="add-section-row" style="margin-top:28px"><button class="add-row-btn" onclick="openAddMember()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>구성원 추가</button></div>
   </div>
 </section>
 <section id="contact">
@@ -399,7 +399,7 @@ body.edit-mode .edit-hint{display:block}
       <button class="tab-btn" data-tab="conference" onclick="switchPubTab('conference')">학술대회 <span class="tab-count" id="cnt-conference">0</span></button>
     </div>
     <div id="modal-pub-list" class="pub-list"></div>
-    <div id="modal-add-row" style="display:none;margin-top:16px"><button class="add-row-btn" onclick="openAddForm()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 논문 추가</button></div>
+    <div id="modal-add-row" style="display:none;margin-top:16px"><button class="add-row-btn" onclick="openAddForm()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>논문 추가</button></div>
   </div>
 </div>
 <!-- PATENTS MODAL -->
@@ -413,7 +413,7 @@ body.edit-mode .edit-hint{display:block}
       <button class="tab-btn" data-ptab="intl" onclick="switchPatTab('intl')">국제출원(PCT) <span class="tab-count" id="cnt-intl">0</span></button>
     </div>
     <div id="modal-patent-list" class="patent-list"></div>
-    <div id="modal-patent-add-row" style="display:none;margin-top:16px"><button class="add-row-btn" onclick="openAddPatent()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 특허 추가</button></div>
+    <div id="modal-patent-add-row" style="display:none;margin-top:16px"><button class="add-row-btn" onclick="openAddPatent()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>특허 추가</button></div>
   </div>
 </div>
 <!-- PROJECTS MODAL -->
@@ -426,7 +426,7 @@ body.edit-mode .edit-hint{display:block}
       <button class="tab-btn" data-jtab="done" onclick="switchProjModalTab('done')">수행 완료 <span class="tab-count" id="cnt-done">0</span></button>
     </div>
     <div id="modal-proj-list" class="proj-list"></div>
-    <div id="modal-proj-add-row" style="display:none;margin-top:16px"><button class="add-row-btn" onclick="openAddProject()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>+ 과제 추가</button></div>
+    <div id="modal-proj-add-row" style="display:none;margin-top:16px"><button class="add-row-btn" onclick="openAddProject()"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>과제 추가</button></div>
   </div>
 </div>
 <!-- ADD PUB -->
