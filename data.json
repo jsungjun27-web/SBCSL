@@ -39,47 +39,128 @@
       "group": "phd",
       "id": "mb2",
       "name": "최병철",
-      "photo": "",
-      "role": "PhD Candidate · 5년차"
+      "photo": "https://raw.githubusercontent.com/CNU-SBCSL/SBCSL/main/images/members/최병철.jpg",
+      "role": "PhD Candidate"
     },
     {
       "group": "phd",
       "id": "mb3",
       "name": "지성준",
-      "photo": "",
-      "role": "PhD Student · 2년차"
+      "photo": "https://raw.githubusercontent.com/CNU-SBCSL/SBCSL/main/images/members/지성준.jpg",
+      "role": "PhD Student"
     },
     {
       "group": "phd",
       "id": "mb4",
       "name": "윤혜영",
-      "photo": "",
-      "role": "PhD Student · 1년차"
+      "photo": "https://raw.githubusercontent.com/CNU-SBCSL/SBCSL/main/images/members/윤혜영.jpg",
+      "role": "PhD Student"
     },
     {
       "group": "ms",
       "id": "mb6",
       "name": "고연우",
       "photo": "",
-      "role": "MS Student · 1년차"
+      "role": "MS Student"
     },
     {
       "group": "ms",
       "id": "mb7",
       "name": "송승훈",
       "photo": "",
-      "role": "MS Student · 1년차"
+      "role": "MS Student"
     }
   ],
   "sbcsl-patents": [
     {
-      "featured": true,
+      "featured": false,
       "id": "pt506",
       "inventor": "김규용, 남정수, 최경철, 이상규, 황의철, 손민재, 서동균, 유하민, 이예찬, 최희용, 신동석, 변춘섭",
       "num": "10-2658141-0000",
       "status": "registered",
       "title": "Block for reducing heat island phenomenon using surface-modified waste glass aggregate",
       "year": "2025"
+    },
+    {
+      "featured": true,
+      "id": "pt507",
+      "inventor": "남정수, 편수정, 김규용, 유하민, 이예찬, 최병철, 김문규",
+      "num": "10-2818044-0000",
+      "status": "registered",
+      "title": "Evaluating Method on the Deterioration of Buildings through Sensing Image Analysis of mechanocromic sensor",
+      "year": "2025"
+    },
+    {
+      "featured": false,
+      "id": "pt510",
+      "inventor": "김규용, 남정수, 최경철, 이상규, 황의철, 손민재, 서동균, 유하민, 이예찬, 최희용, 신동석, 변춘섭",
+      "num": "10-2658141-0000",
+      "status": "registered",
+      "title": "Block for reducing heat island phenomenon using surface-modified waste glass aggregate",
+      "year": "2024"
+    },
+    {
+      "featured": false,
+      "id": "pt509",
+      "inventor": "김규용, 남정수, 이상규, 황의철, 손민재, 서동균, 유하민, 이예찬",
+      "num": "10-2629620-0000",
+      "status": "registered",
+      "title": "Mortar composition for electromagnetic wave shielding",
+      "year": "2024"
+    },
+    {
+      "featured": true,
+      "id": "pt508",
+      "inventor": "남정수, 정동근, 이예찬, 김기웅, 조준우, 최소영, 카레켄굴파이루즈",
+      "num": "10-2492693-0000",
+      "status": "registered",
+      "title": "Hemispherical solar building exterior panel and installation structure using UHPM",
+      "year": "2023"
+    },
+    {
+      "featured": false,
+      "id": "pt505",
+      "inventor": "김규용, 남정수, 최경철, 윤민호, 이상규, 황의철, 손민재, 김경태, 백재욱, 조성광, 이한승",
+      "num": "10-2228987-0000",
+      "status": "registered",
+      "title": "EPOXY PAINT FOR CONCRETE AND REPAIRING OR REINFORCING AGENT OF CONCRETE STRUCTURE USING THE SAME",
+      "year": "2021"
+    },
+    {
+      "featured": true,
+      "id": "pt504",
+      "inventor": "남정수, 이의배, 황의철, 김수빈, 김태형, 홍영준, 유하민, 이예찬",
+      "num": "10-2190604-0000",
+      "status": "registered",
+      "title": "A curing method of concrete specimens and an evaluation method of early concrete solidity that is using thereof",
+      "year": "2020"
+    },
+    {
+      "featured": false,
+      "id": "pt501",
+      "inventor": "길배수, 박용순, 강용식, 윤현도, 김규용, 남정수",
+      "num": "10-1882896-0000",
+      "status": "registered",
+      "title": "Hydration Heat Reducer Improved Long-term Storage Property",
+      "year": "2019"
+    },
+    {
+      "featured": false,
+      "id": "pt503",
+      "inventor": "길배수, 박용순, 강용식, 윤현도, 김규용, 남정수",
+      "num": "10-1882896-0000",
+      "status": "registered",
+      "title": "Hydration Heat Reducer Improved Long-term Storage  Property",
+      "year": "2018"
+    },
+    {
+      "featured": false,
+      "id": "pt506",
+      "inventor": "김규용, 남정수, 이상규, 황의철, 손민재, 유하민, 이예찬, 길배수, 박용순, 강용식, 길병민, 이지연",
+      "num": "10-2307019-0000",
+      "status": "registered",
+      "title": "HYDRATION HEAT REDUCER WITH IMPROVED DURABILITY AND USABILITY",
+      "year": "2021"
     }
   ],
   "sbcsl-projects": [
@@ -112,7 +193,17 @@
     }
   ],
   "sbcsl-pubs": {
-    "conference": [],
+    "conference": [
+      {
+        "authors": "S Sasui, GY Kim, HM Eu, YC Lee, SJ Phyeon, JS Nam",
+        "featured": false,
+        "id": "p537",
+        "journal": "Proceedings of the Korean Institute of Building Construction Conference",
+        "link": "",
+        "title": "A Preliminary Study on Alkali Activation of Waste Concrete Powder",
+        "year": "2023"
+      }
+    ],
     "domestic": [
       {
         "authors": "BC Choi, GY Kim, SJ Ji, HY Youn, SJ Pyeon, JS Nam",
@@ -122,6 +213,573 @@
         "link": "",
         "title": "Evaluation of Material Properties and Panel Applicability of Lightweight High-Strength Cementitious Composites Incorporating Waste Glass Beads",
         "year": "2026"
+      },
+      {
+        "authors": "HY Youn, GY Kim, BC Choi, SJ Ji, YG Pyo, JS Nam",
+        "featured": false,
+        "id": "p512",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "A Review on the Possibility of Using Waste Plastic Pyrolysis Char as Construction Materials",
+        "year": "2026"
+      },
+      {
+        "authors": "SJ Ji, GY Kim, BC Choi, HM Eu, HY Youn, JS Nam",
+        "featured": false,
+        "id": "p519",
+        "journal": "Journal of the Architectural Institute of Korea",
+        "link": "",
+        "title": "Examining the Effect of Alkali Metals on the General Properties of Alkali-Activated Mortars",
+        "year": "2025"
+      },
+      {
+        "authors": "HY Youn, GY Kim, BC Choi, SJ Ji, YG Pyo, JS Nam",
+        "featured": false,
+        "id": "p520",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Fresh Properties and Early Compressive Strength of Mortar with Waste Plastic Pyrolysis By-product Replacement",
+        "year": "2025"
+      },
+      {
+        "authors": "BC Choi, GY Kim, SJ Ji, HY Youn, YC Lee, JS Nam",
+        "featured": false,
+        "id": "p521",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Strength and Electrical Conductivity Properties of Mortar Reinforced with Carbon Nanotubes-Functionalized Steel Fibers",
+        "year": "2025"
+      },
+      {
+        "authors": "YS Choi, GY Kim, DK Suh, HM Eu, SH Han, JS Nam",
+        "featured": false,
+        "id": "p528",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "A Study on the Residual Compressive Strength of Concrete Mixed with Limestone Powder after Heating",
+        "year": "2024"
+      },
+      {
+        "authors": "MW Kil, GY Kim, BC Choi, SJ Ji, HY Youn, JS Nam",
+        "featured": false,
+        "id": "p529",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Evaluation of the Applicability of Azon and Azo-Core for Enhancing Airtightness and Thermal Insulation Performance of Insulated Shutters",
+        "year": "2024"
+      },
+      {
+        "authors": "SJ Ji, SJ Pyeon, BC Choi, JH Kim, DS Kim, JS Nam",
+        "featured": false,
+        "id": "p530",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Preliminary Investigation into the Use of Methyl Methacrylate (MMA)-Based Materials for Road Repair",
+        "year": "2024"
+      },
+      {
+        "authors": "MK Kim, GY Kim, SJ Pyeon, BC Choi, YC Lee, JS Nam",
+        "featured": false,
+        "id": "p531",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Mechanical Properties of Fiber-reinforced Cement Composites according to a Multi-walled Carbon Nanotube Dispersion Method",
+        "year": "2024"
+      },
+      {
+        "authors": "BC Choi, GY Kim, SJ Pyeon, MK Kim, YC Lee, JS Nam",
+        "featured": false,
+        "id": "p538",
+        "journal": "Journal of the Architectural Institute of Korea",
+        "link": "",
+        "title": "Compressive Strength and Absorption Ratio of Mortar for Brick Incorporating Spent Coffee Grounds Coated with Water Repellent",
+        "year": "2023"
+      },
+      {
+        "authors": "GC Choe, HS Kim, JS Jeon, MH Lee, SJ Pyeon, JS Nam",
+        "featured": false,
+        "id": "p539",
+        "journal": "Journal of The Korea Institute of Building Construction",
+        "link": "",
+        "title": "A study on the application method of mechanochromic sensor for crack monitoring in buildings",
+        "year": "2023"
+      },
+      {
+        "authors": "SJ Pyeon, GY Kim, BC Choi, MK Kim, HM Eu, JS Nam",
+        "featured": false,
+        "id": "p540",
+        "journal": "Journal of the Architectural Institute of Korea",
+        "link": "",
+        "title": "Evaluation of Crack Behavior Using Dynamic Discoloration Sensor of Fiber-reinforced Cement Composites After Freeze-thaw",
+        "year": "2023"
+      },
+      {
+        "authors": "WK Seok, YS Kim, YC Lee, JS Nam, GY Kim",
+        "featured": false,
+        "id": "p541",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "A Study on Impact Resistance Properties with Composition Materials and Installation Conditions of Protective Panel",
+        "year": "2023"
+      },
+      {
+        "authors": "WK Seok, YS Kim, YC Lee, JS Nam, GY Kim",
+        "featured": false,
+        "id": "p542",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Impact resistance characteristics of cementitious composites subjected to high-velocity projectiles with reinforcement types",
+        "year": "2023"
+      },
+      {
+        "authors": "SJ Pyeon, GY Kim, MK Kim, BC Choi, SJ Ji, JS Nam",
+        "featured": false,
+        "id": "p543",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Enhancing Freeze-Thaw Resilience in Adhered Mortar Tile Modules",
+        "year": "2023"
+      },
+      {
+        "authors": "SJ Pyeon, GY Kim, SS Lee, JS Nam",
+        "featured": false,
+        "id": "p551",
+        "journal": "Journal of the Korean Recycled Construction Resources Institute",
+        "link": "",
+        "title": "Hydration properties of high-strength cementitious composites incorporating waste glass beads",
+        "year": "2022"
+      },
+      {
+        "authors": "SJ Pyeon, GY Kim, EJ Choi, GC Choe, SS Lee, JS Nam",
+        "featured": false,
+        "id": "p552",
+        "journal": "Journal of the Architectural Institute of Korea",
+        "link": "",
+        "title": "Analysis of the impact of tile defects in apartment houses using one-way ANOVA",
+        "year": "2022"
+      },
+      {
+        "authors": "JK On, YS Kim, HJ Moon, JS Nam, GY Kim",
+        "featured": false,
+        "id": "p561",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "An Experimental Study on the Semi-Adiabatic Temperature Rise Test of Concrete Considering Outside Temperature and Specimen Size",
+        "year": "2021"
+      },
+      {
+        "authors": "SJ Pyeon, GC Choe, HS Kim, GY Kim, JS Nam",
+        "featured": false,
+        "id": "p562",
+        "journal": "Journal of The Korea Institute of Building Construction",
+        "link": "",
+        "title": "An experimental study on the applicability of mechanochromic sensors for monitoring tensile strain of concrete materials",
+        "year": "2021"
+      },
+      {
+        "authors": "MJ Son, GY Kim, SK Lee, HS Kim, JS Nam",
+        "featured": false,
+        "id": "p563",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Tensile Properties of Hybrid Fiber Reinforced Cement Composite according to the Hooked & Smooth Steel Fiber Blending Ratio and Strain Rate",
+        "year": "2021"
+      },
+      {
+        "authors": "SJ Pyeon, JH Kim, GY Kim, GC Choe, MJ Son, JS Nam",
+        "featured": false,
+        "id": "p564",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "A study of the prevent measure by case analysis of apartment building defect lawsuit",
+        "year": "2021"
+      },
+      {
+        "authors": "CC Choe, GY Kim, HS Kim, EC Hwang, JS Nam",
+        "featured": false,
+        "id": "p575",
+        "journal": "J. Korea Concr. Inst",
+        "link": "",
+        "title": "Mechanical properties of amorphous steel fiber reinforced high strength concrete exposed to high temperature",
+        "year": "2020"
+      },
+      {
+        "authors": "DK Suh, GY Kim, BS Kil, T Koyama, JS Nam",
+        "featured": false,
+        "id": "p576",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Evaluation of Hydration Heat Characteristics of Strontium Based Hydration Heat Reducer Addition on Concrete in Hot Weather Condition",
+        "year": "2020"
+      },
+      {
+        "authors": "HM Eu, GY Kim, GC Choe, MJ Son, JS Nam",
+        "featured": false,
+        "id": "p577",
+        "journal": "Journal of the Korean Recycled Construction Resources Institute",
+        "link": "",
+        "title": "Evaluation of mechanical properties and alkali-silica reaction of high strength mortar using waste glass sand",
+        "year": "2020"
+      },
+      {
+        "authors": "GC Choe, GY Kim, HS Kim, EC Hwang, JS Nam",
+        "featured": false,
+        "id": "p586",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Experimental Study on the Spalling Properties of Ultra High Strength Concrete containing Amorphous Metallic Fiber",
+        "year": "2019"
+      },
+      {
+        "authors": "HS Kim, GY Kim, SK Lee, GC Choe, JS Nam",
+        "featured": false,
+        "id": "p587",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Direct Tensile Properties of Fiber-Reinforced Cement Based Composites according to the Length and Volume Fraction of Amorphous Metallic Fiber",
+        "year": "2019"
+      },
+      {
+        "authors": "SB Shin, GY Kim, JS Nam, KS Shin, BK Lee",
+        "featured": false,
+        "id": "p588",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Material Properties of Fast hardening Polymer Mortar by Fine Aggregate Types and Replacement Ratio",
+        "year": "2019"
+      },
+      {
+        "authors": "SY Lee, GY Kim, MH Yoon, CS Na, SK Lee, SG Shin, JS Nam",
+        "featured": false,
+        "id": "p589",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Monitoring on compressive strength and carbonation of reinforced concrete structure with 100% recycled aggregate",
+        "year": "2019"
+      },
+      {
+        "authors": "JC Yoo, GY Kim, SK Lee, EC Hwang, JS Nam",
+        "featured": false,
+        "id": "p590",
+        "journal": "Journal of the Korean Recycled Construction Resources Institute",
+        "link": "",
+        "title": "Effect of Polypropylene Fiber on the Freeze-Thaw Damage of Mortar",
+        "year": "2019"
+      },
+      {
+        "authors": "SB Shin, GY Kim, JS Nam, KS Shin, BK Lee",
+        "featured": false,
+        "id": "p591",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Material properties of repair mortar considering accelerator type and curing conditions",
+        "year": "2019"
+      },
+      {
+        "authors": "GT Kim, GY Kim, JS Nam, BK Lee, CH Lim",
+        "featured": false,
+        "id": "p592",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Influence of hydrostatic pressure on chloride ion penetration of marine concrete",
+        "year": "2019"
+      },
+      {
+        "authors": "KH Lee, GY Kim, BK Lee, KS Shin, JS Nam",
+        "featured": false,
+        "id": "p597",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Setting Time, compressive strength and drying shrinkage of mortar with alpha-calcium sulfate hemihydrate",
+        "year": "2017"
+      },
+      {
+        "authors": "HS Kim, GY Kim, SK Lee, MJ Son, JS Nam",
+        "featured": false,
+        "id": "p598",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Strain Rate Effect on the Compressive and Tensile Strength of Hooked Steel Fiber and Polyamide Fiber Reinforced Cement Composite",
+        "year": "2017"
+      },
+      {
+        "authors": "WW Seo, GY Kim, MH Yoon, BK Lee, JS Nam",
+        "featured": false,
+        "id": "p599",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Mechanical properties of epoxy paint using oxidized graphene nanoplatelet as a reinforcement",
+        "year": "2017"
+      },
+      {
+        "authors": "MJ Son, GY Kim, SK Lee, HS Kim, JS Nam",
+        "featured": false,
+        "id": "p600",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Tensile Behavior of Hybrid Fiber Reinforced Cement Composite According to the Hooked Steel Fiber and Polyvinyl Alcohol Fiber Blending Ratio and Strain Rate",
+        "year": "2017"
+      },
+      {
+        "authors": "BK Lee, GY Kim, GT Kim, KS Shin, JS Nam",
+        "featured": false,
+        "id": "p601",
+        "journal": "Journal of the Korea Concrete Institute",
+        "link": "",
+        "title": "Chloride ion penetration resistance of slag-replaced concrete and cementless slag concrete by marine environmental exposure",
+        "year": "2017"
+      },
+      {
+        "authors": "SK Lee, GY Kim, HS Kim, MJ Son, JS Nam",
+        "featured": false,
+        "id": "p607",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Fracture Property of Concrete on Spherical and Flat Nose Shape Projectile Impact",
+        "year": "2016"
+      },
+      {
+        "authors": "SY Lee, JC Yoo, GY Kim, MH Yoon, JS Nam, HG Choi",
+        "featured": false,
+        "id": "p612",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Evaluation on the chloride ion diffusion coefficient of mortar depending on replacement ratio of recycled fine aggregate",
+        "year": "2016"
+      },
+      {
+        "authors": "남정수, 김규용, 김홍섭, 김정현, 한상휴",
+        "featured": false,
+        "id": "p611",
+        "journal": "한국구조물진단유지관리공학회 논문집",
+        "link": "",
+        "title": "비상체의 충돌에 의한 고인성 섬유보강 시멘트복합체의 파괴특성",
+        "year": "2015"
+      },
+      {
+        "authors": "남정수, 유재철, 김규용, 김홍섭, 전중규",
+        "featured": false,
+        "id": "p613",
+        "journal": "한국구조물진단유지관리공학회 논문집",
+        "link": "",
+        "title": "아라미드섬유의 표면개질에 의한 시멘트 복합재료의 강도특성 및 내충격성능의 향상효과",
+        "year": "2015"
+      },
+      {
+        "authors": "JS Nam, JC Yoo, GY Kim, HS Kim, JK Jeon",
+        "featured": false,
+        "id": "p615",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Improvement of the strength properties and impact resistance of the cement composite materials by the use of surface modification of the aramid fibers",
+        "year": "2015"
+      },
+      {
+        "authors": "JS Nam, GY Kim, HS Kim, JH Kim, SH Han",
+        "featured": false,
+        "id": "p616",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Fracture Characteristics of Ductile Fiber Reinforced Cement based Composites by Collision of Steel Projectile",
+        "year": "2015"
+      },
+      {
+        "authors": "JH Kim, GY Kim, HS Kim, SH Han, JS Nam, JC Yoo",
+        "featured": false,
+        "id": "p617",
+        "journal": "Journal of the Architectural Institute of Korea Structure & Construction",
+        "link": "",
+        "title": "Study of Fiber Reinforced Factor for the Application of the Damage Prediction Formula (modified NDRC) of Concrete due to the Impact of the High-Velocity Projectile",
+        "year": "2015"
+      },
+      {
+        "authors": "SH Han, GY Kim, HS Kim, JH Kim, JS Nam",
+        "featured": false,
+        "id": "p618",
+        "journal": "Journal of the Korea Concrete Institute",
+        "link": "",
+        "title": "Evaluation on rear fracture reduction and crack properties of cement composites with high-velocity projectile impact by fiber types",
+        "year": "2015"
+      },
+      {
+        "authors": "김홍섭, 남정수, 김정현, 한상휴, 김규용",
+        "featured": false,
+        "id": "p619",
+        "journal": "한국구조물진단유지관리공학회 논문집",
+        "link": "",
+        "title": "보강섬유의 형상과 물성에 따른 인발특성이 콘크리트의 휨거동에 미치는 영향",
+        "year": "2014"
+      },
+      {
+        "authors": "HS Kim, JS Nam, JH Kim, SH Han, GY Kim",
+        "featured": false,
+        "id": "p621",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Effect of pull-out property by shape and mechanical property of reinforcing fiber on the flexural behavior of concrete",
+        "year": "2014"
+      },
+      {
+        "authors": "JS Nam, HS Kim, IC Lee, H Miyauchi, GY Kim",
+        "featured": false,
+        "id": "p622",
+        "journal": "Journal of the Korea Concrete Institute",
+        "link": "",
+        "title": "Evaluation on the impact resistant performance of fiber reinforced concrete by high-velocity projectile and contacted explosion",
+        "year": "2013"
+      },
+      {
+        "authors": "HS Kim, JS Nam, HK Hwang, JK Jeon, GY Kim",
+        "featured": false,
+        "id": "p623",
+        "journal": "Journal of the Korea Concrete Institute",
+        "link": "",
+        "title": "A Study on the Penetration Resistance and Spalling Properties of High Strength Concrete by Impact of High Velocity Projectile",
+        "year": "2013"
+      },
+      {
+        "authors": "IC Lee, HS Kim, JS Nam, SB Kim, GY Kim",
+        "featured": false,
+        "id": "p624",
+        "journal": "journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Evaluation of protective performance of fiber reinforced concrete t-wall",
+        "year": "2013"
+      },
+      {
+        "authors": "IC Lee, HS Kim, JS Nam, SB Kim, WH Hong, GY Kim",
+        "featured": false,
+        "id": "p625",
+        "journal": "journal of the Korea Institute of Military Science and Technology",
+        "link": "",
+        "title": "Evaluation of Protective Performance of Protection Materials for Field and Structural Body by Ignition of 155mm Artillery Shell and C-4 Explosive",
+        "year": "2013"
+      },
+      {
+        "authors": "KM Koo, GY Kim, SH Hong, JS Nam, KS Shin, BS Khil",
+        "featured": false,
+        "id": "p626",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Properties of Autogenous Shrinkage according to Hydration Heat Velocity of High Strength Concrete Considering Mass Member",
+        "year": "2012"
+      },
+      {
+        "authors": "GY Kim, HK Hwang, JS Nam, HS Kim, JH Park, JJ Kim",
+        "featured": false,
+        "id": "p627",
+        "journal": "한국건축시공학회지",
+        "link": "",
+        "title": "Evaluation of Impact Resistance of Steel Fiber and Organic Fiber Reinforced Concrete and Mortar",
+        "year": "2012"
+      },
+      {
+        "authors": "GC Choe, TG Lee, JS Nam, BK Park, GY Kim",
+        "featured": false,
+        "id": "p628",
+        "journal": "Journal of the Korea Concrete Institute",
+        "link": "",
+        "title": "Evaluation of spalling property and water vapor pressure of concrete with heating rate",
+        "year": "2012"
+      },
+      {
+        "authors": "HK Hwang, JS Nam, HS Kim, IC Lee, H Miyauchi, GY Kim",
+        "featured": false,
+        "id": "p629",
+        "journal": "Journal of the Architectural Institute of Korea Structure & Construction",
+        "link": "",
+        "title": "Evaluation on the blast resistant performance of fiber reinforced mortar with fiber type and PVA+ STF panel installed intermediate space thickness",
+        "year": "2012"
+      },
+      {
+        "authors": "GY Kim, TG Lee, GC Choe, JS Nam, YW Kang",
+        "featured": false,
+        "id": "p630",
+        "journal": "Journal of the Architectural Institute of Korea Structure & Construction",
+        "link": "",
+        "title": "Thermal Strain Properties of Normal and Clay-ash Light-weight Concrete with Loading Condition",
+        "year": "2012"
+      },
+      {
+        "authors": "GY Kim, KM Koo, JS Nam, H Miyauchi, KS Shin, TG Lee",
+        "featured": false,
+        "id": "p631",
+        "journal": "Journal of the Architectural Institute of Korea Structure & Construction",
+        "link": "",
+        "title": "Compressive strength development of blast furnace slag binder mortar",
+        "year": "2012"
+      },
+      {
+        "authors": "GY Kim, JS Nam, H Miyauchi",
+        "featured": false,
+        "id": "p633",
+        "journal": "Journal of Korea Architecture Institute",
+        "link": "",
+        "title": "Evaluation on impact resistance performance of fiber reinforced mortar under high-velocity impact of projectile",
+        "year": "2011"
+      },
+      {
+        "authors": "YS Kim, TG Lee, JS Nam, GY Park, GY Kim",
+        "featured": false,
+        "id": "p634",
+        "journal": "Journal of the Korea Concrete Institute",
+        "link": "",
+        "title": "A study on the residual mechanical properties of fiber reinforced concrete with high temperature and load",
+        "year": "2011"
+      },
+      {
+        "authors": "YS Jeon, GY Kim, JS Nam, YD Kim, JH Jeong, SH Lee",
+        "featured": false,
+        "id": "p635",
+        "journal": "Journal of the Korea Institute of Building Construction",
+        "link": "",
+        "title": "Evaluation on the mechanical properties of strain hardening cement composite by mixing method for application at building construction site",
+        "year": "2011"
+      },
+      {
+        "authors": "GY Kim, SH Jung, TG Lee, YS Kim, JS Nam",
+        "featured": false,
+        "id": "p636",
+        "journal": "구조물진단학회지",
+        "link": "",
+        "title": "가열 및 재하에 의한 콘크리트의 압축거동",
+        "year": "2010"
+      },
+      {
+        "authors": "GY Kim, SH Jung, TG Lee, YS Kim, JS Nam",
+        "featured": false,
+        "id": "p637",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "Compressive Behavior of Concrete with Loading and Heating",
+        "year": "2010"
+      },
+      {
+        "authors": "GY Kim, KS Shin, CH Lim, JS Nam, MH Kim",
+        "featured": false,
+        "id": "p638",
+        "journal": "Journal of the Korean Recycled Construction Resources Institute",
+        "link": "",
+        "title": "Properties of engineering and durability concrete with fly-ash and blast furnace slag in normal strength level",
+        "year": "2010"
+      },
+      {
+        "authors": "GY Kim, HG Choi, EB Lee, JS Nam, MK Han",
+        "featured": false,
+        "id": "p639",
+        "journal": "Journal of the Korea institute for structural maintenance and inspection",
+        "link": "",
+        "title": "A study on the development of flat-ring type restrained test method and performance evaluation for evaluating shrinkage cracking properties of concrete in early age",
+        "year": "2009"
+      },
+      {
+        "authors": "GY Kim, JS Nam, MH Kim, DH Lee, HY Song",
+        "featured": false,
+        "id": "p640",
+        "journal": "Journal of the Korean Recycled Construction Resources Institute",
+        "link": "",
+        "title": "An Experimental Study on the Properties of Engineering and Shrinkage Cracking Reduction of Fiber Reinforced Concrete Using Recycled Fine Aggregate",
+        "year": "2009"
       }
     ],
     "main": [
@@ -161,6 +819,15 @@
         "year": "2026"
       },
       {
+        "authors": "H Eu, G Kim, S Hwang, C Lim, K Kim, J Park, Y Lee, J Nam",
+        "featured": false,
+        "id": "p511",
+        "journal": "Ocean Engineering",
+        "link": "https://doi.org/10.1016/j.oceaneng.2026.124983",
+        "title": "Vibration RMS and impact monitoring for marine oscillating water column (OWC) structure using ERA5 and deep learning",
+        "year": "2026"
+      },
+      {
         "authors": "S Ji, G Kim, B Choi, H Youn, Y Kim, S Sasui, M Tia, J Nam",
         "featured": true,
         "id": "p502",
@@ -186,6 +853,546 @@
         "link": "https://doi.org/10.1016/j.jmrt.2025.12.075",
         "title": "Material Characterization of Waste Plastic Pyrolysis char (WPPC) and Its Applicability Evaluation in Mortar",
         "year": "2025"
+      },
+      {
+        "authors": "Y Lee, S Lee, G Kim, H Eu, M Son, S Han, J Nam",
+        "featured": false,
+        "id": "p513",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2025.143497",
+        "title": "Electrical conductivity and shielding effectiveness of fiber-reinforced cementitious composites according to steel fiber shape",
+        "year": "2025"
+      },
+      {
+        "authors": "M Son, G Kim, H Eu, Y Lee, S Sasui, S Pyeon, S Lee, J Nam",
+        "featured": false,
+        "id": "p514",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2025.141963",
+        "title": "Effect of pretreated waste glass sand on comprehensive performance of concrete based on mechanical properties, durability, and microstructure",
+        "year": "2025"
+      },
+      {
+        "authors": "M Son, G Kim, H Eu, S Lee, G Choe, S Sasui, S Pyeon, J Nam",
+        "featured": false,
+        "id": "p515",
+        "journal": "Case Studies in Construction Materials",
+        "link": "https://doi.org/10.1016/j.cscm.2025.e04534",
+        "title": "Optimizing the pretreatment conditions for waste glass sand in mortar focusing on the alkali-silica reaction mechanism",
+        "year": "2025"
+      },
+      {
+        "authors": "B Choi, G Kim, M Kim, S Ji, M Kil, H Youn, S Pyeon, M Tia, J Nam",
+        "featured": false,
+        "id": "p516",
+        "journal": "Journal of Materials Research and Technology",
+        "link": "https://doi.org/10.1016/j.jmrt.2025.05.091",
+        "title": "Effect of MWCNTs-coated hook-end steel fibers as a dispersion method for MWCNTs on the mechanical properties of fiber-reinforced cementitious composites",
+        "year": "2025"
+      },
+      {
+        "authors": "S Han, G Kim, S Han, Y Lee, H Eu, Y Choi, J Nam",
+        "featured": false,
+        "id": "p517",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2025.141002",
+        "title": "Residual impact resistance of hybrid fiber-reinforced cementitious composites after thermal degradation",
+        "year": "2025"
+      },
+      {
+        "authors": "H Eu, G Kim, G Yoon, J Hong, S Hwang, M Matsubara, S Han, M Son, H Choi, J Nam",
+        "featured": false,
+        "id": "p518",
+        "journal": "Journal of Building Engineering",
+        "link": "https://doi.org/10.1016/j.jobe.2024.111607",
+        "title": "Analysis of temperature behavior and prediction model for underground permeable blocks rainwater tank source heat pump system through long-term operation",
+        "year": "2025"
+      },
+      {
+        "authors": "S Sasui, G Kim, A van Riessen, C Lim, H Eu, J Park, J Nam",
+        "featured": false,
+        "id": "p522",
+        "journal": "Journal of Building Engineering",
+        "link": "https://doi.org/10.1016/j.jobe.2024.111255",
+        "title": "Effects of Na2SiO3/NaOH ratio in alkali activator on the microstructure, strength and chloride ingress in fly ash and GGBS based alkali activated concrete",
+        "year": "2024"
+      },
+      {
+        "authors": "S Pyeon, G Kim, B Choi, D Oh, Y Leem, R Kitagaki, J Nam",
+        "featured": false,
+        "id": "p523",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2024.138820",
+        "title": "ITZ properties of LWA surroundings in high strength mortar according to LWA/sand with relative humidity",
+        "year": "2024"
+      },
+      {
+        "authors": "H Eu, G Kim, M Son, S Sasui, Y Lee, H Choi, S Kang, J Nam",
+        "featured": false,
+        "id": "p524",
+        "journal": "International Journal of Concrete Structures and Materials",
+        "link": "https://doi.org/10.1186/s40069-024-00711-x",
+        "title": "Alkali-Silica Reaction and Residual Mechanical Properties of High-Strength Mortar Containing Waste Glass Fine Aggregate and Supplementary Cementitious Materials",
+        "year": "2024"
+      },
+      {
+        "authors": "M Son, G Kim, S Lee, H Kim, H Eu, Y Lee, S Sasui, J Nam",
+        "featured": false,
+        "id": "p525",
+        "journal": "International Journal of Concrete Structures and Materials",
+        "link": "https://doi.org/10.1186/s40069-024-00697-6",
+        "title": "Investigation of conditions for using mass-produced waste glass as sustainable fine aggregate for mortar",
+        "year": "2024"
+      },
+      {
+        "authors": "J Park, G Kim, H Eu, Y Lee, S Han, Y Choi, S Sasui, C Lim, K Kim, J Nam",
+        "featured": false,
+        "id": "p526",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2024.136276",
+        "title": "Monitoring long-term chloride penetration into wave power marine concrete structures under repeated air pressure",
+        "year": "2024"
+      },
+      {
+        "authors": "H Eu, G Kim, G Yoon, Y Lee, S Sasui, M Son, H Choi, J Nam",
+        "featured": false,
+        "id": "p527",
+        "journal": "Journal of Building Engineering",
+        "link": "https://doi.org/10.1016/j.jobe.2024.108551",
+        "title": "Field experiment on performance of water source heat pump using underground rainwater tank as heat source",
+        "year": "2024"
+      },
+      {
+        "authors": "S Sasui, G Kim, A van Riessen, SF Alam, J Nam, S Ishak, H Eu",
+        "featured": false,
+        "id": "p532",
+        "journal": "Journal of Cleaner Production",
+        "link": "https://doi.org/10.1016/j.jclepro.2023.140423",
+        "title": "Influence of elevated temperature on waste concrete powder and its application in alkali activated materials",
+        "year": "2024"
+      },
+      {
+        "authors": "S Pyeon, G Kim, B Choi, M Kim, R Kitagaki, H Choi, J Kim, J Nam",
+        "featured": false,
+        "id": "p533",
+        "journal": "Case Studies in Construction Materials",
+        "link": "https://doi.org/10.1016/j.cscm.2023.e02673",
+        "title": "Characteristics on compressive strength and microstructure of high-strength cementitious composites with waste glass beads",
+        "year": "2023"
+      },
+      {
+        "authors": "S Han, G Kim, J Lee, Y Lee, H Eu, J Park, Y Choi, J Nam, H Kim, M Kim",
+        "featured": false,
+        "id": "p534",
+        "journal": "Case Studies in Construction Materials",
+        "link": "https://doi.org/10.1016/j.cscm.2023.e02606",
+        "title": "Evaluation of mechanical properties and shielding effectiveness in mortar composites reinforced with waste aluminum alloy perforated sheets",
+        "year": "2023"
+      },
+      {
+        "authors": "S Sasui, G Kim, J Nam, SF Alam, H Eu, Y Lee, M Ahmad",
+        "featured": false,
+        "id": "p535",
+        "journal": "Ceramics International",
+        "link": "https://doi.org/10.1016/j.ceramint.2023.01.224",
+        "title": "Alkali activation of waste concrete powder: Effects of alkali type and concentration",
+        "year": "2023"
+      },
+      {
+        "authors": "S Pyeon, H Kim, G Choe, M Lee, J Jeon, G Kim, J Nam",
+        "featured": false,
+        "id": "p536",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma16020662",
+        "title": "Crack evaluation of concrete using mechanochromic Sensor",
+        "year": "2023"
+      },
+      {
+        "authors": "S Pyeon, G Kim, S Lee, J Nam",
+        "featured": false,
+        "id": "p547",
+        "journal": "Applied Sciences",
+        "link": "https://doi.org/10.3390/app12168385",
+        "title": "Internal curing effect of waste glass beads on high-strength cement composites",
+        "year": "2022"
+      },
+      {
+        "authors": "S Pyeon, G Kim, G Choe, N Park, D Jeong, B Choi, M Kim, J Nam",
+        "featured": false,
+        "id": "p548",
+        "journal": "Applied Sciences",
+        "link": "https://doi.org/10.3390/app12157667",
+        "title": "Compressive-Strength Analysis of High-Strength Cementitious Composites Mixed with Red and Green Pigments",
+        "year": "2022"
+      },
+      {
+        "authors": "E Lee, J Ko, J Yoo, S Park, J Nam",
+        "featured": false,
+        "id": "p549",
+        "journal": "Applied Sciences",
+        "link": "https://doi.org/10.3390/app12063128",
+        "title": "Effect of Dune Sand on Drying Shrinkage Cracking of Fly Ash Concrete",
+        "year": "2022"
+      },
+      {
+        "authors": "S Sasui, G Kim, J Nam, A van Riessen, M Hadzima-Nyarko, G Choe, D Suh, W Jinwuth",
+        "featured": false,
+        "id": "p550",
+        "journal": "Construction and building materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2021.125864",
+        "title": "Effects of waste glass sand on the thermal behavior and strength of fly ash and GGBS based alkali activated mortar exposed to elevated temperature",
+        "year": "2022"
+      },
+      {
+        "authors": "S Lee, G Kim, H Kim, M Son, Y Lee, Y Choi, J Woo, J Nam",
+        "featured": false,
+        "id": "p553",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma14227052",
+        "title": "Electromagnetic wave shielding properties of amorphous metallic fiber-reinforced high-strength concrete using waveguides",
+        "year": "2021"
+      },
+      {
+        "authors": "E Hwang, G Kim, G Choe, M Yoon, M Son, D Suh, H Eu, J Nam",
+        "featured": false,
+        "id": "p554",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma14206023",
+        "title": "Explosive spalling behavior of single-sided heated concrete according to compressive strength and heating rate",
+        "year": "2021"
+      },
+      {
+        "authors": "C Lim, G Kim, G Kim, B Lee, Y Kim, S Shin, J Nam",
+        "featured": false,
+        "id": "p555",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma14195675",
+        "title": "Evaluation of chloride-ion diffusion characteristics of wave power marine concrete structures",
+        "year": "2021"
+      },
+      {
+        "authors": "E Hwang, G Kim, K Koo, H Moon, G Choe, D Suh, J Nam",
+        "featured": false,
+        "id": "p556",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma14175026",
+        "title": "Compressive creep and shrinkage of high-strength concrete based on limestone coarse aggregate applied to high-rise buildings",
+        "year": "2021"
+      },
+      {
+        "authors": "M Son, G Kim, H Kim, S Lee, Y Lee, J Nam, K Kobayashi",
+        "featured": false,
+        "id": "p557",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma14164504",
+        "title": "Effect of fiber blending ratio on the tensile properties of steel fiber hybrid reinforced cementitious composites under different strain rates",
+        "year": "2021"
+      },
+      {
+        "authors": "S Sasui, G Kim, J Nam, A van Riessen, M Hadzima-Nyarko",
+        "featured": false,
+        "id": "p558",
+        "journal": "Ceramics International",
+        "link": "https://doi.org/10.1016/j.ceramint.2021.04.121",
+        "title": "Effects of waste glass as a sand replacement on the strength and durability of fly ash/GGBS based alkali activated mortar",
+        "year": "2021"
+      },
+      {
+        "authors": "E Lee, J Ko, J Yoo, S Park, J Nam",
+        "featured": false,
+        "id": "p559",
+        "journal": "Applied Sciences",
+        "link": "https://doi.org/10.3390/app11041952",
+        "title": "Analysis of the aggregate effect on the compressive strength of concrete using dune sand",
+        "year": "2021"
+      },
+      {
+        "authors": "S Lee, G Kim, H Kim, M Son, G Choe, K Kobayashi, J Nam",
+        "featured": false,
+        "id": "p560",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2020.121872",
+        "title": "Impact resistance, flexural and tensile properties of amorphous metallic fiber-reinforced cementitious composites according to fiber length",
+        "year": "2021"
+      },
+      {
+        "authors": "G Choe, G Kim, H Kim, E Hwang, S Lee, M Son, J Nam",
+        "featured": false,
+        "id": "p565",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2020.120711",
+        "title": "Influence of amorphous metallic fibers on spalling properties of high-strength concrete exposed to high temperature",
+        "year": "2020"
+      },
+      {
+        "authors": "S Lee, S Lee, G Kim, M Son, G Choe, J Lee, J Nam",
+        "featured": false,
+        "id": "p566",
+        "journal": "Applied Sciences",
+        "link": "https://doi.org/10.3390/app10238527",
+        "title": "Effect of injecting epoxy resin adhesive into cement mortar on tile adhesion performance",
+        "year": "2020"
+      },
+      {
+        "authors": "S Sasui, G Kim, J Nam, A van Riessen, H Eu, S Chansomsak, SF Alam, C Cho",
+        "featured": false,
+        "id": "p567",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma13173906",
+        "title": "Incorporation of waste glass as an activator in Class-C Fly Ash/GGBS based Alkali activated material",
+        "year": "2020"
+      },
+      {
+        "authors": "T Lee, G Kim, G Choe, E Hwang, J Lee, D Ryu, J Nam",
+        "featured": false,
+        "id": "p568",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma13173792",
+        "title": "Spalling resistance of fiber-reinforced ultra-high-strength concrete subjected to the ISO-834 standard fire curve: Effects of thermal strain and water vapor pressure",
+        "year": "2020"
+      },
+      {
+        "authors": "G Choe, G Kim, J Nam, H Kim, E Hwang, S Lee",
+        "featured": false,
+        "id": "p569",
+        "journal": "Journal of Advanced Concrete Technology",
+        "link": "https://doi.org/10.3151/jact.18.339",
+        "title": "Effect of Mass Loss of Organic Fiber on the Water Vapor Pressure and Moisture Migration of 150 and 200 MPa Ultra-High Strength Concrete Exposed to High Temperature",
+        "year": "2020"
+      },
+      {
+        "authors": "H Kim, G Kim, S Lee, G Choe, J Nam, T Noguchi, V Mechtcherine",
+        "featured": false,
+        "id": "p570",
+        "journal": "Cement and Concrete Composites",
+        "link": "https://doi.org/10.1016/j.cemconcomp.2020.103519",
+        "title": "Effects of strain rate on the tensile behavior of cementitious composites made with amorphous metallic fiber",
+        "year": "2020"
+      },
+      {
+        "authors": "G Choe, Y Shinohara, G Kim, J Nam",
+        "featured": false,
+        "id": "p571",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma13051156",
+        "title": "Numerical investigation on lateral confinement effects on concrete cracking induced by rebar corrosion",
+        "year": "2020"
+      },
+      {
+        "authors": "G Choe, Y Shinohara, G Kim, S Lee, E Lee, J Nam",
+        "featured": false,
+        "id": "p572",
+        "journal": "Applied Sciences",
+        "link": "https://doi.org/10.3390/app10051794",
+        "title": "Concrete corrosion cracking and transverse bar strain behavior in a reinforced concrete column under simulated marine conditions",
+        "year": "2020"
+      },
+      {
+        "authors": "M Son, G Kim, H Kim, S Lee, J Nam, K Kobayashi",
+        "featured": false,
+        "id": "p574",
+        "journal": "Cement and Concrete Composites",
+        "link": "https://doi.org/10.1016/j.cemconcomp.2019.103482",
+        "title": "Effects of the strain rate and fiber blending ratio on the tensile behavior of hooked steel fiber and polyvinyl alcohol fiber hybrid reinforced cementitious composites",
+        "year": "2020"
+      },
+      {
+        "authors": "S Sasui, G Kim, J Nam, T Koyama, S Chansomsak",
+        "featured": false,
+        "id": "p578",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma13010059",
+        "title": "Strength and Microstructure of Class-C Fly Ash and GGBS Blend Geopolymer Activated in NaOH & NaOH + Na2SiO3",
+        "year": "2019"
+      },
+      {
+        "authors": "H Kim, G Kim, S Lee, G Choe, T Noguchi, J Nam",
+        "featured": false,
+        "id": "p579",
+        "journal": "Composites Part B: Engineering",
+        "link": "https://doi.org/10.1016/j.compositesb.2019.107430",
+        "title": "Direct tensile behavior of amorphous metallic fiber-reinforced cementitious composites: Effect of fiber length, fiber volume fraction, and strain rate",
+        "year": "2019"
+      },
+      {
+        "authors": "H Chol, J Lee, B Lee, J Nam",
+        "featured": false,
+        "id": "p580",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2019.05.003",
+        "title": "Shrinkage properties of concretes using blast furnace slag and frost-resistant accelerator",
+        "year": "2019"
+      },
+      {
+        "authors": "J Lee, G Kim, Y Kim, K Mun, J Nam",
+        "featured": false,
+        "id": "p581",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma12193059",
+        "title": "Engineering properties and optimal conditions of cementless grouting materials",
+        "year": "2019"
+      },
+      {
+        "authors": "G Choe, G Kim, H Kim, E Hwang, S Lee, J Nam",
+        "featured": false,
+        "id": "p582",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2019.05.134",
+        "title": "Effect of amorphous metallic fiber on mechanical properties of high-strength concrete exposed to high-temperature",
+        "year": "2019"
+      },
+      {
+        "authors": "H Kim, G Kim, S Lee, M Son, G Choe, J Nam",
+        "featured": false,
+        "id": "p583",
+        "journal": "Composites Part B: Engineering",
+        "link": "https://doi.org/10.1016/j.compositesb.2018.10.008",
+        "title": "Strain rate effects on the compressive and tensile behavior of bundle-type polyamide fiber-reinforced cementitious composites",
+        "year": "2019"
+      },
+      {
+        "authors": "G Choe, G Kim, M Yoon, E Hwang, J Nam, N Guncunski",
+        "featured": false,
+        "id": "p584",
+        "journal": "Cement and Concrete Research",
+        "link": "https://doi.org/10.1016/j.cemconres.2018.10.021",
+        "title": "Effect of moisture migration and water vapor pressure build-up with the heating rate on concrete spalling type",
+        "year": "2019"
+      },
+      {
+        "authors": "B Lee, G Kim, J Nam, K Lee, G Kim, S Lee, K Shin, T Koyama",
+        "featured": false,
+        "id": "p585",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma12010163",
+        "title": "Influence of α-calcium sulfate hemihydrate on setting, compressive strength, and shrinkage strain of cement mortar",
+        "year": "2019"
+      },
+      {
+        "authors": "E Hwang, G Kim, G Choe, M Yoon, N Gucunski, J Nam",
+        "featured": false,
+        "id": "p593",
+        "journal": "Construction and building materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2018.03.178",
+        "title": "Evaluation of concrete degradation depending on heating conditions by ultrasonic pulse velocity",
+        "year": "2018"
+      },
+      {
+        "authors": "S Lee, G Kim, H Kim, M Son, G Choe, J Nam",
+        "featured": false,
+        "id": "p594",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma11030409",
+        "title": "Strain behavior of concrete panels subjected to different nose shapes of projectile impact",
+        "year": "2018"
+      },
+      {
+        "authors": "M Yoon, G Kim, Y Kim, T Lee, G Choe, E Hwang, J Nam",
+        "featured": false,
+        "id": "p595",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma10070781",
+        "title": "Creep behavior of high-strength concrete subjected to elevated temperatures",
+        "year": "2017"
+      },
+      {
+        "authors": "J Nam, H Kim, G Kim",
+        "featured": false,
+        "id": "p596",
+        "journal": "International Journal of Concrete Structures and Materials",
+        "link": "https://doi.org/10.1007/s40069-016-0179-y",
+        "title": "Experimental Investigation on the Blast Resistance of Fiber-Reinforced Cementitious Composite Panels Subjected to Contact Explosions",
+        "year": "2017"
+      },
+      {
+        "authors": "B Lee, G Kim, J Nam, B Cho, Y Hama, R Kim",
+        "featured": false,
+        "id": "p602",
+        "journal": "Construction and Building Materials",
+        "link": "https://doi.org/10.1016/j.conbuildmat.2016.10.075",
+        "title": "Compressive strength, resistance to chloride-ion penetration and freezing/thawing of slag-replaced concrete and cementless slag concrete containing desulfurization slag activator",
+        "year": "2016"
+      },
+      {
+        "authors": "J Nam, Y Shinohara, T Atou, H Kim, G Kim",
+        "featured": false,
+        "id": "p603",
+        "journal": "Composites Part B: Engineering",
+        "link": "https://doi.org/10.1016/j.compositesb.2016.06.008",
+        "title": "Comparative assessment of failure characteristics on fiber-reinforced cementitious composite panels under high-velocity impact",
+        "year": "2016"
+      },
+      {
+        "authors": "G Kim, H Kim, J Nam, S Lee",
+        "featured": false,
+        "id": "p604",
+        "journal": "International Conference on Offshore Mechanics and Arctic Engineering",
+        "link": "https://doi.org/10.1115/OMAE2016-54742",
+        "title": "International Conference on Offshore Mechanics and Arctic Engineering",
+        "year": "2016"
+      },
+      {
+        "authors": "Nam, G Kim, B Lee, R Hasegawa, Y Hama",
+        "featured": false,
+        "id": "p605",
+        "journal": "Composites Part B: Engineering",
+        "link": "https://doi.org/10.1016/j.compositesb.2015.12.009",
+        "title": "Frost resistance of polyvinyl alcohol fiber and polypropylene fiber reinforced cementitious composites under freeze thaw cycling",
+        "year": "2016"
+      },
+      {
+        "authors": "J Nam, G Kim, J Yoo, G Choe, H Kim, H Choi, Y Kim",
+        "featured": false,
+        "id": "p606",
+        "journal": "Materials",
+        "link": "https://doi.org/10.3390/ma9030131",
+        "title": "Effectiveness of fiber reinforcement on the mechanical properties and shrinkage cracking of recycled fine aggregate concrete",
+        "year": "2016"
+      },
+      {
+        "authors": "H Kim, G Kim, J Nam, J Kim, S Han, S Lee",
+        "featured": false,
+        "id": "p609",
+        "journal": "Composite Structures",
+        "link": "https://doi.org/10.1016/j.compstruct.2015.08.128",
+        "title": "Static mechanical properties and impact resistance of amorphous metallic fiber-reinforced concrete",
+        "year": "2015"
+      },
+      {
+        "authors": "H Kim, G Kim, N Gucunski, J Nam, J Jeon",
+        "featured": false,
+        "id": "p610",
+        "journal": "Composites Part B: Engineering",
+        "link": "https://doi.org/10.1016/j.compositesb.2015.04.011",
+        "title": "Assessment of flexural toughness and impact resistance of bundle-type polyamide fiber-reinforced concrete",
+        "year": "2015"
+      },
+      {
+        "authors": "J Nam, G Kim, H Kim, J Jeon, Y Shinohara",
+        "featured": false,
+        "id": "p614",
+        "journal": "Asian Journal of Chemistry",
+        "link": "https://doi.org/10.14233/ajchem.2015.19508",
+        "title": "Damage Evaluation of Aramid Fiber Reinforced Cement Composites by High Velocity Impact",
+        "year": "2015"
+      },
+      {
+        "authors": "J Nam, G Kim, H Kim, Y Hama",
+        "featured": false,
+        "id": "p620",
+        "journal": "Concrete Research and Technology",
+        "link": "https://doi.org/10.3151/crt.25.147",
+        "title": "A Study on the Explosive Resistance of Fiber Reinforced Cement Composites Subjected to Contact Explosion",
+        "year": "2014"
+      },
+      {
+        "authors": "JS Nam, GY Kim, H Miyauchi, YS Jeon, HK Hwang",
+        "featured": false,
+        "id": "p632",
+        "journal": "Advanced Materials Research",
+        "link": "https://doi.org/10.4028/www.scientific.net/AMR.311-313.1588",
+        "title": "Evaluation on the blast resistance of fiber reinforced concrete",
+        "year": "2011"
       }
     ]
   },
@@ -258,9 +1465,9 @@
     "s33": "© 2017 SBCSL — Smart Building Construction System Laboratory. All rights reserved.",
     "s4": "5",
     "s5": "연구원",
-    "s6": "(집계중)",
+    "s6": "129",
     "s7": "발표 논문",
-    "s8": "(집계중)",
+    "s8": "3+",
     "s9": "연구 프로젝트"
   }
 }
